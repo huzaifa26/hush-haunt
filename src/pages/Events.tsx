@@ -4,6 +4,7 @@ import Footer from '../components/Footer'
 import Button from '../components/General/Button'
 import SearchBar from '../components/General/SearchBar'
 import { Link } from "react-router-dom"
+import LazyImage from '../components/General/LazyImage'
 
 type Props = {}
 
@@ -211,6 +212,8 @@ export default function Events({ }: Props) {
             <nav className='flex justify-between items-center w-[100%]'>
                 <div className='flex items-center gap-[3.28vw]'>
                     <img className='ml-[8px]' src='./Logo.png' alt='' />
+                    <LazyImage alt="" src={"./Logo.png"} classes='ml-[8px]' />
+
                     <SearchBar />
                 </div>
 

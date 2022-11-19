@@ -6,6 +6,7 @@ import Crousal from '../components/EventDescriptions/Crousal';
 import ContactBar from '../components/EventDescriptions/ContactBar';
 import Footer from '../components/Footer';
 import { Link } from "react-router-dom"
+import LazyImage from '../components/General/LazyImage';
 
 type Props = {}
 
@@ -102,7 +103,8 @@ export default function EventDescriptions({ }: Props) {
     <>
       <section className='backgroundImage w-[calc(100vw - 100%)] h-[964px]'>
         <nav className='absolute flex justify-between items-center w-[100%]'>
-          <img className='ml-[3.54vw]' src='./Logo.png' alt='' />
+          {/* <img className='ml-[3.54vw]' src='./Logo.png' alt='' /> */}
+          <LazyImage alt="" src={"./Logo.png"} style={{ marginLeft: "3.54vw" }} />
           <ul className='text-white text-[16px] font-[700] flex gap-[5.244vw] mr-[8.94vw]'>
             <Link to="/events">
               <li>Events</li>
@@ -115,14 +117,17 @@ export default function EventDescriptions({ }: Props) {
 
         <div className='flex w-[72%] m-auto gap-[5.878vw]'>
           <div className='relative flex-1 mt-[166px]'>
-            <img className='relative z-20 min-w-[521px]' src='./hush.png' alt='' />
-            <img className='absolute z-10 top-[20px] left-[-130px] min-h-[811px] min-w-[681px]' src='./mainBackgroundShadow.png' alt='' />
+            {/* <img className='relative z-20 min-w-[521px]' src='./hush.png' alt='' /> */}
+            <LazyImage alt="" src={"./hush.png"} classes='relative z-20 min-w-[521px]' />
+            {/* <img className='absolute z-10 top-[20px] left-[-130px] min-h-[811px] min-w-[681px]' src='./mainBackgroundShadow.png' alt='' /> */}
+            <LazyImage alt="" src={"./mainBackgroundShadow.png"} classes='absolute z-10 top-[20px] left-[-130px] min-h-[811px] min-w-[681px]' />
           </div>
 
           <div className='mt-[215px] flex-1 flex flex-col  text-white'>
             <h1 className='font-bold text-[36px] leading-[59px]'>Hush Haunt 2022 - Oct 19</h1>
             <div className='flex items-start  gap-[7.5px]'>
-              <img className='mt-[8px]' src='./mainClock.png' alt='' />
+              {/* <img className='mt-[8px]' src='./mainClock.png' alt='' /> */}
+              <LazyImage alt="" src={"./mainClock.png"} classes='mt-[8px]' />
               <p className='w-[27.04vw] font-bold text-[20px] leading-[33px]'>Hush Haunted Attraction, Westland, MI Wed Oct 19</p>
             </div>
 
@@ -147,7 +152,9 @@ export default function EventDescriptions({ }: Props) {
 
       <section>
         <h2 className='font-[700] text-[36px] leading-[58.64px] text-center text-[#231414]'>Watch Video</h2>
-        <img className='m-auto mt-[55px] mb-[79px]' src='./video.png' alt='' />
+        {/* <img className='m-auto mt-[55px] mb-[79px]' src='./video.png' alt='' /> */}
+        <LazyImage alt="" src={"./video.png"} classes='m-auto mt-[55px] mb-[79px]' />
+
       </section>
 
       <section className='w-[90%] m-auto'>
@@ -157,7 +164,8 @@ export default function EventDescriptions({ }: Props) {
 
       <section className='mt-[52px] w-[100%] h-[705px] bg-[#fed4c3] mb-[79px] '>
         <h2 className='pt-[46px] font-[700] text-[36px] leading-[58.64px] text-center text-[#231414]'>Location</h2>
-        <img className='m-auto mb-[20px] mt-[49px]' src='./map.png' alt='' />
+        {/* <img className='m-auto mb-[20px] mt-[49px]' src='./map.png' alt='' /> */}
+        <LazyImage alt="" src={"./map.png"} classes='m-auto mb-[20px] mt-[49px]' />
         <div className='flex justify-between items-center w-[71.24vw] m-auto'>
           <p className='w-[36.714vw] font-[700] text-[#231414] leading-[26px]'>Hush Haunted Attraction is BACK with 3 NEW haunted houses, 3 NEW secret bars, and a new mini game experience </p>
           <button className='border-[2px] border-[#FB4A04] w-[177px] h-[60px] text-[16px] leading-[26px] font-[700]'>Open In Maps</button>

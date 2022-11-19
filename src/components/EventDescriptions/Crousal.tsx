@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from "react-slick";
 import { useRef } from 'react';
+import LazyImage from '../General/LazyImage';
 
 type Props={
   crousalData:{
@@ -67,7 +68,8 @@ export default function Crousal({ crousalData, settings,maxWidth,width }: Props)
           {crousalData.map((data:any)=>{
                 return (
                 <div key={data.id}>
-                    <img style={{maxWidth:maxWidth,width:width}} key={data.id} src={data.image} alt=''/>
+                    {/* <img style={{maxWidth:maxWidth,width:width}} key={data.id} src={data.image} alt=''/> */}
+                    <LazyImage alt="" src={data.image} style={{maxWidth:maxWidth,width:width}}/>
                 </div>)
             })}
         </Slider>

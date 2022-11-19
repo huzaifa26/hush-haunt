@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from '../General/Button'
+import LazyImage from '../General/LazyImage'
 
 type Props = {}
 
@@ -14,7 +15,8 @@ export default function Signup({ }: Props) {
             <div className='flex-1 bg-[#fff] ml-[-45px] rounded-tl-[50px] rounded-bl-[50px]'>
                 <div className='w-[52%] m-auto'>
                     <div className='pt-[58px]'>
-                        <img src='./logo.png' />
+                        {/* <img src='./logo.png' /> */}
+                        <LazyImage alt="" src="/logo.png"/>
                         <h1 className='font-[700] text-[36px] leading-[58px] text-[#473a3a] mt-[13px]'>Signup</h1>
                     </div>
 
@@ -48,13 +50,16 @@ export default function Signup({ }: Props) {
 
                         <div className='flex justify-between my-[100px]'>
                             <div className='rounded-[10px] flex justify-center items-center w-[102px] h-[78px] border-[1px] border-[#D9D9D9]'>
-                                <img src='/facebook.png' />
+                                {/* <img src='/facebook.png' /> */}
+                                <LazyImage alt="" src="/facebook.png"/>
                             </div>
                             <div className='rounded-[10px] flex justify-center items-center w-[102px] h-[78px] border-[1px] border-[#D9D9D9]'>
-                                <img src='/google.png' />
+                                {/* <img src='/google.png' /> */}
+                                <LazyImage alt="" src="/google.png"/>
                             </div>
                             <div className='rounded-[10px] flex justify-center items-center w-[102px] h-[78px] border-[1px] border-[#D9D9D9]'>
-                                <img src='/apple.png' />
+                                {/* <img src='/apple.png' /> */}
+                                <LazyImage alt="" src="/apple.png"/>
                             </div>
                         </div>
                     </form>
