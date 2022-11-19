@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import Crousal from '../components/EventDescriptions/Crousal';
 import ContactBar from '../components/EventDescriptions/ContactBar';
 import Footer from '../components/Footer';
+import { Link } from "react-router-dom"
 
 type Props = {}
 
@@ -70,43 +71,52 @@ let crousalData = [
   },
 ]
 
-const contactData=[
+const contactData = [
   {
-    id:"1",
-    heading:"Email",
-    text:"partymode@mail.com"
+    id: "1",
+    heading: "Email",
+    text: "partymode@mail.com"
   },
   {
-    id:"2",
-    heading:"xxx-xxx-xxxxxx",
-    text:"partymode@mail.com"
+    id: "2",
+    heading: "xxx-xxx-xxxxxx",
+    text: "partymode@mail.com"
   },
   {
-    id:"3",
-    heading:"Website",
-    text:"www.partymode.com"
+    id: "3",
+    heading: "Website",
+    text: "www.partymode.com"
   },
 ]
 
+var settings = {
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1
+};
+
 export default function EventDescriptions({ }: Props) {
-
-
-
   return (
     <>
       <section className='backgroundImage w-[calc(100vw - 100%)] h-[964px]'>
         <nav className='absolute flex justify-between items-center w-[100%]'>
           <img className='ml-[3.54vw]' src='./Logo.png' alt='' />
-          <ul className='text-white flex gap-[5.244vw] mr-[8.94vw]'>
-            <li>Events</li>
-            <li>Login</li>
+          <ul className='text-white text-[16px] font-[700] flex gap-[5.244vw] mr-[8.94vw]'>
+            <Link to="/events">
+              <li>Events</li>
+            </Link>
+            <Link to="/login">
+              <li>Login</li>
+            </Link>
           </ul>
         </nav>
 
         <div className='flex w-[72%] m-auto gap-[5.878vw]'>
-          <div className='flex-1 mt-[166px]'>
-            <img className='min-w-[521px]' src='./hush.png' alt='' />
-            <img src='' alt='' />
+          <div className='relative flex-1 mt-[166px]'>
+            <img className='relative z-20 min-w-[521px]' src='./hush.png' alt='' />
+            <img className='absolute z-10 top-[20px] left-[-130px] min-h-[811px] min-w-[681px]' src='./mainBackgroundShadow.png' alt='' />
           </div>
 
           <div className='mt-[215px] flex-1 flex flex-col  text-white'>
@@ -142,7 +152,7 @@ export default function EventDescriptions({ }: Props) {
 
       <section className='w-[90%] m-auto'>
         <h2 className='mb-[51px] font-[700] text-[36px] leading-[58.64px] text-center text-[#231414]'>Gallery</h2>
-        <Crousal crousalData={crousalData} />
+        <Crousal maxWidth={'503px'} width={"29vw"} settings={settings} crousalData={crousalData} />
       </section>
 
       <section className='mt-[52px] w-[100%] h-[705px] bg-[#fed4c3] mb-[79px] '>
@@ -156,8 +166,8 @@ export default function EventDescriptions({ }: Props) {
 
       <section className='mt-[52px] w-[100%] mb-[79px] '>
         <h2 className='mb-[49px] pt-[46px] font-[700] text-[36px] leading-[58.64px] text-center text-[#231414]'>Contact</h2>
-        {contactData.map((data)=>{
-          return <ContactBar {...data}/>
+        {contactData.map((data) => {
+          return <ContactBar {...data} />
         })}
       </section>
 
@@ -166,7 +176,7 @@ export default function EventDescriptions({ }: Props) {
         <p className='mb-[217px] w-[71.239vw] m-auto font-[400] text-[16px] leading-[26.06px] text-center text-[#231414]'>All tickets are final sale and cannot be exchanged or refunded. By purchasing a ticket to this event, you agree to this purchase policy. Before purchasing your tickets, we urge you to confirm the title, time and location of the event. Hush Haunted Attraction may take and use images & video of all guests. Hush Haunt at all times reserves the right to videotape patrons, and take still images, and to utilize those images and videos for any reason, including marketing, advertising, promotion, on social media.</p>
       </section>
 
-      <Footer/>
+      <Footer />
     </>
   )
 }

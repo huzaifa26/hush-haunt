@@ -2,16 +2,24 @@ import React from 'react'
 import Slider from "react-slick";
 import { useRef } from 'react';
 
-export default function Crousal({ crousalData }: any) {
-    const slider1Arrow: any = useRef();
+type Props={
+  crousalData:{
+    id:string,
+    image:string
+  }[],
+  settings:{
+    dots: boolean,
+    infinite: boolean,
+    speed: number,
+    slidesToShow: number,
+    slidesToScroll: number
+  },
+  maxWidth:string,
+  width:string,
+}
 
-    var settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1
-      };
+export default function Crousal({ crousalData, settings,maxWidth,width }: Props) {
+    const slider1Arrow: any = useRef();
 
     // var settings1 = {
     //     dots: false,
@@ -54,20 +62,12 @@ export default function Crousal({ crousalData }: any) {
     // };
 
     return (
-        // <Slider {...settings} className='flex'>
-            
-        //     <div>
-        //     <img className='max-w-[503px]' key={crousalData[0].id} src={"./Gallery1.png"} alt=''/>
-        //     </div>
-
-            
-        // </Slider>
         <>
         <Slider {...settings}>
           {crousalData.map((data:any)=>{
                 return (
-                <div>
-                    <img className='max-w-[503px]' key={data.id} src={data.image} alt=''/>
+                <div key={data.id}>
+                    <img style={{maxWidth:maxWidth,width:width}} key={data.id} src={data.image} alt=''/>
                 </div>)
             })}
         </Slider>

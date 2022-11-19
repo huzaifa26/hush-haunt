@@ -18,3 +18,34 @@
     background-position: center;
     background-size: cover;
 }
+
+.inputBackground{
+  background-image: url("./assets/searchIcon.png");
+  background-repeat: no-repeat;
+  background-position: 1.383vw center;
+}
+
+.eventsMainBackground{
+  background-image: url("./assets/EventsMain.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.eventTextFont{
+  font-family: 'Rubik Wet Paint', cursive;
+}
+
+.eventDivBoxShadow{
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.authBackground{
+  background-image: url("./assets/AuthBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.authFliterEffect{
+  background: rgba(254, 254, 254, 0.15);
+}

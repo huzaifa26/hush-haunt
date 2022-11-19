@@ -1,10 +1,16 @@
-import React from 'react'
+type Props={
+  id:string,
+  image:string,
+  text:string,
+  price:string,
+  priceDescription: string | null,
+  icon:string
+}
 
 
-
-export default function TicketCard({id,image,text,price,priceDescription,icon}: any) {
+export default function TicketCard({id,image,text,price,priceDescription,icon}: Props) {
   return (
-    <div key={id} className='flex h-[135px] w-[43.305vw]'>
+    <div key={id} className='flex h-[135px] w-[42.305vw] xl:w-[41vw] lg:w-[41vw] md:w-[41vw] sm:w-[80vw] xsm:w-[90vw]'>
       <img className='w-[13.314vw]' src={image} alt=''/>
       <div className='pl-[1.15vw] flex-1 flex flex-col h-[100%] bg-[#fed4c3]'>
         <h3 className='mt-[13px] font-[400] leading-[33px] text-[20px] text-[#231414]'>{text}</h3>
