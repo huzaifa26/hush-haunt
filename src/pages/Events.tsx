@@ -211,9 +211,8 @@ export default function Events({ }: Props) {
         <div className='w-[calc(100vw - 100%)]'>
             <nav className='flex justify-between items-center w-[100%]'>
                 <div className='flex items-center gap-[3.28vw]'>
-                    <img className='ml-[8px]' src='./Logo.png' alt='' />
+                    {/* <img className='ml-[8px]' src='./Logo.png' alt='' /> */}
                     <LazyImage alt="" src={"./Logo.png"} classes='ml-[8px]' />
-
                     <SearchBar />
                 </div>
 

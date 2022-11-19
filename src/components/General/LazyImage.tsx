@@ -15,7 +15,7 @@ export default function LazyImage(props: Props) {
             alt={props.alt}
             src={props.src}
             style={{width:props.width,...props.style}}
-            class={props.classes}
+            className={props.classes}
         />
     )
 }
