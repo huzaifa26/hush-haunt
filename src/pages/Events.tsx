@@ -8,7 +8,7 @@ import LazyImage from '../components/General/LazyImage'
 
 type Props = {}
 
-const data = [
+export const data = [
     {
         image: "./image1.png",
         imageWidth: "20.576368876080693vw",
@@ -35,7 +35,7 @@ const data = [
     },
 ]
 
-const data1 = [
+export const data1 = [
     [{
         image: "./festival1.png",
         imageWidth: "20.576368876080693vw",
