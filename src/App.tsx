@@ -37,7 +37,6 @@ function App() {
         </Routes>
       </BrowserRouter>
     </main>
-  )
-}
+  )}
 
 export default App;
