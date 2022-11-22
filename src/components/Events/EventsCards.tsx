@@ -26,8 +26,8 @@ export default function EventsCards({ mainText, data }: Props) {
                                 {/* <img style={{ width: d.imageWidth }} src={d.image} alt=''/> */}
                                 <LazyImage alt="" src={d.image} width={d.imageWidth}/>
 
-                                {/* <img className='absolute right-0 bottom-0' src='./heartIcon.png' alt=''></img> */}
-                                <LazyImage alt="" src={"./heartIcon.png"} style={{position:"absolute",right:"0px",bottom:"0px"}}/>
+                                <img className='absolute right-0 bottom-[1.5%] w-[48px]' src='./heartIcon.png' alt=''></img>
+                                {/* <LazyImage alt="" src={"./heartIcon.png"} style={{width:"48px",position:"absolute",right:"0px",bottom:"0px"}}/> */}
                             </div>
                             <div>
                                 <h3 className='w-[351px] font-[700] text-[20px] leading-[32.58px] text-[#473a3a]'>{d.text}</h3>

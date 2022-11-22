@@ -8,6 +8,10 @@ import SubscriptionAndPricing from './pages/SubscriptionAndPricing';
 import ContactUs from './pages/ContactUs';
 import HelpSub from './pages/HelpSub';
 import Dashboard from './pages/Dashboard';
+import Likes from './pages/Likes';
+import Ticket from './pages/Ticket';
+import TicketVerifiedEmail from './pages/TicketVerifiedEmail';
+import CreatorDashboard from './pages/CreatorDashboard';
 
 function App() {
   return (
@@ -22,6 +26,14 @@ function App() {
           <Route path='/contact-us' element={<ContactUs />}></Route>
           <Route path='/help-sub' element={<HelpSub />}></Route>
           <Route path='/dashboard' element={<Dashboard />}></Route>
+          <Route path='/likes' element={<Likes />}></Route>
+          <Route path='/ticket' element={<Ticket />}></Route>
+          <Route path='/ticket-verified' element={<TicketVerifiedEmail />}></Route>
+          <Route path='/creator-dashboard' element={<CreatorDashboard />}></Route>
+          <Route path='/event-dashboard' element={<CreatorDashboard />}></Route>
+          <Route path='/report-analysis' element={<CreatorDashboard />}></Route>
+          <Route path='/invoice-and-billing' element={<CreatorDashboard />}></Route>
+          <Route path='/setting' element={<CreatorDashboard />}></Route>
         </Routes>
       </BrowserRouter>
     </main>
