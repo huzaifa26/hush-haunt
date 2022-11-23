@@ -18,7 +18,7 @@ type Props={
   },
   maxWidth:string,
   width:string,
-  minWidth:string
+  minWidth?:string
 }
 
 export default function Crousal({ crousalData, settings,maxWidth,width,minWidth }: Props) {
