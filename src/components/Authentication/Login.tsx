@@ -17,16 +17,16 @@ export default function Login({ }: Props) {
                 <div className='w-[52%] m-auto'>
                     <div className='pt-[58px]'>
                         <LazyImage alt="" src="/logo.png"/>
-                        <h1 className='font-[700] text-[36px] leading-[58px] text-[#473a3a] mt-[13px]'>Login</h1>
+                        <h1 className='font-[700] text-[clamp(20px,2.07492795389049vw,36px)] leading-[58px] text-[#473a3a] mt-[13px]'>Login</h1>
                     </div>
 
                     <form className='mt-[72px]'>
                         <div>
-                            <label className='font-[400] text-[16px] leading-[26.06px] text-[#473a3a] mb-[12px]'>Email</label>
+                            <label className='font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26.06px] text-[#473a3a] mb-[12px]'>Email</label>
                             <input className='w-[27.608069164265128vw] h-[50px] block rounded-[10px] border-[1px] border-[#473a3a]' />
                         </div>
                         <div className='mt-[64px]'>
-                            <label className='font-[400] text-[16px] leading-[26.06px] text-[#473a3a] mb-[12px]'>Password</label>
+                            <label className='font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26.06px] text-[#473a3a] mb-[12px]'>Password</label>
                             <input className='w-[27.608069164265128vw] h-[50px] block rounded-[10px] border-[1px] border-[#473a3a]' />
                             <div className='flex justify-between mt-[19px]'>
                                 <div className='flex gap-[10px]'>

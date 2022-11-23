@@ -52,7 +52,7 @@ export default function Layout({ children }: Props) {
                     <SearchBar />
                 </div>
 
-                <ul className='text-[#493c3c] text-[16px] font-[700] flex gap-[31px] mr-[7.37vw] items-center border-[1px] px-[21px] py-[6px] rounded-full border-[#473a3a] '>
+                <ul className='text-[#493c3c] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[31px] mr-[7.37vw] items-center border-[1px] px-[21px] py-[6px] rounded-full border-[#473a3a] '>
                     <li className='flex items-center gap-[8px]'>
                         <img src='./profile.png' alt='' />
                         <p className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center ml-[20px]'>partymode</p>

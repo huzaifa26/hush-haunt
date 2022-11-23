@@ -21,7 +21,7 @@ export default function Dashboard({ }: Props) {
                     <SearchBar />
                 </div>
 
-                <ul className='text-[#493c3c] text-[16px] font-[700] flex gap-[31px] mr-[7.37vw] items-center'>
+                <ul className='text-[#493c3c] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[31px] mr-[7.37vw] items-center'>
                     <li className='flex items-center gap-[8px]'>
                         <p className='text-[#1977F3] font-[400] text-[14px] leading-[23px] text-center'>+</p>
                         <p className='text-[#1977F3] font-[400] text-[14px] leading-[23px] text-center'>Create Events</p>
@@ -46,9 +46,9 @@ export default function Dashboard({ }: Props) {
                         </div>
                         {openContextMenu &&
                         <div className='transition-all w-[181px] h-[170px] bg-white shadow-md absolute z-[1] flex flex-col justify-around py-[20px] top-full left-[-270%]'>
-                            <p className='text-[#473a3a] font-[400] text-[16px] leading-[23px] text-center'> Explore Community</p>
-                            <p className='text-[#473a3a] font-[400] text-[16px] leading-[23px] text-center'>Invite a Friend</p>
-                            <p className='text-[#473a3a] font-[400] text-[16px] leading-[23px] text-center'>Vibe Check</p>
+                            <p className='text-[#473a3a] font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[23px] text-center'> Explore Community</p>
+                            <p className='text-[#473a3a] font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[23px] text-center'>Invite a Friend</p>
+                            <p className='text-[#473a3a] font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[23px] text-center'>Vibe Check</p>
                         </div>
                         }
                     </li>
@@ -64,14 +64,14 @@ export default function Dashboard({ }: Props) {
 
             <div className='bg-white relative top-[-28px] p-[14px] eventDivBoxShadow w-[85.76368876080691vw] h-[118px] m-auto'>
                 <div className='pt-[5px] pb-[18px] pl-[10px] border-l-[2px] border-[#FB4A04]'>
-                    <h2 className='mb-[8px] font-[700] text-[24px] leading-[40px] text-[#473a3a]'>Do events help you find connection?</h2>
-                    <p className='font-[400] text-[16px] w-[100%] leading-[26px] text-[#473a3a]'>Help us understand how attending events contributes to building social connection by taking a short survey before and after your next event.</p>
+                    <h2 className='mb-[8px] font-[700] text-[clamp(16px,1.38328530259366vw,24px)] leading-[40px] text-[#473a3a]'>Do events help you find connection?</h2>
+                    <p className='font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] w-[100%] leading-[26px] text-[#473a3a]'>Help us understand how attending events contributes to building social connection by taking a short survey before and after your next event.</p>
                 </div>
             </div>
 
             <section>
                 <div className='flex flex-col justify-center items-center mt-[115px]'>
-                    <h2 className="font-[700] text-[36px] leading-[58.64px] text-[#473a3a]">Check out trending categories</h2>
+                    <h2 className="font-[700] text-[clamp(20px,2.07492795389049vw,36px)] leading-[58.64px] text-[#473a3a]">Check out trending categories</h2>
                     <hr className='mt-[23px] w-[232px] !h-[2px] border-[#FB4A04] !p-0'></hr>
                 </div>
             </section>

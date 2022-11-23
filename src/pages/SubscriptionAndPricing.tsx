@@ -55,7 +55,7 @@ export default function SubscriptionAndPricing({ }: Props) {
                     <LazyImage alt="" src={"./Logo.png"} classes='ml-[8px]' />
                     <SearchBar />
                 </div>
-                <ul className='text-[#473a3a] text-[16px] font-[700] flex gap-[5.244vw] mr-[8.94vw]'>
+                <ul className='text-[#473a3a] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[5.244vw] mr-[8.94vw]'>
                     <Link to="/events"><li>Events</li></Link>
                     <li>Livestreams</li>
                     <li>Help</li>
@@ -71,7 +71,7 @@ export default function SubscriptionAndPricing({ }: Props) {
                         <h1 className='font-[700] text-[48px] leading-[78px] text-[#473a3a] relative z-20'>Our Membership Pricing Plan</h1>
                         <LazyImage alt="" src={"./SAcircle.png"} classes='relative top-[-10%] left-[-30%] z-10' />
                     </div>
-                    <p className='h-[86px] font-[400] text-[24px] leading-[39.09px] text-[#473a3a] w-[33.487031700288185vw] text-center mt-[41px]'>We are an industry leading company that values honesty,intergrity and efficiency</p>
+                    <p className='h-[86px] font-[400] text-[clamp(16px,1.38328530259366vw,24px)] leading-[39.09px] text-[#473a3a] w-[33.487031700288185vw] text-center mt-[41px]'>We are an industry leading company that values honesty,intergrity and efficiency</p>
                 </div>
 
                 <div className='flex justify-between items-center w-[86vw] m-auto mt-[0px]'>
@@ -83,33 +83,33 @@ export default function SubscriptionAndPricing({ }: Props) {
                             </div>
                         </div>
                         <div className='flex flex-col items-center'>
-                            <h3 className='font-[400] text-[36px] leading-[58px] text-[#473a3a] mt-[19px] mb-[35px]'>Free</h3>
+                            <h3 className='font-[400] text-[clamp(20px,2.07492795389049vw,36px)] leading-[58px] text-[#473a3a] mt-[19px] mb-[35px]'>Free</h3>
                             <Button width='22.76657060518732vw' height='55px' text="SignUp For Free" style={{ border: "2px solid #473a3a", background: "#fff", color: "#473a3a", borderRadius: "0px", marginBottom: "19px" }} />
 
                             <div className='flex flex-col gap-[6px]'>
                                 <div className='flex items-center gap-[15px]'>
                                     <img className='self-start mt-[2.5%]' src='./tick.png' alt='' />
-                                    <p className='font-[400] text-[20px] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>One ticket type (ex. "General Admission")</p>
+                                    <p className='font-[400] text-[clamp(14px,1.1527377521613833vw,20px)] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>One ticket type (ex. "General Admission")</p>
                                 </div>
 
                                 <div className='flex items-center gap-[15px]'>
                                     <img className='self-start mt-[2.5%]' src='./tick.png' alt='' />
-                                    <p className='font-[400] text-[20px] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Ticketing & registration essentials</p>
+                                    <p className='font-[400] text-[clamp(14px,1.1527377521613833vw,20px)] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Ticketing & registration essentials</p>
                                 </div>
 
                                 <div className='flex items-center gap-[15px]'>
                                     <img className='self-start mt-[2.5%]' src='./tick.png' alt='' />
-                                    <p className='font-[400] text-[20px] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Organizer mobile app</p>
+                                    <p className='font-[400] text-[clamp(14px,1.1527377521613833vw,20px)] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Organizer mobile app</p>
                                 </div>
 
                                 <div className='flex items-center gap-[15px]'>
                                     <img className='self-start mt-[2.5%]' src='./tick.png' alt='' />
-                                    <p className='font-[400] text-[20px] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>One ticket type (ex. "General Admission")</p>
+                                    <p className='font-[400] text-[clamp(14px,1.1527377521613833vw,20px)] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>One ticket type (ex. "General Admission")</p>
                                 </div>
 
                                 <div className='flex items-center gap-[15px]'>
                                     <img className='self-start mt-[2.5%]' src='./tick.png' alt='' />
-                                    <p className='font-[400] text-[20px] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Signup for free</p>
+                                    <p className='font-[400] text-[clamp(14px,1.1527377521613833vw,20px)] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Signup for free</p>
                                 </div>
                             </div>
                         </div>
@@ -127,38 +127,38 @@ export default function SubscriptionAndPricing({ }: Props) {
                         </div>
 
                         <div className='flex flex-col items-center'>
-                            <h3 className='font-[400] text-[36px] leading-[58px] text-[#473a3a] mt-[25px] mb-[33px]'>$24.99per/month</h3>
+                            <h3 className='font-[400] text-[clamp(20px,2.07492795389049vw,36px)] leading-[58px] text-[#473a3a] mt-[25px] mb-[33px]'>$24.99per/month</h3>
                             <Button width='22.76657060518732vw' height='55px' text="SignUp For Free" style={{ background: "#FB4A04", color: "#fff", borderRadius: "0px", marginBottom: "19px" }} />
 
                             <div className='flex flex-col gap-[6px]'>
                                 <div className='flex items-center gap-[15px] h-[43px]'>
                                     <img className='self-start mt-[2.5%]' src='./tick.png' alt='' />
-                                    <p className='font-[400] text-[20px] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Everything in Starter plan, plus</p>
+                                    <p className='font-[400] text-[clamp(14px,1.1527377521613833vw,20px)] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Everything in Starter plan, plus</p>
                                 </div>
 
                                 <div className='flex items-center gap-[15px] h-[43px]'>
                                     <img className='self-start mt-[2.5%]' src='./tick.png' alt='' />
-                                    <p className='font-[400] text-[20px] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Early Bird acccess</p>
+                                    <p className='font-[400] text-[clamp(14px,1.1527377521613833vw,20px)] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Early Bird acccess</p>
                                 </div>
 
                                 <div className='flex items-center gap-[15px] h-[43px]'>
                                     <img className='self-start mt-[2.5%]' src='./tick.png' alt='' />
-                                    <p className='font-[400] text-[20px] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Discounts on tickets price</p>
+                                    <p className='font-[400] text-[clamp(14px,1.1527377521613833vw,20px)] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Discounts on tickets price</p>
                                 </div>
 
                                 <div className='flex items-center gap-[15px] h-[43px]'>
                                     <img className='self-start mt-[2.5%]' src='./tick.png' alt='' />
-                                    <p className='font-[400] text-[20px] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Early releases and gated content.</p>
+                                    <p className='font-[400] text-[clamp(14px,1.1527377521613833vw,20px)] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Early releases and gated content.</p>
                                 </div>
 
                                 <div className='flex items-center gap-[15px] h-[43px]'>
                                     <img className='self-start mt-[2.5%]' src='./tick.png' alt='' />
-                                    <p className='font-[400] text-[20px] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Access to live streaming for all events</p>
+                                    <p className='font-[400] text-[clamp(14px,1.1527377521613833vw,20px)] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Access to live streaming for all events</p>
                                 </div>
 
                                 <div className='flex items-center gap-[15px] h-[43px]'>
                                     <img className='self-start mt-[2.5%]' src='./tick.png' alt='' />
-                                    <p className='font-[400] text-[20px] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Private shows booking with preferred creators</p>
+                                    <p className='font-[400] text-[clamp(14px,1.1527377521613833vw,20px)] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Private shows booking with preferred creators</p>
                                 </div>
                             </div>
                         </div>
@@ -172,18 +172,18 @@ export default function SubscriptionAndPricing({ }: Props) {
                             </div>
                         </div>
                         <div className='flex flex-col items-center'>
-                            <h3 className='font-[400] text-[36px] leading-[58px] text-[#473a3a] mt-[19px] mb-[35px]'>$2.5%per/ticket</h3>
+                            <h3 className='font-[400] text-[clamp(20px,2.07492795389049vw,36px)] leading-[58px] text-[#473a3a] mt-[19px] mb-[35px]'>$2.5%per/ticket</h3>
                             <Button width='22.76657060518732vw' height='55px' text="SignUp For Free" style={{ border: "2px solid #473a3a", background: "#fff", color: "#473a3a", borderRadius: "0px", marginBottom: "24px" }} />
 
                             <div className='flex flex-col gap-[6px]'>
                                 <div className='flex items-center gap-[15px]'>
                                     <img className='self-start mt-[2.5%]' src='./tick.png' alt='' />
-                                    <p className='font-[400] text-[20px] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Artist and promoters will be able to advertise online for free</p>
+                                    <p className='font-[400] text-[clamp(14px,1.1527377521613833vw,20px)] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Artist and promoters will be able to advertise online for free</p>
                                 </div>
 
                                 <div className='flex items-center gap-[15px]'>
                                     <img className='self-start mt-[2.5%]' src='./tick.png' alt='' />
-                                    <p className='font-[400] text-[20px] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Partymode will take a ticket fee of $2.5% for each ticket.</p>
+                                    <p className='font-[400] text-[clamp(14px,1.1527377521613833vw,20px)] w-[23.054755043227665vw] leading-[32px] text-[#473a3a] '>Partymode will take a ticket fee of $2.5% for each ticket.</p>
                                 </div>
                             </div>
                         </div>
@@ -193,8 +193,8 @@ export default function SubscriptionAndPricing({ }: Props) {
 
             <section className='w-[86vw] flex m-auto mt-[97px]'>
                 <div className='flex-2'>
-                    <h2 className='font-[700] text-[36px] leading-[58px] text-[#473a3a]'>FAQs</h2>
-                    <p className='font-[400] text-[16px] leading-[26px] text-[#473a3a] mt-[27px] mb-[112px]'>Everything you need to know about Party mode.</p>
+                    <h2 className='font-[700] text-[clamp(20px,2.07492795389049vw,36px)] leading-[58px] text-[#473a3a]'>FAQs</h2>
+                    <p className='font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26px] text-[#473a3a] mt-[27px] mb-[112px]'>Everything you need to know about Party mode.</p>
                     <img src='./rafiki.png' alt=''></img>
                 </div>
                 <div className='flex-1'>

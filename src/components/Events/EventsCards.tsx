@@ -16,7 +16,7 @@ export default function EventsCards({ mainText, data }: Props) {
         <div className='m-auto w-[86.1671469740634vw]'>
             <div className='flex justify-between'>
                 <h3 className='font-[700] text-[32px] leading-[52.13px] text-[#473a3a]'>{mainText}</h3>
-                <button className='w-[171px] h-[53px] border-2 border-[#FB4A04] font-[400] text-[24px] leading-[40px] text-[#473a3a]'>See More</button>
+                <button className='w-[171px] h-[53px] border-2 border-[#FB4A04] font-[400] text-[clamp(16px,1.38328530259366vw,24px)] leading-[40px] text-[#473a3a]'>See More</button>
             </div>
             <div className='flex justify-between mt-[25px]'>
                 {data.map((d,index) => {
@@ -30,8 +30,8 @@ export default function EventsCards({ mainText, data }: Props) {
                                 {/* <LazyImage alt="" src={"./heartIcon.png"} style={{width:"48px",position:"absolute",right:"0px",bottom:"0px"}}/> */}
                             </div>
                             <div>
-                                <h3 className='w-[351px] font-[700] text-[20px] leading-[32.58px] text-[#473a3a]'>{d.text}</h3>
-                                <p className='font-[400] text-[16px] leading-[33px] text-[#473a3a]'>{d.description}</p>
+                                <h3 className='w-[351px] font-[700] text-[clamp(14px,1.1527377521613833vw,20px)] leading-[32.58px] text-[#473a3a]'>{d.text}</h3>
+                                <p className='font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[33px] text-[#473a3a]'>{d.description}</p>
                             </div>
                         </div>
                     )

@@ -4,7 +4,7 @@
 
 @layer components {
     footer ul li {
-      @apply font-[400] text-[16px] leading-[26px];
+      @apply font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26px];
     }
   }
 

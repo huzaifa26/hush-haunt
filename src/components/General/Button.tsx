@@ -9,6 +9,6 @@ type Props = {
 
 export default function Button({width,height,text,style}: Props) {
   return (
-    <button style={{width:width,height:height, ...style}} className='rounded-[20px] text-[24px] font-[700] leading-[40px] bg-[#FB4A04] text-white'>{text}</button>
+    <button style={{width:width,height:height, ...style}} className='rounded-[20px] text-[clamp(16px,1.38328530259366vw,24px)] font-[700] leading-[40px] bg-[#FB4A04] text-white'>{text}</button>
   )
 }
