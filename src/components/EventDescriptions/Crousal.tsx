@@ -18,10 +18,11 @@ type Props={
   },
   maxWidth:string,
   width:string,
-  minWidth?:string
+  style?:any,
+  classes?:string
 }
 
-export default function Crousal({ crousalData, settings,maxWidth,width,minWidth }: Props) {
+export default function Crousal({ crousalData, settings,maxWidth,width,style, classes}: Props) {
     const slider1Arrow: any = useRef();
 
     return (
@@ -30,7 +31,7 @@ export default function Crousal({ crousalData, settings,maxWidth,width,minWidth 
           {crousalData.map((data:any)=>{
                 return (
                 <motion.div whileHover={{scale:1.01}} key={data.id} className="shadow-md xsm:flex xsm:justify-center">
-                    <LazyImage alt="" src={data.image} style={{maxWidth ,width ,minWidth }} classes=""/>
+                    <LazyImage alt="" src={data.image} style={{maxWidth ,width, ...style }} classes={classes}/>
                 </motion.div>)
             })}
         </Slider>

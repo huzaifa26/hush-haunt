@@ -159,17 +159,17 @@ export default function EventDescriptions({ }: Props) {
           </div>
 
           <div className='xsm:mt-[100px] sm:mt-[100px] xsm:mb-[100px] sm:mb-[100px] mt-[215px] flex-1 flex flex-col text-white'>
-            <h1 className='font-bold text-[clamp(20px,2.07492795389049vw,36px)] min-w-[260px] w-[27.089337175792508vw] xsm:leading-[35px] leading-[59px]'>Hush Haunt 2022 - Oct 19</h1>
+            <h1 className='font-bold text-[clamp(20px,2.07492795389049vw,36px)] min-w-[260px] xsm:min-w-[80vw] w-[27.089337175792508vw] xsm:leading-[35px] leading-[59px]'>Hush Haunt 2022 - Oct 19</h1>
             <div className='flex items-start  gap-[7.5px]'>
               <LazyImage alt="" src={"./mainClock.png"} classes='mt-[8px]' />
-              <p className='w-[27.04vw] min-w-[260px] font-bold text-[clamp(14px,1.1527377521613833vw,20px)] leading-[33px]'>Hush Haunted Attraction, Westland, MI Wed Oct 19</p>
+              <p className='w-[27.04vw] min-w-[260px] xsm:min-w-[80vw] font-bold text-[clamp(14px,1.1527377521613833vw,20px)] leading-[33px]'>Hush Haunted Attraction, Westland, MI Wed Oct 19</p>
             </div>
 
             <div className='mt-[44px]'>
               <h2 className='font-bold text-[clamp(20px,2.07492795389049vw,36px)] xsm:leading-[35px] sm:leading-[35px] leading-[59px]'>Description</h2>
-              <h3 className='w-[36.72vw] min-w-[260px] font-bold text-[clamp(14px,1.1527377521613833vw,20px)] leading-[33px]'>Hush Haunted Attraction is BACK with 3 NEW haunted houses, 3 NEW secret bars, and a new mini game experience </h3>
+              <h3 className='w-[36.72vw] min-w-[260px] xsm:min-w-[80vw] font-bold text-[clamp(14px,1.1527377521613833vw,20px)] leading-[33px]'>Hush Haunted Attraction is BACK with 3 NEW haunted houses, 3 NEW secret bars, and a new mini game experience </h3>
             </div>
-            <p className='leading-[26.06px] mt-[19px] w-[38.81vw] min-w-[260px] text-[clamp(12px,0.9221902017291066vw,16px)] font-[400]'><span className='font-[700] block'>Belly of the Beast:</span>
+            <p className='leading-[26.06px] mt-[19px] w-[38.81vw] min-w-[260px] xsm:min-w-[80vw] text-[clamp(12px,0.9221902017291066vw,16px)] font-[400]'><span className='font-[700] block'>Belly of the Beast:</span>
               The Hush Falls Hotel has a new dark secret brewing in its abyss: a temple to its dark lord: Anglor. Constructed by the undead who reside under the hotel, the temple is alive and its roots have spread like veins throughout the Hotel underpass. Do you dare to explore the negative 13th floor of the Hush Falls Hotel? Just whatever you do, don't look at Anglor directly in his eyes.
             </p>
             <motion.button initial={{ scale: 1, backgroundColor: '#ffffff00' }} whileHover={{ scale: 1.02, backgroundColor: "#FB4A04" }} className='mt-[15px] w-[231px] h-[47px] font-[700] text-[clamp(16px,1.38328530259366vw,24px)] leading-[39px] border-[4px] border-white'>Read More</motion.button>
@@ -187,24 +187,26 @@ export default function EventDescriptions({ }: Props) {
         <h2 className='font-[700] text-[clamp(20px,2.07492795389049vw,36px)] leading-[58.64px] text-center text-[#231414]'>Watch Video</h2>
         <div className='flex justify-center items-center  mt-[55px] mb-[79px]'>
           <motion.div whileHover={{ scale: 1.01 }}>
-            <LazyImage alt="" src={"./video.png"} classes='shadow-md w-[71.23919308357348vw]' />
+            <LazyImage alt="" src={"./video.png"} classes='shadow-md w-[71.23919308357348vw] xsm:min-w-[80vw]' />
           </motion.div>
         </div>
       </section>
 
       <section className='w-[90%] m-auto'>
         <h2 className='mb-[51px] font-[700] text-[clamp(20px,2.07492795389049vw,36px)] leading-[58.64px] text-center text-[#231414]'>Gallery</h2>
-        <Crousal maxWidth={'503px'} width={"29vw"} settings={settings} crousalData={crousalData} minWidth={"300px"}/>
+        <Crousal maxWidth={'503px'} width={"29vw"} settings={settings} crousalData={crousalData} classes="xsm:min-w-[80vw] sm:min-w-[40vw]"/>
       </section>
 
       <section className='mt-[52px] w-[100%] h-[705px] xsm:h-auto bg-[#fed4c3] mb-[79px] '>
         <h2 className='pt-[46px] font-[700] text-[clamp(20px,2.07492795389049vw,36px)] leading-[58.64px] text-center text-[#231414]'>Location</h2>
-        <div className='flex justify-center items-center'>
-          <LazyImage alt="" src={"./map.png"} classes='m-auto mb-[20px] mt-[49px] w-[71.23919308357348vw] min-w-[260px] ' />
-        </div>
+        <motion.div className='flex justify-center items-center'>
+          <motion.div whileHover={{scale:1.01}}>
+            <LazyImage alt="" src={"./map.png"} classes='m-auto mb-[20px] mt-[49px] w-[71.23919308357348vw] min-w-[260px] xsm:min-w-[80vw]' />
+          </motion.div>
+        </motion.div>
         <div className='flex justify-between items-center xsm:flex-col w-[71.24vw] m-auto'>
-          <p className='w-[36.714vw] min-w-[260px] font-[700] text-[#231414] leading-[26px]'>Hush Haunted Attraction is BACK with 3 NEW haunted houses, 3 NEW secret bars, and a new mini game experience </p>
-          <button className='xsm:mt-[20px] xsm:mb-[50px] border-[2px] border-[#FB4A04] w-[177px] h-[60px] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26px] font-[700]'>Open In Maps</button>
+          <p className='w-[36.714vw] min-w-[260px] xsm:min-w-[80vw] font-[700] text-[#231414] leading-[26px]'>Hush Haunted Attraction is BACK with 3 NEW haunted houses, 3 NEW secret bars, and a new mini game experience </p>
+          <motion.button initial={{ scale: 1, backgroundColor: '#ffffff00' }} whileHover={{ scale: 1.02, backgroundColor: "#FB4A04",color:"#fff" }} className='xsm:mt-[20px] xsm:mb-[50px] border-[2px] border-[#FB4A04] w-[177px] h-[60px] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26px] font-[700]'>Open In Maps</motion.button>
         </div>
       </section>
 
@@ -217,7 +219,7 @@ export default function EventDescriptions({ }: Props) {
 
       <section>
         <h2 className='mb-[46px] font-[700] text-[clamp(20px,2.07492795389049vw,36px)] leading-[58.64px] xsm:leading-[35px] text-center text-[#231414]'>Terms</h2>
-        <p className='mb-[217px] w-[71.239vw] min-w-[260px] m-auto font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26.06px] text-center text-[#231414]'>All tickets are final sale and cannot be exchanged or refunded. By purchasing a ticket to this event, you agree to this purchase policy. Before purchasing your tickets, we urge you to confirm the title, time and location of the event. Hush Haunted Attraction may take and use images & video of all guests. Hush Haunt at all times reserves the right to videotape patrons, and take still images, and to utilize those images and videos for any reason, including marketing, advertising, promotion, on social media.</p>
+        <p className='mb-[217px] w-[71.239vw] min-w-[260px] xsm:min-w-[80vw] m-auto font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26.06px] text-center text-[#231414]'>All tickets are final sale and cannot be exchanged or refunded. By purchasing a ticket to this event, you agree to this purchase policy. Before purchasing your tickets, we urge you to confirm the title, time and location of the event. Hush Haunted Attraction may take and use images & video of all guests. Hush Haunt at all times reserves the right to videotape patrons, and take still images, and to utilize those images and videos for any reason, including marketing, advertising, promotion, on social media.</p>
       </section>
       <Footer />
     </>
