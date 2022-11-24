@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import TicketCard from '../components/EventDescriptions/TicketCard'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -7,7 +7,7 @@ import ContactBar from '../components/EventDescriptions/ContactBar';
 import Footer from '../components/Footer';
 import { Link } from "react-router-dom"
 import LazyImage from '../components/General/LazyImage';
-import { motion } from "framer-motion"
+import { motion, useScroll, useAnimationControls } from "framer-motion"
 
 
 type Props = {}
@@ -134,21 +134,28 @@ var settings = {
 };
 
 export default function EventDescriptions({ }: Props) {
+  const { scrollY } = useScroll()
+  const [scrollCounter,setScrollCounter]=useState<number>(0);
+  useEffect(() => {
+    return scrollY.onChange((latest) => {
+      setScrollCounter(latest)
+    })
+  }, [])
+
   return (
     <>
       <section style={{ backgroundImage: `url("./backgroundimage.png")` }} className='backgroundImage w-[calc(100vw - 100%)] h-[964px] xsm:h-auto sm:h-auto'>
-        <nav className='absolute flex justify-between items-center w-[100%]'>
-          {/* <img className='ml-[3.54vw]' src='./Logo.png' alt='' /> */}
+        <motion.nav style={scrollCounter > 0?{ background:"#fff",boxShadow:"1px 1px 8px #00000020" }:{background:"rgba(0,0,0,0)"}} className='fixed transition-all z-[1000] flex justify-between items-center w-[100%]'>
           <LazyImage alt="" src={"./Logo.png"} style={{ marginLeft: "3.54vw" }} />
-          <ul className='text-white text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[5.244vw] mr-[8.94vw]'>
+          <motion.ul className={scrollCounter > 0?'text-[#473a3a] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[5.244vw] mr-[8.94vw]':'text-[#ffffff] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[5.244vw] mr-[8.94vw]'}>
             <Link to="/events">
-              <motion.li whileHover={{ color: "#FB4A04" }}>Events</motion.li>
+              <motion.li whileHover={{ color: "#FB4A04" }} className="text-inherit">Events</motion.li>
             </Link>
             <Link to="/login">
-              <motion.li whileHover={{ color: "#FB4A04" }}>Login</motion.li>
+              <motion.li whileHover={{ color: "#FB4A04" }} className="text-inherit">Login</motion.li>
             </Link>
-          </ul>
-        </nav>
+          </motion.ul>
+        </motion.nav>
 
         <div className='flex xsm:flex-col sm:flex-col w-[72%] xsm:w-[80%] sm:w-[76%] m-auto gap-[5.878vw]'>
           <div className='relative flex-1 mt-[166px]'>
@@ -194,19 +201,19 @@ export default function EventDescriptions({ }: Props) {
 
       <section className='w-[90%] m-auto'>
         <h2 className='mb-[51px] font-[700] text-[clamp(20px,2.07492795389049vw,36px)] leading-[58.64px] text-center text-[#231414]'>Gallery</h2>
-        <Crousal maxWidth={'503px'} width={"29vw"} settings={settings} crousalData={crousalData} classes="xsm:min-w-[80vw] sm:min-w-[40vw]"/>
+        <Crousal maxWidth={'503px'} width={"29vw"} settings={settings} crousalData={crousalData} classes="xsm:min-w-[80vw] sm:min-w-[40vw]" />
       </section>
 
       <section className='mt-[52px] w-[100%] h-[705px] xsm:h-auto bg-[#fed4c3] mb-[79px] '>
         <h2 className='pt-[46px] font-[700] text-[clamp(20px,2.07492795389049vw,36px)] leading-[58.64px] text-center text-[#231414]'>Location</h2>
         <motion.div className='flex justify-center items-center'>
-          <motion.div whileHover={{scale:1.01}}>
+          <motion.div whileHover={{ scale: 1.01 }}>
             <LazyImage alt="" src={"./map.png"} classes='m-auto mb-[20px] mt-[49px] w-[71.23919308357348vw] min-w-[260px] xsm:min-w-[80vw]' />
           </motion.div>
         </motion.div>
         <div className='flex justify-between items-center xsm:flex-col w-[71.24vw] m-auto'>
           <p className='w-[36.714vw] min-w-[260px] xsm:min-w-[80vw] font-[700] text-[#231414] leading-[26px]'>Hush Haunted Attraction is BACK with 3 NEW haunted houses, 3 NEW secret bars, and a new mini game experience </p>
-          <motion.button initial={{ scale: 1, backgroundColor: '#ffffff00' }} whileHover={{ scale: 1.02, backgroundColor: "#FB4A04",color:"#fff" }} className='xsm:mt-[20px] xsm:mb-[50px] border-[2px] border-[#FB4A04] w-[177px] h-[60px] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26px] font-[700]'>Open In Maps</motion.button>
+          <motion.button initial={{ scale: 1, backgroundColor: '#ffffff00' }} whileHover={{ scale: 1.02, backgroundColor: "#FB4A04", color: "#fff" }} className='xsm:mt-[20px] xsm:mb-[50px] border-[2px] border-[#FB4A04] w-[177px] h-[60px] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26px] font-[700]'>Open In Maps</motion.button>
         </div>
       </section>
 

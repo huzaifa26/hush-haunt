@@ -24,6 +24,20 @@ body{
     background-size: cover;
 }
 
+.contactusBackgroundImage{
+    background-image: url("./assets/contactMain.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.helpSubBackgroundImage{
+    background-image: url("./assets/helpsubMain.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .inputBackground{
   background-image: url("./assets/searchIcon.png");
   background-repeat: no-repeat;

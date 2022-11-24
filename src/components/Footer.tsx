@@ -6,10 +6,10 @@ type Props = {
 
 export default function Footer({ showFooterHeaders = true }: Props) {
     return (
-        <footer className={showFooterHeaders ? "flex flex-col justify-between w-[100%] bg-[#FB4A04] text-[#ffffff] xsm:h-auto sm:h-auto h-auto" : "flex flex-col justify-between w-[100%] bg-[#FB4A04] text-[#ffffff] h-[118px] xsm:h-auto"}>
+        <footer className={showFooterHeaders ? "flex flex-col justify-between w-[100%] bg-[#FB4A04] text-[#ffffff] xsm:h-auto sm:h-auto h-auto" : "flex flex-col justify-between w-[100%] bg-[#FB4A04] text-[#ffffff] xsm:h-auto"}>
             {
                 showFooterHeaders &&
-                <motion.div className='w-[90%] m-auto flex justify-around mt-[55px] xsm:flex-col flex-wrap xsm:gap-[40px] sm:gap-[40px]'>
+                <motion.div className='w-[90%] mb-[77px] m-auto flex justify-around mt-[55px] xsm:flex-col flex-wrap xsm:gap-[40px] sm:gap-[40px]'>
                     <ul>
                         <h3 className='font-[700] text-[clamp(16px,1.38328530259366vw,24px)] leading-[40px] mb-[25px] xsm:mb-[15px]'>Use Site</h3>
                         <motion.li whileHover={{color:"#473a3a"}} className=''>How It Works</motion.li>
@@ -64,8 +64,8 @@ export default function Footer({ showFooterHeaders = true }: Props) {
                 </motion.div>
             }
 
-            <div className='mb-[31px] m-auto flex flex-col items-center mt-[27px]'>
-                <div className="w-[58.44380403458213vw] xsm:min-w-[80vw] flex gap-[5px] flex-wrap justify-center">
+            <div className='mb-[31px] m-auto flex flex-col items-center mt-[31px]'>
+                <div className="w-[58.44380403458213vw] xsm:min-w-[95vw] flex gap-[5px] flex-wrap justify-center">
                     <motion.p whileHover={{color:"#473a3a"}} className="cursor-pointer">About</motion.p>
                     <div>|</div>
                     <motion.p whileHover={{color:"#473a3a"}} className="cursor-pointer">Blog</motion.p>

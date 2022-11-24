@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Footer from '../components/Footer'
 import Button from '../components/General/Button'
 import LazyImage from '../components/General/LazyImage'
@@ -7,24 +7,43 @@ import SearchBar from '../components/General/SearchBar'
 type Props = {}
 
 export default function Ticket({ }: Props) {
+    const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
+
     return (
         <div>
             <nav className='flex justify-between items-center w-[100%]'>
-                <div className='flex items-center gap-[3.28vw]'>
-                    <LazyImage alt="" src={"./Logo.png"} classes='ml-[8px]' />
-                    <SearchBar />
+                <div className='flex items-center gap-[3.28vw] xsm:justify-between sm:justify-between xsm:w-full sm:w-full'>
+                    <LazyImage alt="" src={"./Logo.png"} classes='ml-[8px] min-w-[80px] ' />
+                    <SearchBar style={{ flex: "1" }} />
+                    <div onClick={() => setShowMobileNav(!showMobileNav)} className='xsm:flex sm:flex cursor-pointer hidden flex-col items-center gap-[5px] mr-[10px]'>
+                        <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>
+                        <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>
+                        <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>
+                    </div>
                 </div>
 
-                <ul className='text-[#493c3c] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[31px] mr-[7.37vw] items-center'>
+                <ul className='text-[#493c3c] xsm:hidden sm:hidden text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[31px] mr-[7.37vw] items-center'>
                     <li className='flex items-center gap-[8px]'>
                         <p className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>Back</p>
                     </li>
                     <li className='flex items-center gap-[8px]'>
                         <img src='./profile.png' alt='' />
-                        <p className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>partymode</p>
+                        <p className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>partymode@gmail.com</p>
                     </li>
                 </ul>
             </nav>
+
+            {showMobileNav &&
+                <ul style={showMobileNav ? { maxHeight: "1000px" } : { maxHeight: "0px", overflow: "hidden" }} className='flex-col-reverse transition-all xsm:flex sm:flex hidden text-[#493c3c] py-[10px] items-center text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] gap-[5.244vw]'>
+                    <li className='flex items-center gap-[8px]'>
+                        <p className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>Back</p>
+                    </li>
+                    <li className='flex items-center gap-[8px]'>
+                        <img src='./profile.png' alt='' />
+                        <p className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>partymode@gmail.com</p>
+                    </li>
+                </ul>
+            }
 
             <div className='flex gap-[48px] items-center ml-[6.916426512968299vw] mt-[100px]'>
                 <div className='flex justify-center items-center w-[155px] h-[149px] rounded-full bg-[#F5F5F5]'>
