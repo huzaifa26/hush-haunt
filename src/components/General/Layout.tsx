@@ -48,7 +48,7 @@ export default function Layout({ children }: Props) {
         <div>
             <nav className='flex justify-between items-center w-[100%]'>
                 <div className='flex items-center gap-[3.28vw]'>
-                    <LazyImage alt="" src={"./Logo.png"} classes="w-[80px]" />
+                    <LazyImage alt="" src={"./Logo.png"} classes="w-[80px] xsm:min-w-[57px] sm:min-w-[57px]" />
                     <SearchBar />
                 </div>
 
@@ -61,12 +61,12 @@ export default function Layout({ children }: Props) {
                 </ul>
             </nav>
             <div className='flex'>
-                <div className='w-[78px] bg-[#FB4A04] h-[1015px] flex flex-col items-end pt-[65px] gap-[12px]'>
+                <div className='w-[78px] xsm:w-[57px] sm:w-[57px] bg-[#FB4A04] h-[1015px] flex flex-col items-end pt-[65px] gap-[12px]'>
                     {drawer.map((item) => {
                         return (
-                            <NavLink to={item.route}>
-                                <div style={location.pathname === item.route?{background:"#ffffff"}:{background:"#FB4A04"}} key={item.id} className='w-[69px] h-[61px] flex justify-center items-center'>
-                                    <img src={location.pathname === item.route?item.iconOrange:item.iconWhite} alt="" />
+                            <NavLink to={item.route} end>
+                                <div style={location.pathname.includes( item.route)?{background:"#ffffff"}:{background:"#FB4A04"}} key={item.id} className='w-[57px] h-[61px] flex justify-center items-center'>
+                                    <img src={location.pathname.includes( item.route)?item.iconOrange:item.iconWhite} alt="" />
                                 </div>
                             </NavLink>
                         )

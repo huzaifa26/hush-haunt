@@ -38,6 +38,13 @@ body{
     background-size: cover;
 }
 
+.creatorDashboardProfileBacgroundImage{
+    background-image: url("./assets/creator-dashboard.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .inputBackground{
   background-image: url("./assets/searchIcon.png");
   background-repeat: no-repeat;
@@ -77,4 +84,9 @@ body{
   background-image: url("./assets/dashboardImage.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.navActive{
+  border-bottom: "1px solid #473a3a";
+  background-color: white;
 }

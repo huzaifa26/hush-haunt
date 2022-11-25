@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import LazyImage from '../components/General/LazyImage';
 import { Link } from "react-router-dom";
-import Footer from '../components/Footer';
+import Footer from '../components/General/Footer';
 import EventsCards from '../components/Events/EventsCards';
 import { data, data1 } from "./Events";
 import SearchBar from '../components/General/SearchBar';

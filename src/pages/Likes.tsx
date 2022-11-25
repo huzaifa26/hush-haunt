@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Footer from '../components/Footer'
+import Footer from '../components/General/Footer'
 import LazyImage from '../components/General/LazyImage'
 import SearchBar from '../components/General/SearchBar'
 

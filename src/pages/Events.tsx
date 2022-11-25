@@ -1,6 +1,6 @@
 import Crousal from '../components/EventDescriptions/Crousal'
 import EventsCards from '../components/Events/EventsCards'
-import Footer from '../components/Footer'
+import Footer from '../components/General/Footer'
 import Button from '../components/General/Button'
 import SearchBar from '../components/General/SearchBar'
 import { Link } from "react-router-dom"

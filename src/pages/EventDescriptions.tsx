@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Crousal from '../components/EventDescriptions/Crousal';
 import ContactBar from '../components/EventDescriptions/ContactBar';
-import Footer from '../components/Footer';
+import Footer from '../components/General/Footer';
 import { Link } from "react-router-dom"
 import LazyImage from '../components/General/LazyImage';
 import { motion, useScroll, useAnimationControls } from "framer-motion"
