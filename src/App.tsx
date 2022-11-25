@@ -17,6 +17,10 @@ import EventsDashboard from './pages/EventsDashboard';
 import Orders from './components/EventsDashboard/Orders';
 import ReportAnalysis from './pages/ReportAnalysis';
 import InvoiceAndBilling from './pages/InvoiceAndBilling';
+import Setting from './pages/Setting';
+import ProfileEdit from './components/Setting/ProfileEdit';
+import InviteTeam from './components/Setting/InviteTeam';
+import AppInstallation from './components/Setting/AppInstallation';
 
 function App() {
   return (
@@ -41,10 +45,15 @@ function App() {
           </Route>
           <Route path='/report-analysis' element={<ReportAnalysis />}></Route>
           <Route path='/invoice-and-billing' element={<InvoiceAndBilling />}></Route>
-          <Route path='/setting' element={<CreatorDashboard />}></Route>
+          <Route path='/setting' element={<Setting />}>
+            <Route index element={<ProfileEdit />}></Route>
+            <Route path='invite-team' element={<InviteTeam />}></Route>
+            <Route path='app-installation' element={<AppInstallation />}></Route>
+          </Route>
         </Routes>
       </BrowserRouter>
     </main>
-  )}
+  )
+}
 
 export default App;
