@@ -30,28 +30,28 @@ export default function ReportAnalysis({ }: Props) {
                     </select>
                 </div>
                 <div className='flex gap-[32.5px] mt-[47px] justify-center'>
-                    <div className='w-[22.997118155619596vw] h-[173px] rounded-[10px] bg-[#FB4A043D]'>
-                        <h2>Total Revenue</h2>
-                        <h1>$20,000</h1>
-                        <div>
-                            <img src='' alt='' />
-                            <p>2.00%</p>
+                    <div className='flex flex-col justify-center items-center w-[22.997118155619596vw] h-[173px] rounded-[10px] bg-[#FB4A043D]'>
+                        <h2 className='font-[700] text-[20px] leading-[32.58px] text-[#000000]'>Total Revenue</h2>
+                        <h1 className='font-[700] text-[36px] leading-[58.64px] text-[#000000]'>$20,000</h1>
+                        <div className='flex gap-[10px]'>
+                            <img src='./updropdown.svg' alt='' />
+                            <p className='font-[400] text-[15px] leading-[24.43px] text-[#000000]'>2.00%</p>
                         </div>
                     </div>
-                    <div className='w-[22.997118155619596vw] h-[173px] rounded-[10px] bg-[#FB4A04B8]'>
-                        <h2>Total Revenue</h2>
-                        <h1>$20,000</h1>
-                        <div>
-                            <img src='' alt='' />
-                            <p>2.00%</p>
+                    <div className='flex flex-col justify-center items-center w-[22.997118155619596vw] h-[173px] rounded-[10px] bg-[#FB4A04B8]'>
+                        <h2 className='font-[700] text-[20px] leading-[32.58px] text-[#000000]'>Ticket sales </h2>
+                        <h1 className='font-[700] text-[36px] leading-[58.64px] text-[#fff]'>$20,000</h1>
+                        <div className='flex gap-[10px]'>
+                            <img src='./updropdown.svg' alt='' />
+                            <p className='font-[400] text-[15px] leading-[24.43px] text-[#000000]'>2.00%</p>
                         </div>
                     </div>
-                    <div className='w-[22.997118155619596vw] h-[173px] rounded-[10px] bg-[#FBB60491]'>
-                        <h2>Total Revenue</h2>
-                        <h1>$20,000</h1>
-                        <div>
-                            <img src='' alt='' />
-                            <p>2.00%</p>
+                    <div className='flex flex-col justify-center items-center w-[22.997118155619596vw] h-[173px] rounded-[10px] bg-[#FBB60491]'>
+                        <h2 className='font-[700] text-[20px] leading-[32.58px] text-[#000000]'>Live Streaming</h2>
+                        <h1 className='font-[700] text-[36px] leading-[58.64px] text-[#fff]'>$20,000</h1>
+                        <div className='flex gap-[10px]'>
+                            <img src='./updropdown.svg' alt='' />
+                            <p className='font-[400] text-[15px] leading-[24.43px] text-[#000000]'>2.00%</p>
                         </div>
                     </div>
                 </div>
