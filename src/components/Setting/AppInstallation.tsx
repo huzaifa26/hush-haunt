@@ -47,7 +47,7 @@ export default function AppInstallation({ }: Props) {
                     }
                 </tbody>
             </table>
-            <Button width="255px" height='47px' text="Browse Apps" style={{ borderRadius: "0px", fontSize: "20px", marginTop:"22px",alignSelf:"flex-end",marginTop:"150px" }} />
+            <Button width="255px" height='47px' text="Browse Apps" style={{ borderRadius: "0px", fontSize: "20px",alignSelf:"flex-end",marginTop:"150px" }} />
         </div>
     )
 }
