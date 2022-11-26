@@ -48,8 +48,10 @@ export default function Layout({ children }: Props) {
         <div>
             <nav className='flex justify-between items-center w-[100%]'>
                 <div className='flex items-center gap-[3.28vw]'>
-                    <LazyImage alt="" src={"./Logo.png"} classes="w-[80px] xsm:min-w-[57px] sm:min-w-[57px]" />
+                    <LazyImage alt="" src={"/Logo.png"} classes="w-[80px] xsm:min-w-[57px] sm:min-w-[57px]" />
+                    <div className='xsm:hidden '>
                     <SearchBar />
+                    </div>
                 </div>
 
                 <ul className='text-[#493c3c] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[31px] mr-[7.37vw] items-center border-[1px] px-[21px] py-[6px] rounded-full border-[#473a3a] '>
@@ -72,7 +74,7 @@ export default function Layout({ children }: Props) {
                         )
                     })}
                 </div>
-                <div className='flex-2 w-full flex bg-aqua'>
+                <div className='flex-1 flex bg-[aqua]'>
                     {children}
                 </div>
             </div>

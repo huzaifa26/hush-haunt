@@ -21,6 +21,13 @@ import Setting from './pages/Setting';
 import ProfileEdit from './components/Setting/ProfileEdit';
 import InviteTeam from './components/Setting/InviteTeam';
 import AppInstallation from './components/Setting/AppInstallation';
+import Interests from './components/Authentication/Interests';
+import CreateEvent from './pages/CreateEvent';
+import BasicInfo from './components/CreateEvent/BasicInfo';
+import Detail from './components/CreateEvent/Detail';
+import OnlinePageEvent from './components/CreateEvent/OnlinePageEvent';
+import CreateTicket from './components/CreateEvent/CreateTicket';
+import Publish from './components/CreateEvent/Publish';
 
 function App() {
   return (
@@ -31,6 +38,7 @@ function App() {
           <Route path='/events' element={<Events />}></Route>
           <Route path='/login' element={<Login />}></Route>
           <Route path='/signup' element={<Signup />}></Route>
+          <Route path='/interests' element={<Interests />}></Route>
           <Route path='/subscription-and-pricing' element={<SubscriptionAndPricing />}></Route>
           <Route path='/contact-us' element={<ContactUs />}></Route>
           <Route path='/help-sub' element={<HelpSub />}></Route>
@@ -49,6 +57,13 @@ function App() {
             <Route index element={<ProfileEdit />}></Route>
             <Route path='invite-team' element={<InviteTeam />}></Route>
             <Route path='app-installation' element={<AppInstallation />}></Route>
+          </Route>
+          <Route path='/create-event' element={<CreateEvent />}>
+            <Route index element={<BasicInfo />}></Route>
+            <Route path='detail' element={<Detail />}></Route>
+            <Route path='online-page-event' element={<OnlinePageEvent />}></Route>
+            <Route path='create-ticket' element={<CreateTicket />}></Route>
+            <Route path='publish' element={<Publish />}></Route>
           </Route>
         </Routes>
       </BrowserRouter>

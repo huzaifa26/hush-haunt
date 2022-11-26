@@ -16,7 +16,6 @@ type Props = {
 }
 
 export default function InvoiceTableRow({ data,ShowModalhandler }: Props) {
-    console.log(data);
     return (
         <tr key={data.id} className='py-[15px] text-center  '>
             <td className='py-[17px] '>{data.no}</td>

@@ -26,12 +26,12 @@ export default function InviteTeam({ }: Props) {
                     </div>
                 </div>
             </Modal>
-            <div className='w-full flex flex-col justify-center items-center'>
+            <div className='w-full xsm:w-[80%] flex flex-col justify-center items-center xsm:m-auto sm:m-auto'>
                 <div className='flex justify-center items-center w-[137px] h-[134px] rounded-full bg-[#F5F5F5]'>
                     <img src='/mailIcon.svg' alt='' />
                 </div>
-                <h2 className='mt-[8px] font-[700] text-[24px] leading-[24px] text-[#231414D4]'>Build your team</h2>
-                <p className='mt-[25px] w-[34.46685878962536vw] text-center font-[400] text-[16px] leading-[26.06px] text-[#231414D4]'>Create new custom roles and assign them to team members, or invite users into an all access role.</p>
+                <h2 className='mt-[8px] font-[700] text-[24px] leading-[24px] text-[#231414D4] text-center'>Build your team</h2>
+                <p className='mt-[25px] w-[34.46685878962536vw] xsm:w-[100%] sm:w-[85%] text-center font-[400] text-[16px] leading-[26.06px] text-[#231414D4]'>Create new custom roles and assign them to team members, or invite users into an all access role.</p>
                 <Button onClick={() => ShowModalhandler()} width="158px" height='47px' text="Invite Users" style={{ borderRadius: "0px", fontSize: "20px", marginTop: "22px" }} />
             </div>
         </>

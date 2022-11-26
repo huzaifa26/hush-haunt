@@ -149,7 +149,7 @@ export default function InvoiceDetails({ }: Props) {
             </Modal>
 
             <div className='w-[85.93659942363112vw]'>
-                <div className='flex justify-between items-center ml-[10px] mt-[15px]'>
+                <div className='flex justify-between items-center ml-[10px] mt-[15px] xsm:flex-col sm:flex-col xsm:gap-[30px] sm:gap-[30px]'>
                     <div>
                         <p className='font-[700] text-[16px] text-[#666666B2] leading-[26.06px]'>Here is your monthly invoice for November - December 2022  </p>
                         <p className='font-[700] text-[16px] text-[#666666B2] leading-[26.06px]'>Kindly Pay up within the next 30 days.</p>
@@ -164,8 +164,9 @@ export default function InvoiceDetails({ }: Props) {
                     </div>
                 </div>
 
+                <div className='w-full whitespace-nowrap overflow-auto'>
 
-                <table className="transition-all table-fixed w-full mt-[43px] relative z-10 mb-[50px]">
+                <table className="transition-all min-w-[1000px] table-fixed w-full mt-[43px] relative z-10 mb-[50px]">
                     <thead className='bg-[#fed4c3]'>
                         <tr className=''>
                             <th className='py-[17px]'>No</th>
@@ -187,6 +188,7 @@ export default function InvoiceDetails({ }: Props) {
                         }
                     </tbody>
                 </table>
+                </div>
             </div>
         </>
     )
