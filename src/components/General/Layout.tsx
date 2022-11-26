@@ -74,7 +74,7 @@ export default function Layout({ children }: Props) {
                         )
                     })}
                 </div>
-                <div className='flex-1 flex bg-[aqua]'>
+                <div className='flex-1 flex'>
                     {children}
                 </div>
             </div>

@@ -61,13 +61,13 @@ export default function ReportAnalysis({ }: Props) {
                 <div className='w-[48.5878962536023vw] h-full rounded-[20px]'>
                     <BarChart />
                 </div>
-                <div className='w-[36.138328530259365vw] h-full bg-[aqua] rounded-[20px]'></div>
+                <div className='w-[36.138328530259365vw] h-full  rounded-[20px]'></div>
             </div>
 
 
             <div className='w-full h-[580px] flex gap-[18px] mt-[95px]'>
-                <div className='w-[48.5878962536023vw] h-full bg-[aqua] rounded-[20px]'></div>
-                <div className='w-[36.138328530259365vw] h-full bg-[aqua] rounded-[20px]'></div>
+                <div className='w-[48.5878962536023vw] h-full  rounded-[20px]'></div>
+                <div className='w-[36.138328530259365vw] h-full  rounded-[20px]'></div>
             </div>
 
 

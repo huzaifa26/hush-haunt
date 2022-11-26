@@ -45,7 +45,7 @@ export default function Ticket({ }: Props) {
                 </ul>
             }
 
-            <div className='flex gap-[48px] items-center ml-[6.916426512968299vw] mt-[100px]'>
+            <div className='flex gap-[48px] items-center ml-[6.916426512968299vw] mt-[100px] xsm:flex-col'>
                 <div className='flex justify-center items-center w-[155px] h-[149px] rounded-full bg-[#F5F5F5]'>
                     <img src='./profile.svg' alt='' />
                 </div>
@@ -62,7 +62,7 @@ export default function Ticket({ }: Props) {
                 </div>
             </div>
 
-            <div className='w-[42.70893371757925vw] m-auto'>
+            <div className='w-[42.70893371757925vw]  xsm:w-[90%] sm:w-[80%] m-auto'>
                 <h3 className='font-[700] text-[clamp(16px,1.38328530259366vw,24px)] leading-[39px] text-[#473a3a] ml-[3%] mt-[85px]'>Orders</h3>
                 <div className='flex flex-col items-center'>
                     <h3 className='font-[700] text-[clamp(16px,1.38328530259366vw,24px)] leading-[39px] text-[#473a3a] mb-[13px]'>Looking for your tickets?</h3>
@@ -75,12 +75,12 @@ export default function Ticket({ }: Props) {
 
                 <div>
                     <h3 className='font-[700] text-[clamp(16px,1.38328530259366vw,24px)] leading-[39px] text-[#473a3a] mb-[49px] ml-[3%]'>Likes</h3>
-                    <div className='flex gap-[20px]'>
+                    <div className='flex gap-[20px] xsm:flex-col sm:flex-col'>
 
                         <div className='flex flex-col gap-[49px]'>
-                            <img className='w-[20.576368876080693vw]' src='./likes1.png' alt='' />
+                            <img className='w-[20.576368876080693vw] xsm:min-w-[100%] sm:min-w-[100%]' src='./likes1.png' alt='' />
                             <div className='flex flex-col justify-center'>
-                                <h2 className='font-[700] text-[clamp(14px,1.1527377521613833vw,20px)] leading-[33px] text-[#473a3a] w-[20.403458213256485vw]'>Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.</h2>
+                                <h2 className='font-[700] xsm:min-w-[100%] sm:min-w-[100%] text-[clamp(14px,1.1527377521613833vw,20px)] leading-[33px] text-[#473a3a] w-[20.403458213256485vw]'>Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.</h2>
                                 <div className='flex items-center gap-[23px]'>
                                     <p className='font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[33px] text-[#F2141483]'>Thurs Oct 13 at 7:00pm EDT</p>
                                     <img src='./download.png' alt='' />
@@ -88,9 +88,9 @@ export default function Ticket({ }: Props) {
                             </div>
                         </div>
                         <div className='flex flex-col gap-[49px]'>
-                            <img className='w-[20.576368876080693vw]' src='./likes2.png' alt='' />
+                            <img className='w-[20.576368876080693vw] xsm:min-w-[100%] sm:min-w-[100%]' src='./likes2.png' alt='' />
                             <div className='flex flex-col justify-center'>
-                                <h2 className='font-[700] text-[clamp(14px,1.1527377521613833vw,20px)] leading-[33px] text-[#473a3a] w-[20.403458213256485vw]'>Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.</h2>
+                                <h2 className='font-[700] xsm:min-w-[100%] sm:min-w-[100%] text-[clamp(14px,1.1527377521613833vw,20px)] leading-[33px] text-[#473a3a] w-[20.403458213256485vw]'>Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.</h2>
                                 <div className='flex items-center gap-[23px]'>
                                     <p className='font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[33px] text-[#F2141483]'>Thurs Oct 13 at 7:00pm EDT</p>
                                     <img src='./download.png' alt='' />

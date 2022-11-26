@@ -165,7 +165,6 @@ export default function InvoiceDetails({ }: Props) {
                 </div>
 
                 <div className='w-full whitespace-nowrap overflow-auto'>
-
                 <table className="transition-all min-w-[1000px] table-fixed w-full mt-[43px] relative z-10 mb-[50px]">
                     <thead className='bg-[#fed4c3]'>
                         <tr className=''>

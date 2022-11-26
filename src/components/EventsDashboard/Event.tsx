@@ -27,7 +27,7 @@ const data: any = [
 
 export default function Events({ }: Props) {
   return (
-    <div className='w-full'>
+    <div className='w-full xsm:w-[75.93659942363112vw] sm:w-[75.93659942363112vw]'>
       <div className='flex gap-[20px] xsm:flex-col sm:flex-col'>
         <SearchBar style={{ width: "27.780979827089336vw", height: "47px", borderRadius: "0px", border: "3px solid #f6ccbb", minWidth: "240px" }} />
         <Link to={"create-event"}>

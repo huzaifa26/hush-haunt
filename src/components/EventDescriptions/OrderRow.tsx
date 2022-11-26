@@ -27,7 +27,7 @@ export default function OrderRow({ data }: any) {
 
     return (
         <>
-            <div className='w-[78.55907780979827vw] xsm:min-w-[255px] divide-y-2 py-[10px] '>
+            <div className='w-[78.55907780979827vw] xsm:min-w-[245px] divide-y-2 py-[10px] '>
                 <div className='flex justify-between items-center mx-[2%] xsm:flex-col sm:flex-col xsm:gap-[10px] sm:gap-[10px]'>
                     <div className='flex gap-[3.4582132564841497vw] items-center xsm:flex-col sm:flex-col xsm:items-start'>
                         <div className='flex flex-col items-center'>
@@ -51,24 +51,26 @@ export default function OrderRow({ data }: any) {
                 </div>
             </div>
             {showOrderDetail &&
-                <table style={showOrderDetail === true ? { maxHeight: "1000px" } : { maxHeight: "0px" }} className="transition-all table-auto w-[78.32853025936599vw] mt-[43px] relative z-10 border-collapse border border-slate-500 mb-[50px]">
-                    <thead className='bg-[#fed4c3] border-collapse border border-slate-500'>
-                        <tr className=''>
-                            <th className='py-[17px] border-collapse border border-slate-500'>Name</th>
-                            <th className='py-[17px] border-collapse border border-slate-500'>Order ID number</th>
-                            <th className='py-[17px] border-collapse border border-slate-500'>Email Address</th>
-                            <th className='py-[17px] border-collapse border border-slate-500'>Ticket  purchased</th>
-                        </tr>
-                    </thead>
-                    <tbody className='w-[78.32853025936599vw]'>
-                        {data1.length > 0 && data1.map((d: any) => {
-                            return (
-                                <TableRowOrder data={data1} />
-                            )
-                        })
-                        }
-                    </tbody>
-                </table>
+                <div className='w-full whitespace-nowrap overflow-auto'>
+                    <table style={showOrderDetail === true ? { maxHeight: "1000px" } : { maxHeight: "0px" }} className="transition-all table-auto w-[78.32853025936599vw] mt-[43px] relative z-10 border-collapse border border-slate-500 mb-[50px]">
+                        <thead className='bg-[#fed4c3] border-collapse border border-slate-500'>
+                            <tr className=''>
+                                <th className='py-[17px] border-collapse border border-slate-500'>Name</th>
+                                <th className='py-[17px] border-collapse border border-slate-500'>Order ID number</th>
+                                <th className='py-[17px] border-collapse border border-slate-500'>Email Address</th>
+                                <th className='py-[17px] border-collapse border border-slate-500'>Ticket  purchased</th>
+                            </tr>
+                        </thead>
+                        <tbody className='w-[78.32853025936599vw]'>
+                            {data1.length > 0 && data1.map((d: any) => {
+                                return (
+                                    <TableRowOrder data={data1} />
+                                )
+                            })
+                            }
+                        </tbody>
+                    </table>
+                </div>
             }
         </>
     )
