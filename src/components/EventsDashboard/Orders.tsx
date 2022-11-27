@@ -35,7 +35,7 @@ export default function Orders({ }: Props) {
   return (
     <div>
       <div className='flex gap-[20px] xsm:flex-col sm:flex-col mb-[121px]'>
-        <SearchBar text='Search  Order number ,email or name' style={{ width: "28.472622478386167vw",minWidth:"240px",fontSize:"14px", height: "47px", borderRadius: "0px", border: "1px solid #473a3a", }} />
+        <SearchBar whileHover={{scale:1.03}} text='Search  Order number ,email or name' style={{ width: "28.472622478386167vw",minWidth:"240px",fontSize:"14px", height: "47px", borderRadius: "0px", border: "1px solid #473a3a", }} />
 
         <div className='w-[13.314121037463977vw] flex flex-col border-[1px] border-[#473a3a] xsm:min-w-[240px]'>
           <label className='text-[12px] font-[400] leading-[19px] text-[#473a3a] mx-[24px]'>Search by</label>

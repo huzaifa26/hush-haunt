@@ -1,8 +1,10 @@
-import { useState } from 'react'
-import EventDescriptions from './pages/EventDescriptions';
-import Events from './pages/Events';
-import Event from './components/EventsDashboard/Event'
+import React from 'react';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { useState } from 'react'
+// import EventDescriptions from './pages/EventDescriptions';
+import Events from './pages/Events';
+const EventsLazy = React.lazy(()=> import('./pages/Events'))
+import Event from './components/EventsDashboard/Event'
 import Login from './components/Authentication/Login';
 import Signup from './components/Authentication/Signup';
 import SubscriptionAndPricing from './pages/SubscriptionAndPricing';
@@ -28,6 +30,9 @@ import Detail from './components/CreateEvent/Detail';
 import OnlinePageEvent from './components/CreateEvent/OnlinePageEvent';
 import CreateTicket from './components/CreateEvent/CreateTicket';
 import Publish from './components/CreateEvent/Publish';
+import Community from './pages/Community';
+import Community2 from './pages/Community2';
+import EventDescriptions from './pages/EventDescriptions';
 
 function App() {
   return (
@@ -35,12 +40,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path='/' element={<EventDescriptions />}></Route>
-          <Route path='/events' element={<Events />}></Route>
-          <Route path='/login' element={<Login />}></Route>
+          <Route path='/events' element={<EventsLazy />}></Route>
+          {/* <Route path='/login' element={<Login />}></Route>
           <Route path='/signup' element={<Signup />}></Route>
           <Route path='/interests' element={<Interests />}></Route>
           <Route path='/subscription-and-pricing' element={<SubscriptionAndPricing />}></Route>
           <Route path='/contact-us' element={<ContactUs />}></Route>
+          <Route path='/community' element={<Community />}></Route>
+          <Route path='/community2' element={<Community2 />}></Route>
           <Route path='/help-sub' element={<HelpSub />}></Route>
           <Route path='/dashboard' element={<Dashboard />}></Route>
           <Route path='/likes' element={<Likes />}></Route>
@@ -64,7 +71,7 @@ function App() {
             <Route path='online-page-event' element={<OnlinePageEvent />}></Route>
             <Route path='create-ticket' element={<CreateTicket />}></Route>
             <Route path='publish' element={<Publish />}></Route>
-          </Route>
+          </Route> */}
         </Routes>
       </BrowserRouter>
     </main>

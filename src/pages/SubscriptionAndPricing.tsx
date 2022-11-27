@@ -56,7 +56,7 @@ export default function SubscriptionAndPricing({ }: Props) {
             <nav style={{ boxShadow: "1px 1px 8px #00000015" }} className='fixed z-[1000] bg-[white] flex justify-between items-center w-[100%] xsm:flex-col'>
                 <div className='flex items-center gap-[3.28vw] xsm:justify-between sm:justify-between xsm:w-full sm:w-full'>
                     <LazyImage alt="" src={"./Logo.png"} classes='ml-[8px] min-w-[80px] ' />
-                    <SearchBar style={{ flex: "1" }} />
+                    <SearchBar whileHover={{scale:1.03}} style={{ flex: "1" }} />
                     <div onClick={() => setShowMobileNav(!showMobileNav)} className='xsm:flex sm:flex cursor-pointer hidden flex-col items-center gap-[5px] mr-[10px]'>
                         <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>
                         <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>

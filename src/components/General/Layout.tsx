@@ -50,7 +50,7 @@ export default function Layout({ children }: Props) {
                 <div className='flex items-center gap-[3.28vw]'>
                     <LazyImage alt="" src={"/Logo.png"} classes="w-[80px] xsm:min-w-[57px] sm:min-w-[57px]" />
                     <div className='xsm:hidden '>
-                    <SearchBar />
+                    <SearchBar whileHover={{scale:1.03}} />
                     </div>
                 </div>
 
