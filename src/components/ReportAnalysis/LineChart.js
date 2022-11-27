@@ -1,5 +1,5 @@
 import { lineChartData as data } from './Data';
-import { ResponsiveBump } from '@nivo/bump'
+import { ResponsiveBump } from '@nivo/bump';
 const LineChart = () => (
     <ResponsiveBump
         data={data}
