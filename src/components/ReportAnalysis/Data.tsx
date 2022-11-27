@@ -49,109 +49,104 @@ export const barChartData=[
     'Live streamers':4,
     'Live streamersColor':'#FB4A04',
   },
-    // {
-    //   "country": "AD",
-    //   "hot dog": 157,
-    //   "hot dogColor": "hsl(293, 70%, 50%)",
-    //   "burger": 186,
-    //   "burgerColor": "hsl(149, 70%, 50%)",
-    //   "sandwich": 63,
-    //   "sandwichColor": "hsl(41, 70%, 50%)",
-    //   "kebab": 26,
-    //   "kebabColor": "hsl(11, 70%, 50%)",
-    //   "fries": 166,
-    //   "friesColor": "hsl(122, 70%, 50%)",
-    //   "donut": 68,
-    //   "donutColor": "hsl(298, 70%, 50%)"
-    // },
-    // {
-    //   "country": "AE",
-    //   "hot dog": 139,
-    //   "hot dogColor": "hsl(65, 70%, 50%)",
-    //   "burger": 37,
-    //   "burgerColor": "hsl(293, 70%, 50%)",
-    //   "sandwich": 128,
-    //   "sandwichColor": "hsl(70, 70%, 50%)",
-    //   "kebab": 191,
-    //   "kebabColor": "hsl(7, 70%, 50%)",
-    //   "fries": 88,
-    //   "friesColor": "hsl(20, 70%, 50%)",
-    //   "donut": 47,
-    //   "donutColor": "hsl(289, 70%, 50%)"
-    // },
-    // {
-    //   "country": "AF",
-    //   "hot dog": 90,
-    //   "hot dogColor": "hsl(113, 70%, 50%)",
-    //   "burger": 159,
-    //   "burgerColor": "hsl(83, 70%, 50%)",
-    //   "sandwich": 117,
-    //   "sandwichColor": "hsl(119, 70%, 50%)",
-    //   "kebab": 159,
-    //   "kebabColor": "hsl(198, 70%, 50%)",
-    //   "fries": 149,
-    //   "friesColor": "hsl(135, 70%, 50%)",
-    //   "donut": 189,
-    //   "donutColor": "hsl(258, 70%, 50%)"
-    // },
-    // {
-    //   "country": "AG",
-    //   "hot dog": 196,
-    //   "hot dogColor": "hsl(219, 70%, 50%)",
-    //   "burger": 75,
-    //   "burgerColor": "hsl(21, 70%, 50%)",
-    //   "sandwich": 100,
-    //   "sandwichColor": "hsl(171, 70%, 50%)",
-    //   "kebab": 121,
-    //   "kebabColor": "hsl(305, 70%, 50%)",
-    //   "fries": 1,
-    //   "friesColor": "hsl(1, 70%, 50%)",
-    //   "donut": 90,
-    //   "donutColor": "hsl(91, 70%, 50%)"
-    // },
-    // {
-    //   "country": "AI",
-    //   "hot dog": 132,
-    //   "hot dogColor": "hsl(295, 70%, 50%)",
-    //   "burger": 40,
-    //   "burgerColor": "hsl(234, 70%, 50%)",
-    //   "sandwich": 78,
-    //   "sandwichColor": "hsl(233, 70%, 50%)",
-    //   "kebab": 41,
-    //   "kebabColor": "hsl(88, 70%, 50%)",
-    //   "fries": 158,
-    //   "friesColor": "hsl(84, 70%, 50%)",
-    //   "donut": 175,
-    //   "donutColor": "hsl(186, 70%, 50%)"
-    // },
-    // {
-    //   "country": "AL",
-    //   "hot dog": 24,
-    //   "hot dogColor": "hsl(356, 70%, 50%)",
-    //   "burger": 187,
-    //   "burgerColor": "hsl(331, 70%, 50%)",
-    //   "sandwich": 159,
-    //   "sandwichColor": "hsl(21, 70%, 50%)",
-    //   "kebab": 33,
-    //   "kebabColor": "hsl(2, 70%, 50%)",
-    //   "fries": 46,
-    //   "friesColor": "hsl(289, 70%, 50%)",
-    //   "donut": 158,
-    //   "donutColor": "hsl(113, 70%, 50%)"
-    // },
-    // {
-    //   "country": "AM",
-    //   "hot dog": 12,
-    //   "hot dogColor": "hsl(117, 70%, 50%)",
-    //   "burger": 91,
-    //   "burgerColor": "hsl(14, 70%, 50%)",
-    //   "sandwich": 141,
-    //   "sandwichColor": "hsl(193, 70%, 50%)",
-    //   "kebab": 185,
-    //   "kebabColor": "hsl(236, 70%, 50%)",
-    //   "fries": 149,
-    //   "friesColor": "hsl(236, 70%, 50%)",
-    //   "donut": 148,
-    //   "donutColor": "hsl(34, 70%, 50%)"
-    // }
+  ]
+
+
+export const SingleBarChartData=[
+  {
+    'type':"Conference",
+    'Ticket sales':70,
+    'Ticket salesColor':'#8E30FF',
+  },
+  {
+    'type':"Movies",
+    'Ticket sales':79,
+    'Ticket salesColor':'#FF7723',
+  },
+  { 
+    'type':"Hip Hop",
+    'Ticket sales':54,
+    'Ticket salesColor':'#FFC3BD',
+  },
+  {
+    'type':"Musical",
+    'Ticket sales':87,
+    'Ticket salesColor':'#FBBC04',
+  },
+  ]
+
+  export const pieChartData=[
+    {
+      "id": "conference",
+      "label": "conference",
+      "value": 30,
+      "color": "#8E30FF"
+    },
+    {
+      "id": "Movies",
+      "label": "Movies",
+      "value": 20,
+      "color": "#FF7723"
+    },
+    {
+      "id": "Hip Hop",
+      "label": "Hip Hop",
+      "value": 37,
+      "color": "#FFC3BD"
+    },
+    {
+      "id": "Musical",
+      "label": "Musical",
+      "value": 13,
+      "color": "#FBBC04"
+    },
+
+  ]
+
+
+  export const lineChartData=[
+    {
+      "id": "a-",
+      "color": "hsl(255, 70%, 50%)",
+      "data": [
+        {
+          "x": "plane",
+          "y": 47
+        },
+        {
+          "x": "helicopter",
+          "y": 35
+        },
+        {
+          "x": "boat",
+          "y": 39
+        },
+        {
+          "x": "train",
+          "y": 45
+        },
+      ]
+    },
+    {
+      "id": "b",
+      "color": "hsl(255, 70%, 50%)",
+      "data": [
+        {
+          "x": "plane",
+          "y": 32
+        },
+        {
+          "x": "helicopter",
+          "y": 44
+        },
+        {
+          "x": "boat",
+          "y": 39
+        },
+        {
+          "x": "train",
+          "y": 50
+        },
+      ]
+    },
   ]
