@@ -66,10 +66,9 @@ const Community2Lazy = React.lazy(()=> import('./pages/Community2'))
 function App() {
   return (
     <main>
-      <BrowserRouter>
         <Routes>
-          <Route path='/' element={<EventDescriptions />}></Route>
-          <Route path='/events' element={<React.Suspense fallback={<LoadingAnimation />}><EventsLazy /></React.Suspense>}></Route>
+          <Route path='/' element={<EventsLazy />}></Route>
+          <Route path='/event-description' element={<React.Suspense fallback={<LoadingAnimation />}><EventDescriptions /></React.Suspense>}></Route>
           <Route path='/login' element={<React.Suspense fallback={<LoadingAnimation />}><LoginLazy /></React.Suspense>}></Route>
           <Route path='/signup' element={<React.Suspense fallback={<LoadingAnimation />}><SignupLazy /></React.Suspense>}></Route>
           <Route path='/interests' element={<React.Suspense fallback={<LoadingAnimation />}><InterestsLazy /></React.Suspense>}></Route>
@@ -102,8 +101,7 @@ function App() {
             <Route path='publish' element={<React.Suspense fallback={<LoadingAnimation />}><PublishLazy /></React.Suspense>}></Route>
           </Route>
         </Routes>
-      </BrowserRouter>
-    </main>
+s    </main>
   )
 }
 

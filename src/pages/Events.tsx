@@ -249,7 +249,7 @@ export default function Events({ }: Props) {
             <nav style={{ boxShadow: "1px 1px 8px #00000015" }} className='fixed z-[1000] bg-[white] flex justify-between items-center w-[100%] xsm:flex-col'>
                 <div className='flex items-center gap-[3.28vw] xsm:justify-between sm:justify-between xsm:w-full sm:w-full'>
                     <LazyImage alt="" src={"./Logo.png"} classes='ml-[8px] min-w-[80px] ' />
-                    <SearchBar whileHover={{scale:1.03}} style={{ flex: "1" }} />
+                    <SearchBar whileHover={{ scale: 1.03 }} style={{ flex: "1" }} />
                     <div onClick={() => setShowMobileNav(!showMobileNav)} className='xsm:flex sm:flex cursor-pointer hidden flex-col items-center gap-[5px] mr-[10px]'>
                         <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>
                         <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>
@@ -260,7 +260,9 @@ export default function Events({ }: Props) {
                 <ul className='xsm:hidden sm:hidden text-[#493c3c] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[5.244vw] mr-[7.37vw]'>
                     <motion.li whileHover={{ color: "#FB4A04" }}>Events</motion.li>
                     <motion.li whileHover={{ color: "#FB4A04" }}>Live Stream</motion.li>
-                    <motion.li whileHover={{ color: "#FB4A04" }}>Help</motion.li>
+                    <Link to={"/help-sub"}>
+                        <motion.li whileHover={{ color: "#FB4A04" }}>Help</motion.li>
+                    </Link>
                     <Link to="/login">
                         <motion.li whileHover={{ color: "#FB4A04" }}>Log In</motion.li>
                     </Link>

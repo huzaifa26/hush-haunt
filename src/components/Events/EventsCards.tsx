@@ -1,6 +1,7 @@
 import React from 'react'
 import LazyImage from '../General/LazyImage'
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
+import {useNavigate} from "react-router-dom"
 
 type Props = {
     mainText: string,
@@ -13,6 +14,7 @@ type Props = {
 }
 
 export default function EventsCards({ mainText, data }: Props) {
+    const navigate=useNavigate();
     return (
         <div className='m-auto w-[86.1671469740634vw]'>
             <div className='flex justify-between'>
@@ -29,7 +31,7 @@ export default function EventsCards({ mainText, data }: Props) {
             <motion.div className='flex justify-between mt-[25px] flex-wrap xsm:justify-center sm:justify-center md:justify-center lg:justify-center xsm:gap-[5vw] sm:gap-[5vw] md:gap-[5vw] lg:gap-[5vw]'>
                 {data.map((d, index) => {
                     return (
-                        <motion.div whileHover={{ scale: 1.01 }} key={index} className="xsm:mb-[40px]">
+                        <motion.div onClick={()=>navigate("/event-description")} whileHover={{ scale: 1.01 }} key={index} className="xsm:mb-[40px] cursor-pointer">
                             <div className='relative xsm:min-w-[280px] sm:min-w-[300px] md:min-w-[320px] lg:min-w-[320px] w-[20.576368876080693vw]'>
                                 <motion.div initial={{ opacity: 0, scale: 0.1, backgroundColor: '#ffffff00' }}
                                     whileInView={{ opacity: 1, scale: 1 }}

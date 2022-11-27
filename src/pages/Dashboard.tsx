@@ -7,6 +7,7 @@ import { data, data1 } from "./Events";
 import SearchBar from '../components/General/SearchBar';
 import Button from '../components/General/Button';
 import { motion } from "framer-motion"
+import Modal from '../components/General/Modal';
 
 type Props = {}
 
@@ -14,8 +15,19 @@ export default function Dashboard({ }: Props) {
 
     const [openContextMenu, setOpenContextMenu] = useState<boolean>(false);
     const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
+    const [showModal,setShowModal]=useState<boolean>(false);
 
     return (
+        <>
+        <Modal showModal={showModal} hideShowModalHandler={()=>setShowModal(false)}>
+            <div className='w-[41.84438040345821vw] h-[190px] bg-white px-[24px] flex flex-col justify-center'>
+                <p className='font-[400] text-[16px] text-[#231414D4] leading-[26.06px] mb-[16px]'>Enter Friend email address</p>
+                <div className='flex gap-[2.3054755043227666vw]'>
+                    <input className='w-[28.35734870317003vw] h-[41px] border-[1px] border-[#231414D4]'></input>
+                    <Button initial={{ backgroundColor: '#FB4A04', color: "#fff" }} whileHover={{ scale: 1.02, backgroundColor: "#ffffff", border: "3px solid #FB4A04", color: "#FB4A04" }} style={{borderRadius:"0px",fontSize:"12px" }}  width={"6.858789625360231vw"} height={"41px"} text={"Invite a Friend"} />
+                </div>
+            </div>
+        </Modal>
         <div className='w-[calc(100vw - 100%)]'>
             <nav style={{ boxShadow: "1px 1px 8px #00000015" }} className='fixed z-[1000] bg-[white] flex justify-between items-center w-[100%] xsm:flex-col'>
                 <div className='flex items-center gap-[3.28vw] xsm:justify-between sm:justify-between xsm:w-full sm:w-full'>
@@ -55,9 +67,9 @@ export default function Dashboard({ }: Props) {
                         </div>
                         {openContextMenu &&
                             <div className='transition-all w-[181px] h-[170px] bg-white shadow-md absolute z-[1] flex flex-col justify-around py-[20px] top-full left-[-270%]'>
-                                <p className='text-[#473a3a] font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[23px] text-center'> Explore Community</p>
-                                <p className='text-[#473a3a] font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[23px] text-center'>Invite a Friend</p>
-                                <p className='text-[#473a3a] font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[23px] text-center'>Vibe Check</p>
+                                <motion.p whileHover={{color:"#FB4A04"}} className='text-[#473a3a] font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[23px] text-center'> Explore Community</motion.p>
+                                <motion.p whileHover={{color:"#FB4A04"}} className='text-[#473a3a] font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[23px] text-center'>Invite a Friend</motion.p>
+                                <motion.p whileHover={{color:"#FB4A04"}} className='text-[#473a3a] font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[23px] text-center'>Vibe Check</motion.p>
                             </div>
                         }
                     </li>
@@ -101,7 +113,7 @@ export default function Dashboard({ }: Props) {
                 <section className='dashboardBackground h-[778px] w-[100%] flex relative'>
                     <div className='flex flex-col justify-center absolute top-[332px] left-[65%] xsm:left-[10vw] sm:left-[50vw]'>
                         <h1 className="mb-[23px] eventTextFont w-[31.435158501440924vw] min-w-[260px] font-[400] text-[96px] leading-[113px] xsm:leading-[65px] sm:leading-[65px] md:leading-[65px] lg:leading-[70px] xl:leading-[80px] text-[#ffffff]">NOW <span className='eventTextFont text-[64px]'>IS YOUR</span> TIME</h1>
-                        <Button initial={{ backgroundColor: '#FB4A04', color: "#fff" }} whileHover={{ scale: 1.02, backgroundColor: "#ffffff", border: "3px solid #FB4A04", color: "#FB4A04" }} style={{ minWidth: "240px" }}  width={"17.75vw"} height={"61px"} text={"Find your next Event"} />
+                        <Button onClick={()=>setShowModal(true)} initial={{ backgroundColor: '#FB4A04', color: "#fff" }} whileHover={{ scale: 1.02, backgroundColor: "#ffffff", border: "3px solid #FB4A04", color: "#FB4A04" }} style={{ minWidth: "240px" }}  width={"17.75vw"} height={"61px"} text={"Find your next Event"} />
                     </div>
                 </section>
 
@@ -139,5 +151,6 @@ export default function Dashboard({ }: Props) {
                 </div>
             </div>
         </div>
+        </>
     )
 }

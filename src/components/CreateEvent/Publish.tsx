@@ -1,9 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Modal from '../General/Modal'
 
 type Props = {}
 
 export default function Publish({ }: Props) {
+    const [showModal,setShowModal]=useState<boolean>(false);
     return (
+        <>
+        <Modal showModal={showModal} hideShowModalHandler={()=>setShowModal(false)}>
+            <div className='w-[63.7463976945245vw] xsm:w-[90vw] xsm:flex-col xsm:items-start xsm:justify-center xsm:gap-[15px] h-[77px] bg-white flex justify-between items-center px-[2.5%]'>
+                <p className='font-[700] text-[14px] text-[#231414D4] leading-[22.8px]'>Please complete setup before publishing.</p>
+                <div className='flex gap-[20px]'>
+                    <p className='font-[700] text-[14px] text-[#1977F3] leading-[22.8px]'>Complete setup</p>
+                    <img onClick={()=>setShowModal(false)} className="cursor-pointer" src='/x-circle.svg' alt=''/>
+                </div>
+            </div>
+        </Modal>
         <div className='w-[56.829971181556196vw] xsm:w-[90%] sm:w-[50%] m-auto mt-[66px]'>
             <h1 className='font-[700] text-[32px] leading-[38.73px] text-[#231414D4]'>Publish Events</h1>
 
@@ -57,7 +69,7 @@ export default function Publish({ }: Props) {
             <div className='flex gap-[20px] mt-[18px] mb-[152px] xsm:flex-col sm:flex-col'>
                 <div className='relative w-[13.371757925072046vw] min-w-[170px] h-[51px] bg-[#F5F5F5] flex justify-center items-center gap-[43px]'>
                     <img className='absolute left-[10%]' src='/calendar.svg' alt=''></img>
-                    <div className='flex flex-col items-center justify-center'>
+                    <div className='flex flex-col items-center justify-center' onClick={()=>setShowModal(true)}>
                         <p className='font-[400] text-[14px] text-[#231414D4] leading-[22.8px]'>Publish</p>
                         <p className='font-[400] text-[14px] text-[#231414D4] leading-[22.8px]'>01/11/2022</p>
                     </div>
@@ -70,5 +82,7 @@ export default function Publish({ }: Props) {
                 </div>
             </div>
         </div>
+        </>
+
     )
 }

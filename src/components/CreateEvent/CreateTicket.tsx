@@ -95,7 +95,7 @@ export default function CreateTicket({ }: Props) {
                 </div>
             </Modal>
             <div className='flex flex-col justify-center items-center mt-[151px]'>
-                <h1 className='font-[700] text-[2.07492795389049vw] leading-[58.64px] text-[#231414D4]'>Create Ticket</h1>
+                <h1 className='font-[700] text-[24px] leading-[58.64px] text-[#231414D4]'>Create Ticket</h1>
                 <img src='/emojione-monotone_ticket1.svg' className='mt-[44px]' alt='' />
                 <div className='ml-[4.322766570605188vw] flex gap-[20px] mt-[53px] xsm:flex-col sm:flex-col'>
                     <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} onClick={() => setShowModal1(true)} width='231px' height='57px' text='Create section' style={{ background: "transparent", color: "#FB4A04", border: "1px solid #231414D4", borderRadius: "10px", fontSize: "20px", lineHeight: "32.58px" }} />

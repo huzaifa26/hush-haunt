@@ -13,53 +13,40 @@ export default function Footer({ showFooterHeaders = true }: Props) {
                     <ul>
                         <h3 className='font-[700] text-[clamp(16px,1.38328530259366vw,24px)] leading-[40px] mb-[25px] xsm:mb-[15px]'>Use Site</h3>
                         <motion.li whileHover={{color:"#473a3a"}} className=''>How It Works</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Partymode Boost</motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}>Partymode vibe check</motion.li>
                         <motion.li whileHover={{color:"#473a3a"}}>Pricing</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Content Standards</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Partymode Mobile Ticket App</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Partymode Check-In App</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Partymode App Marketplace</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>COVID-19 (Coronavirus) Resources</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>FAQs</motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}>Content standards</motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}>Partymode mobile ticket</motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}>Partymode check-in</motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}>Partymode marketplace</motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}>FAQ</motion.li>
                         <motion.li whileHover={{color:"#473a3a"}}>Sitemap</motion.li>
                     </ul>
 
                     <ul>
                         <h3 className='font-[700] text-[clamp(16px,1.38328530259366vw,24px)] leading-[40px] mb-[25px] '>Plan Events</h3>
-                        <motion.li whileHover={{color:"#473a3a"}}>Sell Tickets Onmotion.line</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Event Registration Software</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Onmotion.line RSVP</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Virtual Events Platform</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Event Planning</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Event Payment System</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Nonprofits & Fundraisers Events</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Event Marketing</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Grow your Business</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Party Planning</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}></motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}>Sell tickets online</motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}>Live streaming events</motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}>Create event</motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}>Event payment</motion.li>
                     </ul>
 
                     <ul>
                         <h3 className='font-[700] text-[clamp(16px,1.38328530259366vw,24px)] leading-[40px] mb-[25px] '>Find Events</h3>
-                        <motion.li whileHover={{color:"#473a3a"}}>Virtual Events</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Onmotion.line Webinars</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Onmotion.line Classes</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Onmotion.line Yoga</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Virtual Runs</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Onmotion.line Zumba Classes</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Virtual Conferences</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Onmotion.line Seminars</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Onmotion.line Speed Dating</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Virtual Wine Tasting</motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}>Live streaming</motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}>Online events</motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}>Find promoter - creators</motion.li>
                     </ul>
 
                     <ul>
                         <h3 className='font-[700] text-[clamp(16px,1.38328530259366vw,24px)] leading-[40px] mb-[25px]'>Connect With Us</h3>
-                        <motion.li whileHover={{color:"#473a3a"}}>Contact Support</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Twitter</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Facebook</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>motion.linkedIn</motion.li>
-                        <motion.li whileHover={{color:"#473a3a"}}>Instagram</motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}><a target={"_blank"}>Contact support</a></motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}><a href="https://fb.watch/gJthIVVA0p/" target={"_blank"}>Facebook</a></motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}><a href="https://www.instagram.com/reel/Ckt0HO0jwUt/?igshid=YmMyMTA2M2Y=" target={"_blank"}>Instagram</a></motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}><a target={"_blank"}>LinkedIn</a></motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}><a href="https://vm.tiktok.com/ZMFPkXUYS/" target={"_blank"}>TikTok</a></motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}><a href="https://twitter.com/partymode_/status/1579279888879878147?s=12&t=-jK89kyXLwS-ennKAld_Sw" target={"_blank"}>Twitter</a></motion.li>
+                        <motion.li whileHover={{color:"#473a3a"}}><a href="https://open.spotify.com/track/3UGNdLrhhsK0SY9gNqe8TT?si=RBDLUrG-R8CqHlZrz865rw" target={"_blank"}>Podcast</a></motion.li>
                     </ul>
                 </motion.div>
             }
