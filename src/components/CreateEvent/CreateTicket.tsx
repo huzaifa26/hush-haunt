@@ -87,8 +87,8 @@ export default function CreateTicket({ }: Props) {
                             </div>
 
                             <div className='flex justify-between mt-[20px] mb-[27px] gap-[2.07492795389049vw]'>
-                                <Button width='222px' height='60px' text='Cancel' style={{ background: "transparent", color: "#231414D4", border: "1px solid #231414D4", borderRadius: "0px", fontSize: "20px", lineHeight: "32.58px" }} />
-                                <Button width='222px' height='60px' text='Save' style={{ borderRadius: "0px", fontSize: "20px", lineHeight: "32.58px" }} />
+                                <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='222px' height='60px' text='Cancel' style={{ background: "transparent", color: "#231414D4", border: "1px solid #231414D4", borderRadius: "0px", fontSize: "20px", lineHeight: "32.58px" }} />
+                                <Button whileHover={{background:"white",color:"#FB4A04",scale:1.03,border:"1px solid #FB4A04"}} width='222px' height='60px' text='Save' style={{ borderRadius: "0px", fontSize: "20px", lineHeight: "32.58px" }} />
                             </div>
                         </div>
                     </div>
@@ -98,10 +98,10 @@ export default function CreateTicket({ }: Props) {
                 <h1 className='font-[700] text-[2.07492795389049vw] leading-[58.64px] text-[#231414D4]'>Create Ticket</h1>
                 <img src='/emojione-monotone_ticket1.svg' className='mt-[44px]' alt='' />
                 <div className='ml-[4.322766570605188vw] flex gap-[20px] mt-[53px] xsm:flex-col sm:flex-col'>
-                    <Button onClick={() => setShowModal1(true)} width='231px' height='57px' text='Create section' style={{ background: "transparent", color: "#FB4A04", border: "1px solid #231414D4", borderRadius: "10px", fontSize: "20px", lineHeight: "32.58px" }} />
-                    <Button onClick={() => setShowModal2(true)} width='231px' height='57px' text='Create Ticket' style={{ borderRadius: "10px", fontSize: "20px", lineHeight: "32.58px" }} />
+                    <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} onClick={() => setShowModal1(true)} width='231px' height='57px' text='Create section' style={{ background: "transparent", color: "#FB4A04", border: "1px solid #231414D4", borderRadius: "10px", fontSize: "20px", lineHeight: "32.58px" }} />
+                    <Button  whileHover={{background:"white",color:"#FB4A04",scale:1.03,border:"1px solid #FB4A04"}} onClick={() => setShowModal2(true)} width='231px' height='57px' text='Create Ticket' style={{ borderRadius: "10px", fontSize: "20px", lineHeight: "32.58px" }} />
                 </div>
-                <p className=' font-[400] text-[15px] leading-[24.43px] text-[#473a3a] mt-[55px]'>Create Yur events ticket</p>
+                <p className=' font-[400] text-[15px] leading-[24.43px] text-[#473a3a] mt-[55px]'>Create Your events ticket</p>
             </div>
         </>
     )

@@ -31,10 +31,10 @@ export default function Events({ }: Props) {
       <div className='flex gap-[20px] xsm:flex-col sm:flex-col'>
         <SearchBar whileHover={{scale:1.03}} style={{ width: "27.780979827089336vw", height: "47px", borderRadius: "0px", border: "3px solid #f6ccbb", minWidth: "240px" }} />
         <Link to={"create-event"}>
-          <Button width='150px' height='47px' text="Create Event" style={{ borderRadius: "0px", fontSize: "16px" }}></Button>
+          <Button initial={{scale:1.03,background:"#FB4A04",border:"0px solid #fff",color:"#fff"}} whileHover={{scale:1.03,background:"#fff",border:"1px solid #FB4A04",color:"#FB4A04"}} width='150px' height='47px' text="Create Event" style={{ borderRadius: "0px", fontSize: "16px" }}></Button>
         </Link>
       </div>
-      <div className='w-full whitespace-nowrap overflow-auto'>
+      <div className='w-full whitespace-nowrap xsm:overflow-auto sm:overflow-auto md:overflow-auto'>
         <table className="table-auto w-[78.32853025936599vw] min-w-[500px] mt-[83px] relative z-10">
           <thead className='bg-[#fed4c3]'>
             <tr className='text-left'>

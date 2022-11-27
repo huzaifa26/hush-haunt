@@ -2,7 +2,8 @@ import React from 'react'
 import { NavLink, Outlet } from "react-router-dom"
 import LazyImage from './LazyImage'
 import SearchBar from './SearchBar'
-import {useLocation} from "react-router-dom"
+import { useLocation } from "react-router-dom"
+import { motion } from "framer-motion"
 
 type Props = {
     children: any
@@ -43,22 +44,31 @@ let drawer = [
 ]
 
 export default function Layout({ children }: Props) {
-    const location=useLocation();
+    const location = useLocation();
     return (
         <div>
-            <nav className='flex justify-between items-center w-[100%]'>
+            <nav className='flex justify-between items-center w-[100%] h-85px'>
                 <div className='flex items-center gap-[3.28vw]'>
-                    <LazyImage alt="" src={"/Logo.png"} classes="w-[80px] xsm:min-w-[57px] sm:min-w-[57px]" />
+                    <motion.img
+                        initial={{ opacity: 0, scale: 0.1 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 0.4,
+                            delay: 0.1,
+                            ease: [0, 0.71, 0.2, 1.01]
+                        }}
+                        alt="" src={"/Logo.png"} className="w-[80px] xsm:min-w-[57px] sm:min-w-[57px]" />
                     <div className='xsm:hidden '>
-                    <SearchBar whileHover={{scale:1.03}} />
+                        <SearchBar whileHover={{ scale: 1.03 }} />
                     </div>
                 </div>
 
                 <ul className='text-[#493c3c] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[31px] mr-[7.37vw] items-center border-[1px] px-[21px] py-[6px] rounded-full border-[#473a3a] '>
                     <li className='flex items-center gap-[8px]'>
-                        <img src='./profile.png' alt='' />
+                        <img src='/profile.png' alt='' />
                         <p className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center ml-[20px]'>partymode</p>
-                        <img className='ml-[41px]' src='./dropdown.svg' alt=''/>
+                        <img className='ml-[41px]' src='/dropdown.svg' alt='' />
                     </li>
                 </ul>
             </nav>
@@ -67,8 +77,8 @@ export default function Layout({ children }: Props) {
                     {drawer.map((item) => {
                         return (
                             <NavLink to={item.route} end>
-                                <div style={location.pathname.includes( item.route)?{background:"#ffffff"}:{background:"#FB4A04"}} key={item.id} className='w-[57px] h-[61px] flex justify-center items-center'>
-                                    <img src={location.pathname.includes( item.route)?item.iconOrange:item.iconWhite} alt="" />
+                                <div style={location.pathname.includes(item.route) ? { background: "#ffffff" } : { background: "#FB4A04" }} key={item.id} className='w-[57px] h-[61px] flex justify-center items-center'>
+                                    <img src={location.pathname.includes(item.route) ? item.iconOrange : item.iconWhite} alt="" />
                                 </div>
                             </NavLink>
                         )

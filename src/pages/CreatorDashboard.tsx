@@ -4,6 +4,7 @@ import Button from '../components/General/Button'
 import Layout from '../components/General/Layout'
 import LazyImage from '../components/General/LazyImage'
 import SearchBar from '../components/General/SearchBar'
+import {motion} from 'framer-motion'
 
 type Props = {}
 
@@ -56,7 +57,7 @@ export default function CreatorDashboard({ }: Props) {
                             <p className='font-[400] text-[14px] leading-[22.9px] text-[#473a3a] '><span className='text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26.06px]'>Draft:</span> start  November 18 at  00:00 ends by 00:00am</p>
                         </div>
 
-                        <Button classes="!max-w-[231px]" width='13.314121037463977vw' height='54px' text="Continue Editing" style={{ borderRadius: "20px", background: "#FB4A04", fontSize: "16px", marginTop: "33px", marginBottom: "17px", alignSelf: "flex-end", marginRight: "23px", minWidth: "60%",  }} />
+                        <Button whileHover={{background:"#fff",border:"3px solid #FB4A04",color:"#FB4A04"}} classes="!max-w-[231px]" width='13.314121037463977vw' height='54px' text="Continue Editing" style={{ borderRadius: "20px", background: "#FB4A04", fontSize: "16px", marginTop: "33px", marginBottom: "17px", alignSelf: "flex-end", marginRight: "23px", minWidth: "60%",  }} />
                     </div>
 
 
@@ -64,24 +65,24 @@ export default function CreatorDashboard({ }: Props) {
                         <h2 className='font-[700] text-[clamp(16px,1.38328530259366vw,24px)] leading-[39px] text-[#473a3a] mt-[8px] ml-[33px] xsm:ml-[10px] sm:ml-[10px]'>Boost your Events with Vibe Check</h2>
                         <p className='font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26.06px] text-[#473a3a] mt-[25px] ml-[33px] xsm:ml-[10px] sm:ml-[10px]'>Take your marketing to the next level</p>
 
-                        <Button classes={"!max-w-[231px]"} width='13.314121037463977vw' height='54px' text="Vibe check" style={{ borderRadius: "20px", background: "#ffff", border: "1px solid #FB4A04", color: "#FB4A04", fontSize: "16px", marginTop: "31px", marginBottom: "22px", alignSelf: "flex-end", marginRight: "23px", minWidth: "60%" }} />
+                        <Button whileHover={{background:"#FB4A04",border:"3px solid #fff",color:"#fff"}} classes={"!max-w-[231px]"} width='13.314121037463977vw' height='54px' text="Vibe check" style={{ borderRadius: "20px", background: "#ffff", border: "3px solid #FB4A04", color: "#FB4A04", fontSize: "16px", marginTop: "31px", marginBottom: "22px", alignSelf: "flex-end", marginRight: "23px", minWidth: "60%" }} />
                     </div>
 
                     <div className='w-[52.04610951008645vw] xsm:w-[90%] sm:w-[80%] border-2 border-[#D9D9D9] mt-[70px] flex flex-col mb-[316px] '>
                         <h2 className='font-[700] text-[clamp(16px,1.38328530259366vw,24px)] leading-[39px] text-[#473a3a] mt-[8px] ml-[33px] xsm:ml-[10px] sm:ml-[10px]'>Boost your Events with Vibe Check</h2>
                         <div className='flex gap-[74px] justify-center mt-[32px] mb-[30px] xsm:flex-col sm:flex-col '>
-                            <div className='relative w-[19.654178674351584vw] h-[172px] bg-[#473a3a] rounded-[20px] flex justify-center items-center xsm:w-[90%] sm:w-[80%] xsm:m-auto sm:m-auto'>
+                            <motion.div whileHover={{scale:1.03}} className='shadow-lg relative w-[19.654178674351584vw] h-[172px] bg-[#473a3a] rounded-[20px] flex justify-center items-center xsm:w-[90%] sm:w-[80%] xsm:m-auto sm:m-auto'>
                                 <h3 className='w-[231px] font-[700] text-[clamp(14px,1.1527377521613833vw,20px)] leading-[32.58px] text-white'>4 Faqs about setting up your first event</h3>
                                 <div className='absolute w-[52px] h-[52px] bg-white flex justify-center items-center rounded-full bottom-[9px] right-[18px]'>
                                     <img className='' src='./arrow.svg' alt='' />
                                 </div>
-                            </div>
-                            <div className='relative w-[19.654178674351584vw] h-[172px] bg-[#473a3a] rounded-[20px] flex justify-center items-center xsm:w-[90%] sm:w-[80%] xsm:m-auto sm:m-auto'>
+                            </motion.div>
+                            <motion.div whileHover={{scale:1.03}} className='shadow-lg relative w-[19.654178674351584vw] h-[172px] bg-[#473a3a] rounded-[20px] flex justify-center items-center xsm:w-[90%] sm:w-[80%] xsm:m-auto sm:m-auto'>
                                 <h3 className='w-[231px] font-[700] text-[clamp(14px,1.1527377521613833vw,20px)] leading-[32.58px] text-white'>4 Faqs about setting up your first event</h3>
                                 <div className='absolute w-[52px] h-[52px] bg-white flex justify-center items-center rounded-full bottom-[9px] right-[18px]'>
                                     <img className='' src='./arrow.svg' alt='' />
                                 </div>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                 </div>
@@ -91,9 +92,9 @@ export default function CreatorDashboard({ }: Props) {
                         <div className='w-full'>
                             <h3 className='mt-[43px] mb-[53px] text-center font-[400] text-[clamp(16px,1.38328530259366vw,24px)] leading-[39.09px] text-[#473a3a]'>Partymode</h3>
                             <div className='flex justify-around w-[70%] m-auto mb-[54px] xsm:flex-col xsm:items-center'>
-                                <p className='font-[400] text-[14px] leading-[22.9px] text-[#1977F3]'>View</p>
-                                <p className='font-[400] text-[14px] leading-[22.9px] text-[#1977F3]'>Edit </p>
-                                <p className='font-[400] text-[14px] leading-[22.9px] text-[#1977F3]'>Copy profile url</p>
+                                <motion.p whileHover={{color:"#FB4A04"}} className='cursor-pointer font-[400] text-[14px] leading-[22.9px] text-[#1977F3]'>View</motion.p>
+                                <motion.p whileHover={{color:"#FB4A04"}} className='cursor-pointer font-[400] text-[14px] leading-[22.9px] text-[#1977F3]'>Edit </motion.p>
+                                <motion.p whileHover={{color:"#FB4A04"}} className='cursor-pointer font-[400] text-[14px] leading-[22.9px] text-[#1977F3]'>Copy profile url</motion.p>
                             </div>
                         </div>
                     </div>

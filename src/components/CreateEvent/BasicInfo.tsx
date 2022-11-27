@@ -33,7 +33,7 @@ export default function BasicInfo({ }: Props) {
                             <p className='font-[700] text-[14px] leading-[22.8px] text-[#231414D4]'>Improve discoverability of your event by adding tags relevant to the subject matter</p>
                             <div className='flex gap-[1.1527377521613833vw] xsm:gap-[20px] sm:gap-[20px] pt-[44px] xsm:flex-col sm:flex-col'>
                                 <textarea className='w-[35.04322766570605vw] xsm:w-[100%] sm:w-[90%] h-[58px] border-[1px] border-b-0 border-[#231414D4] font-[400] text-[12px] leading-[19.55px] text-[#231414D4] indent-[16px] pt-[8px] outline-none' placeholder='Organiser'></textarea>
-                                <Button width='106px' height='58px' text='Add' style={{ border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
+                                <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='106px' height='58px' text='Add' style={{ border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
                             </div>
                         </div>
                     </div>
@@ -47,9 +47,9 @@ export default function BasicInfo({ }: Props) {
                         <p className='font-[400] text-[14px] leading-[22.8px] text-[#231414D4]'>Help people in the area discover your event and let attendees know where to show up.</p>
                         <div className='mt-[22px]'>
                             <div className='flex gap-[1.1527377521613833vw] pt-[37px] xsm:flex-col sm:flex-col'>
-                                <Button width='13.314121037463977vw' height='58px' text='Venue' style={{minWidth:"213px", border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
-                                <Button width='13.314121037463977vw' height='58px' text='online events ' style={{minWidth:"213px", border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
-                                <Button width='13.314121037463977vw' height='58px' text='To be annouced' style={{minWidth:"213px", border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
+                                <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='13.314121037463977vw' height='58px' text='Venue' style={{minWidth:"213px", border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
+                                <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='13.314121037463977vw' height='58px' text='online events ' style={{minWidth:"213px", border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
+                                <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='13.314121037463977vw' height='58px' text='To be annouced' style={{minWidth:"213px", border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
                             </div>
                             <p className='font-[700] text-[14px] leading-[22.8px] text-[#231414D4] mb-[69px] mt-[18px]'>Online events have unique event pages where you can add links to livestreams and more</p>
                         </div>
@@ -64,8 +64,8 @@ export default function BasicInfo({ }: Props) {
                         <p className='font-[400] text-[14px] leading-[22.8px] text-[#231414D4]'>Tell event-goers when your event starts and ends so they can make plans to start</p>
                         <div className='mt-[22px]'>
                             <div className='flex gap-[1.1527377521613833vw] pt-[37px] xsm:flex-col sm:flex-col'>
-                                <Button width='13.371757925072046vw' height='58px' text='Single events' style={{ minWidth:"213px", border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
-                                <Button width='13.371757925072046vw' height='58px' text='Single events ' style={{ minWidth:"213px", border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
+                                <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='13.371757925072046vw' height='58px' text='Single events' style={{ minWidth:"213px", border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
+                                <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='13.371757925072046vw' height='58px' text='Single events ' style={{ minWidth:"213px", border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
                             </div>
                             <p className='font-[700] text-[14px] leading-[22.8px] text-[#231414D4] mb-[69px] mt-[18px]'>Single event happens once and can last multiple days</p>
                         </div>
@@ -104,8 +104,8 @@ export default function BasicInfo({ }: Props) {
                 </div>
                 <div className='mt-[44px] pt-[62px] flex justify-end mb-[211px]'>
                     <div className='flex gap-[20px] xsm:flex-col sm:flex-col'>
-                        <Button width='13.198847262247838vw' height='65px' text='Cancel' style={{minWidth:"213px",background:"transparent",color:"#FB4A04",border:"1px solid #231414D4",borderRadius:"10px",fontSize:"24px",lineHeight:"39.09px"}}/>
-                        <Button width='13.198847262247838vw' height='65px' text='Save & Continue' style={{minWidth:"213px",borderRadius:"10px",fontSize:"24px",lineHeight:"39.09px"}}/>
+                        <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='13.198847262247838vw' height='65px' text='Cancel' style={{minWidth:"213px",background:"transparent",color:"#FB4A04",border:"1px solid #231414D4",borderRadius:"10px",fontSize:"24px",lineHeight:"39.09px"}}/>
+                        <Button whileHover={{background:"white",color:"#FB4A04",scale:1.03,border:"1px solid #FB4A04"}} width='13.198847262247838vw' height='65px' text='Save & Continue' style={{minWidth:"213px",borderRadius:"10px",fontSize:"24px",lineHeight:"39.09px"}}/>
                     </div>
                 </div>
             </div>

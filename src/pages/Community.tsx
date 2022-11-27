@@ -82,7 +82,8 @@ export default function Community({ }: Props) {
                                 duration: 0.4,
                                 delay: 0.1,
                                 ease: [0, 0.71, 0.2, 1.01]
-                            }} className='relative z-[1000] ml-[3.6887608069164264vw] xsm:ml-0 sm:ml-0' src='./community2.svg' />
+                            }}
+                            className='relative z-[1000] ml-[3.6887608069164264vw] xsm:ml-0 sm:ml-0' src='./community2.svg' />
                     </div>
                     <div className='flex-1 flex flex-col justify-center items-center ml-[3.515850144092219vw] xsm:mt-[20px] sm:mt-[20px]'>
                         <div>

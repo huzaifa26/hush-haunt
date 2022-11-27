@@ -16,8 +16,8 @@ export default function Detail({ }: Props) {
                         <img className='mt-[106px]' src='/bx_image.svg' alt='' />
                         <p className='mt-[24px] font-[400] text-[16px] leading-[26.06px] text-[#231414D4]'>Drag and drop an image</p>
                         <div className='flex gap-[2.881844380403458vw] xsm:flex-col sm:flex-col mt-[34px] mb-[90px]'>
-                            <Button width='154px' height='43px' text='Upload Image' style={{ border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
-                            <Button width='154px' height='43px' text='Upload from canva ' style={{ border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
+                            <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='154px' height='43px' text='Upload Image' style={{ border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
+                            <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='154px' height='43px' text='Upload from canva ' style={{ border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
                         </div>
                     </div>
                 </div>
@@ -43,14 +43,14 @@ export default function Detail({ }: Props) {
                         <textarea className='w-[49.56772334293948vw] xsm:w-[100%] sm:w-[80%] h-[83px] border-[1px] border-[#666666B2] font-[400] text-[12px] leading-[19.55px] text-[#231414D4] indent-[16px] pt-[8px] outline-none' placeholder=''></textarea>
                     </div>
                     <div className='ml-[75px] xsm:ml-0 flex gap-[2.881844380403458vw] xsm:flex-col sm:flex-col mt-[34px] mb-[90px]'>
-                        <Button width='154px' height='43px' text='Add Image' style={{ border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
-                        <Button width='154px' height='43px' text='Add Text' style={{ border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
-                        <Button width='154px' height='43px' text='Add video' style={{ border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
+                        <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='154px' height='43px' text='Add Image' style={{ border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
+                        <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='154px' height='43px' text='Add Text' style={{ border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
+                        <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='154px' height='43px' text='Add video' style={{ border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
                     </div>
                 </div>
                 <div className='ml-[75px] xsm:w-[100%] xsm:items-center xsm:ml-0 flex gap-[20px] justify-end mb-[203px] xsm:flex-col-reverse sm:flex-col-reverse'>
-                    <Button width='229px' height='65px' text='Back' style={{ background: "transparent", color: "#FB4A04", border: "1px solid #231414D4", borderRadius: "10px", fontSize: "24px", lineHeight: "39.09px" }} />
-                    <Button width='229px' height='65px' text='Save & Continue' style={{ borderRadius: "10px", fontSize: "24px", lineHeight: "39.09px" }} />
+                    <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='229px' height='65px' text='Back' style={{ background: "transparent", color: "#FB4A04", border: "1px solid #231414D4", borderRadius: "10px", fontSize: "24px", lineHeight: "39.09px" }} />
+                    <Button whileHover={{background:"white",color:"#FB4A04",scale:1.03,border:"1px solid #FB4A04"}} width='229px' height='65px' text='Save & Continue' style={{ borderRadius: "10px", fontSize: "24px", lineHeight: "39.09px" }} />
                 </div>
             </div>
         </div>

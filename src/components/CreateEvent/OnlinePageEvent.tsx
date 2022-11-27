@@ -24,7 +24,7 @@ export default function OnlinePageEvent({ }: Props) {
                             </div>
                             <p className=' font-[400] text-[15px] leading-[24.43px] text-[#473a3a] mt-[55px]'>Connect with Zoom to embed your event within your virtual venue, or link to another video or audio service. Use  to manage when your video or audio is available and who can access it.</p>
                             <div className='flex justify-between items-center mt-[28px] mb-[39px]'>
-                                <Button width='191px' height='50px' text='Zoom' style={{ border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
+                                <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='191px' height='50px' text='Zoom' style={{ border: "1px solid #231414D4", borderRadius: "0px", background: "transparent", color: "#231414D4", fontSize: "14px", lineHeight: "22.8px" }} />
                                 <p className=' font-[400] text-[15px] leading-[24.43px] text-[#1977F3] '>Link another service provider</p>
                             </div>
                         </div>
@@ -43,8 +43,8 @@ export default function OnlinePageEvent({ }: Props) {
             </div>
 
             <div className='ml-[75px] flex gap-[20px] justify-end mb-[203px] mt-[103px] sm:flex-col xsm:flex-col sm:items-center xsm:items-center sm:ml-0 xsm:ml-0'>
-                <Button width='229px' height='65px' text='Back' style={{minWidth:"200px", background: "transparent", color: "#FB4A04", border: "1px solid #231414D4", borderRadius: "10px", fontSize: "24px", lineHeight: "39.09px" }} />
-                <Button width='229px' height='65px' text='Save & Continue' style={{minWidth:"200px", borderRadius: "10px", fontSize: "24px", lineHeight: "39.09px" }} />
+                <Button whileHover={{background:"#FB4A04",color:"white",scale:1.03}} width='229px' height='65px' text='Back' style={{minWidth:"200px", background: "transparent", color: "#FB4A04", border: "1px solid #231414D4", borderRadius: "10px", fontSize: "24px", lineHeight: "39.09px" }} />
+                <Button  whileHover={{background:"white",color:"#FB4A04",scale:1.03,border:"1px solid #FB4A04"}} width='229px' height='65px' text='Save & Continue' style={{minWidth:"200px", borderRadius: "10px", fontSize: "24px", lineHeight: "39.09px" }} />
             </div>
         </div>
     )

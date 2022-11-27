@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import TableRowOrder from '../EventsDashboard/TableRowOrder';
+import { motion } from "framer-motion"
 
 type Props = {}
 
@@ -26,8 +27,8 @@ export default function OrderRow({ data }: any) {
     const [showOrderDetail, setShowOrderDetail] = useState<boolean>(false);
 
     return (
-        <>
-            <div className='w-[78.55907780979827vw] xsm:min-w-[245px] divide-y-2 py-[10px] '>
+        <div className='divide-y-2'>
+            <div style={showOrderDetail?{paddingBottom:"50px"}:{}} className='w-[78.55907780979827vw] xsm:min-w-[245px] py-[10px]'>
                 <div className='flex justify-between items-center mx-[2%] xsm:flex-col sm:flex-col xsm:gap-[10px] sm:gap-[10px]'>
                     <div className='flex gap-[3.4582132564841497vw] items-center xsm:flex-col sm:flex-col xsm:items-start'>
                         <div className='flex flex-col items-center'>
@@ -49,10 +50,8 @@ export default function OrderRow({ data }: any) {
                         <img style={showOrderDetail ? { transform: "rotate(180deg)" } : { transform: "rotate(0deg)" }} src='/dropdown.svg' alt='' />
                     </div>
                 </div>
-            </div>
-            {showOrderDetail &&
-                <div className='w-full whitespace-nowrap overflow-auto'>
-                    <table style={showOrderDetail === true ? { maxHeight: "1000px" } : { maxHeight: "0px" }} className="transition-all table-auto w-[78.32853025936599vw] mt-[43px] relative z-10 border-collapse border border-slate-500 mb-[50px]">
+                <motion.div style={showOrderDetail ? { maxHeight: "10000px" } : {maxHeight: "0px"}} className=' w-full whitespace-nowrap overflow-auto'>
+                    <table  className=" table-auto w-[78.32853025936599vw] mt-[43px] relative z-10 border-collapse border border-slate-500 ">
                         <thead className='bg-[#fed4c3] border-collapse border border-slate-500'>
                             <tr className=''>
                                 <th className='py-[17px] border-collapse border border-slate-500'>Name</th>
@@ -70,8 +69,8 @@ export default function OrderRow({ data }: any) {
                             }
                         </tbody>
                     </table>
-                </div>
-            }
-        </>
+                </motion.div>
+            </div>
+        </div>
     )
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {motion} from "framer-motion"
 
 type Props = {}
 
@@ -12,19 +13,19 @@ export default function TableRow({ data }: any) {
             <td>{data.gross}</td>
             <td>{data.status}</td>
             <td className='relative'>
-                <div className='flex flex-col gap-[5px] justify-center items-start relative z-[10]' onClick={() => setContextMenu(!contextMenu)}>
+                <div className='cursor-pointer flex flex-col gap-[5px] justify-center items-start relative z-[10]' onClick={() => setContextMenu(!contextMenu)}>
                     <div className='min-w-[4px] min-h-[4px] bg-[#473a3a] rounded-full'></div>
                     <div className='min-w-[4px] min-h-[4px] bg-[#473a3a] rounded-full'></div>
                     <div className='min-w-[4px] min-h-[4px] bg-[#473a3a] rounded-full'></div>
                 </div>
                 {contextMenu &&
-                    <div style={{boxShadow:"1px 2px 8px #00000030"}} className='absolute bg-white z-[2000]  w-[165px] h-[139px] right-[20%] '>
+                    <motion.div initial={{maxHeight:0}} animate={{maxHeight:"1000px"}} style={{boxShadow:"1px 2px 8px #00000030"}} className='absolute bg-white z-[2000]  w-[165px] h-[139px] right-[20%] '>
                         <div className='flex flex-col justify-around m-auto w-[80%] h-full'>
-                            <p className='font-[400] text-[16px] leading-[26px] text-[black]'>Copy Event url</p>
-                            <p className='font-[400] text-[16px] leading-[26px] text-[black]'>View</p>
-                            <p className='font-[400] text-[16px] leading-[26px] text-[black]'>Edit</p>
+                            <motion.p whileHover={{color:"#FB4A04"}} className='font-[400] cursor-pointer text-[16px] leading-[26px] text-[black]'>Copy Event url</motion.p>
+                            <motion.p whileHover={{color:"#FB4A04"}} className='font-[400] cursor-pointer text-[16px] leading-[26px] text-[black]'>View</motion.p>
+                            <motion.p whileHover={{color:"#FB4A04"}} className='font-[400] cursor-pointer text-[16px] leading-[26px] text-[black]'>Edit</motion.p>
                         </div>
-                    </div>
+                    </motion.div>
                 }
             </td>
         </tr>

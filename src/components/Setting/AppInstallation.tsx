@@ -10,14 +10,14 @@ let data1: any[] = [
         appName: "mailer",
         description: "Marketing",
         installed: "2 weeks",
-        delete: "./trash-2.svg"
+        delete: "/trash-2.svg"
     },
     {
         id: 1,
         appName: "mailer",
         description: "Marketing",
         installed: "2 weeks",
-        delete: "./trash-2.svg"
+        delete: "/trash-2.svg"
     },
 ]
 
@@ -26,12 +26,12 @@ export default function AppInstallation({ }: Props) {
         <div className='w-[78.04034582132564vw] flex flex-col justify-center items-center'>
             <div className='w-full whitespace-nowrap overflow-auto'>
                 <table className="transition-all table-fixed min-w-[400px] w-full mt-[43px] relative z-10 mb-[50px]">
-                    <thead className='bg-[#fed4c3]'>
+                    <thead className='bg-[#FB4A04]'>
                         <tr className=''>
-                            <th className='py-[17px] pl-[1%] text-left w-[50%] sm:w-[25%] xsm:w-auto'>App Name</th>
-                            <th className='py-[17px]'>Description</th>
-                            <th className='py-[17px]'>Installed</th>
-                            <th className='py-[17px]'>Actions</th>
+                            <th className='py-[17px] text-white pl-[1%] text-left w-[50%] sm:w-[25%] xsm:w-auto'>App Name</th>
+                            <th className='py-[17px] text-white'>Description</th>
+                            <th className='py-[17px] text-white'>Installed</th>
+                            <th className='py-[17px] text-white'>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -41,7 +41,7 @@ export default function AppInstallation({ }: Props) {
                                     <td className='py-[17px] pl-[1%] text-left w-[50%] sm:w-[25%] xsm:w-auto'>{d.appName}</td>
                                     <td className='py-[17px] '>{d.description}</td>
                                     <td className='py-[17px] '>{d.installed}</td>
-                                    <td className='py-[17px] '>{d.delete}</td>
+                                    <td className='py-[17px] flex justify-center'><img src={d.delete} /></td>
                                 </tr>
                             )
                         })
@@ -49,7 +49,7 @@ export default function AppInstallation({ }: Props) {
                     </tbody>
                 </table>
             </div>
-            <Button width="255px" height='47px' text="Browse Apps" style={{ borderRadius: "0px", fontSize: "20px", alignSelf: "flex-end", marginTop: "150px" }} />
+            <Button whileHover={{background:"#fff",color:"#FB4A04",border:"1px solid #FB4A04"}} width="255px" height='47px' text="Browse Apps" style={{background:"#FB4A04", borderRadius: "0px", fontSize: "20px", alignSelf: "flex-end", marginTop: "150px" }} />
         </div>
     )
 }

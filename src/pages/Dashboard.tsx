@@ -31,21 +31,21 @@ export default function Dashboard({ }: Props) {
                 </div>
 
                 <ul className='xsm:hidden sm:hidden text-[#493c3c] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[2.881844380403458vw] mr-[7.37vw]'>
-                    <li className='flex items-center gap-[0.4610951008645533vw] '>
-                        <p className='text-[#1977F3] font-[400] text-[20px] leading-[23px] text-center'>+</p>
-                        <p className='text-[#1977F3] font-[400] text-[14px] leading-[23px] text-center'>Create Events</p>
-                    </li>
+                    <motion.li whileHover={{color:"#FB4A04"}} className='flex items-center gap-[0.4610951008645533vw] '>
+                        <motion.p className='text-[#1977F3] font-[400] text-[20px] leading-[23px] text-center'>+</motion.p>
+                        <motion.p whileHover={{color:"#FB4A04"}} className='text-[#1977F3] font-[400] text-[14px] leading-[23px] text-center'>Create Events</motion.p>
+                    </motion.li>
                     <li className='flex items-center  gap-[0.4610951008645533vw] '>
-                        <img src='./heart.png' alt='' />
-                        <p className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Likes</p>
+                        <motion.img  src='./heart.png' alt='' />
+                        <motion.p whileHover={{color:"#FB4A04"}} className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Likes</motion.p>
                     </li>
                     <li className='flex items-center gap-[0.4610951008645533vw] '>
                         <img src='./ticket.png' alt='' />
-                        <p className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Ticket</p>
+                        <motion.p whileHover={{color:"#FB4A04"}} className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Ticket</motion.p>
                     </li>
                     <li className='flex items-center gap-[0.4610951008645533vw] '>
                         <img src='./profile.png' alt='' />
-                        <p className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>partymode@gmail.com</p>
+                        <motion.p whileHover={{color:"#FB4A04"}} className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>partymode@gmail.com</motion.p>
                     </li>
                     <li className='relative flex items-center'>
                         <div className='flex flex-col items-center gap-[5px]' onClick={() => { setOpenContextMenu(!openContextMenu) }}>
@@ -70,28 +70,28 @@ export default function Dashboard({ }: Props) {
                         <ul style={showMobileNav ? { maxHeight: "1000px" } : { maxHeight: "0px", overflow: "hidden" }} className='transition-all xsm:flex sm:flex flex-col hidden text-[#493c3c] py-[10px] items-center text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] gap-[5.244vw]'>
                             <li className='flex items-center gap-[8px]'>
                                 <p className='text-[#1977F3] font-[400] text-[14px] leading-[23px] text-center'>+</p>
-                                <p className='text-[#1977F3] font-[400] text-[14px] leading-[23px] text-center'>Create Events</p>
+                                <motion.p whileHover={{color:"#FB4A04"}} className='text-[#1977F3] font-[400] text-[14px] leading-[23px] text-center'>Create Events</motion.p>
                             </li>
                             <li className='flex items-center gap-[8px]'>
                                 <img src='./heart.png' alt='' />
-                                <p className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Likes</p>
+                                <motion.p whileHover={{color:"#FB4A04"}} className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Likes</motion.p>
                             </li>
                             <li className='flex items-center gap-[8px]'>
                                 <img src='./ticket.png' alt='' />
-                                <p className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Ticket</p>
+                                <motion.p whileHover={{color:"#FB4A04"}} className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Ticket</motion.p>
                             </li>
                             <li className='flex items-center gap-[8px]'>
                                 <img src='./profile.png' alt='' />
-                                <p className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>partymode@gmail.com</p>
+                                <motion.p whileHover={{color:"#FB4A04"}} className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>partymode@gmail.com</motion.p>
                             </li>
                             <li className='flex items-center gap-[8px]'>
-                                <p className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Explore Community</p>
+                                <motion.p whileHover={{color:"#FB4A04"}} className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Explore Community</motion.p>
                             </li>
                             <li className='flex items-center gap-[8px]'>
-                                <p className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Invite a Friend</p>
+                                <motion.p whileHover={{color:"#FB4A04"}} className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Invite a Friend</motion.p>
                             </li>
                             <li className='flex items-center gap-[8px]'>
-                                <p className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Vibe Check</p>
+                                <motion.p whileHover={{color:"#FB4A04"}} className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Vibe Check</motion.p>
                             </li>
 
                         </ul>
@@ -101,7 +101,7 @@ export default function Dashboard({ }: Props) {
                 <section className='dashboardBackground h-[778px] w-[100%] flex relative'>
                     <div className='flex flex-col justify-center absolute top-[332px] left-[65%] xsm:left-[10vw] sm:left-[50vw]'>
                         <h1 className="mb-[23px] eventTextFont w-[31.435158501440924vw] min-w-[260px] font-[400] text-[96px] leading-[113px] xsm:leading-[65px] sm:leading-[65px] md:leading-[65px] lg:leading-[70px] xl:leading-[80px] text-[#ffffff]">NOW <span className='eventTextFont text-[64px]'>IS YOUR</span> TIME</h1>
-                        <Button initial={{ scale: 1, backgroundColor: '#FB4A04', color: "#fff" }} whileHover={{ scale: 1.02, backgroundColor: "#ffffff", border: "3px solid #FB4A04", color: "#FB4A04" }} style={{ minWidth: "240px" }}  width={"17.75vw"} height={"61px"} text={"Find your next Event"} />
+                        <Button initial={{ backgroundColor: '#FB4A04', color: "#fff" }} whileHover={{ scale: 1.02, backgroundColor: "#ffffff", border: "3px solid #FB4A04", color: "#FB4A04" }} style={{ minWidth: "240px" }}  width={"17.75vw"} height={"61px"} text={"Find your next Event"} />
                     </div>
                 </section>
 

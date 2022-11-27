@@ -1,4 +1,5 @@
 import React from 'react'
+import {motion} from "framer-motion"
 
 type Props = {}
 
@@ -13,10 +14,11 @@ export default function ProfileEdit({}: Props) {
             <p className='text-center w-[230px] font-[400] text-[14px] leading-[22.8px] text-[#231414D4]'>Drag and drop JPEG,PNG no longer than 10 mb</p>
         </div>
 
-        <input className='indent-[28px] mt-[102px] font-[400] text-[16px] leading-[26.06px] text-[#231414D4] border-[1px] border-[#231414D4] w-full xsm:w-[90%] sm:w-[80%] md:w-[70%] h-[68px]' placeholder='Organisation name'/>
-        <select className='indent-[28px] mt-[102px] mb-[39px] font-[400] text-[16px] leading-[26.06px] text-[#231414D4] border-[1px] border-[#231414D4] w-full xsm:w-[90%] sm:w-[80%] md:w-[70%] h-[68px]'>
+        <motion.input whileHover={{scale:1.03}} className='indent-[28px] mt-[102px] font-[400] text-[16px] leading-[26.06px] text-[#231414D4] border-[1px] border-[#231414D4] w-full xsm:w-[90%] sm:w-[80%] md:w-[70%] h-[68px]' placeholder='Organisation name'/>
+        <motion.select whileHover={{scale:1.03}} className='indent-[28px] mt-[102px] mb-[39px] font-[400] text-[16px] leading-[26.06px] text-[#231414D4] border-[1px] border-[#231414D4] w-full xsm:w-[90%] sm:w-[80%] md:w-[70%] h-[68px]'>
             <option>Preferred Country</option>
-        </select>
+            <option>Preferred Country</option>
+        </motion.select>
     </div>
   )
 }

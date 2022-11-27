@@ -29,7 +29,7 @@ const TicketVerifiedEmailLazy = React.lazy(()=> import('./pages/TicketVerifiedEm
 // import CreatorDashboard from './pages/CreatorDashboard';
 const CreatorDashboardLazy = React.lazy(()=> import('./pages/CreatorDashboard'))
 // import EventsDashboard from './pages/EventsDashboard';
-const EventsDashboardLazy = React.lazy(()=> import('./pages/CreatorDashboard'))
+const EventsDashboardLazy = React.lazy(()=> import('./pages/EventsDashboard'))
 // import Orders from './components/EventsDashboard/Orders';
 const OrdersLazy = React.lazy(()=> import('./components/EventsDashboard/Orders'))
 // import ReportAnalysis from './pages/ReportAnalysis';

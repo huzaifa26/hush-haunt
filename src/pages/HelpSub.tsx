@@ -39,7 +39,9 @@ export default function HelpSub({ }: Props) {
                             <p className='font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26px] text-[#473a3a] mb-[37px]'>Livestreams and videos on demand are accessed and viewed through Tixr. You can get here through Partymode.com, your Partymode confirmation email, or the event page.</p>
                             <h3 className='font-[700] text-[clamp(14px,1.1527377521613833vw,20px)] leading-[33px] text-[#473a3a]'>1. Your Partymode Account</h3>
                             <p className='font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26px] text-[#473a3a] mb-[23px]'>You can access your livestreams and on demand videos directly through your Partymode account. By logging in at Partymode.com, hover over your initials in the upper right hand corner, click My Media, hover over the event card under your Live Streams or Videos section, and click the play button in the left hand corner on the event card. </p>
-                            <LazyImage src='helpsubImage.png' classes='mb-[52px]' />
+                            <motion.div whileHover={{scale:1.03}}>
+                                <LazyImage src='helpsubImage.png' classes='mb-[52px]' />
+                            </motion.div>
                             <h3 className='font-[700] text-[clamp(14px,1.1527377521613833vw,20px)] leading-[33px] text-[#473a3a] mb-[30px]'>2. Your Email Confirmation</h3>
                             <p className='font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26px] text-[#473a3a] mb-[30px]'>You can also access your livestream or videos on demand right from your confirmation email! Click the blue</p>
                             <p className='font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26px] text-[#473a3a]'>button that says Go to Livestream under the ticket name and it will direct you to the livestream or video on demand screen.PLEASE NOTE: You must be logged in to your Party account before being able to view the live stream and you must press play on both the event card and streaming page for the livestream or video on demand to begin.</p>

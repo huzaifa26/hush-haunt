@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import Footer from '../components/General/Footer'
 import LazyImage from '../components/General/LazyImage'
 import SearchBar from '../components/General/SearchBar'
+import { motion } from "framer-motion"
 
 type Props = {}
 
-export default function({ }: Props) {
+export default function ({ }: Props) {
 
     const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
 
@@ -14,7 +15,7 @@ export default function({ }: Props) {
             <nav className='flex justify-between items-center w-[100%]'>
                 <div className='flex items-center gap-[3.28vw] xsm:justify-between sm:justify-between xsm:w-full sm:w-full'>
                     <LazyImage alt="" src={"./Logo.png"} classes='ml-[8px] min-w-[80px] ' />
-                    <SearchBar whileHover={{scale:1.03}} style={{ flex: "1" }} />
+                    <SearchBar whileHover={{ scale: 1.03 }} style={{ flex: "1" }} />
                     <div onClick={() => setShowMobileNav(!showMobileNav)} className='xsm:flex sm:flex cursor-pointer hidden flex-col items-center gap-[5px] mr-[10px]'>
                         <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>
                         <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>
@@ -23,25 +24,25 @@ export default function({ }: Props) {
                 </div>
 
                 <ul className='text-[#493c3c] xsm:hidden sm:hidden text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[31px] mr-[7.37vw] items-center'>
-                    <li className='flex items-center gap-[8px]'>
-                        <p className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>Back</p>
-                    </li>
-                    <li className='flex items-center gap-[8px]'>
+                    <motion.li className='flex items-center gap-[8px]'>
+                        <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>Back</motion.p>
+                    </motion.li>
+                    <motion.li className='flex items-center gap-[8px]'>
                         <img src='./profile.png' alt='' />
-                        <p className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>partymode@gmail.com</p>
-                    </li>
+                        <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>partymode@gmail.com</motion.p>
+                    </motion.li>
                 </ul>
             </nav>
 
             {showMobileNav &&
                 <ul style={showMobileNav ? { maxHeight: "1000px" } : { maxHeight: "0px", overflow: "hidden" }} className='flex-col-reverse transition-all xsm:flex sm:flex hidden text-[#493c3c] py-[10px] items-center text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] gap-[5.244vw]'>
-                    <li className='flex items-center gap-[8px]'>
-                        <p className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>Back</p>
-                    </li>
-                    <li className='flex items-center gap-[8px]'>
+                    <motion.li className='flex items-center gap-[8px]'>
+                        <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>Back</motion.p>
+                    </motion.li>
+                    <motion.li className='flex items-center gap-[8px]'>
                         <img src='./profile.png' alt='' />
-                        <p className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>partymode@gmail.com</p>
-                    </li>
+                        <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>partymode@gmail.com</motion.p>
+                    </motion.li>
                 </ul>
             }
 
@@ -57,7 +58,17 @@ export default function({ }: Props) {
                             <img src='./download.png' alt='' />
                         </div>
                     </div>
-                    <LazyImage src='./likes1.png' classes='w-[22.01729106628242vw] min-w-[260px] xsm:w-[80%]' />
+                    <motion.div className='' whileHover={{scale:1.03}} initial={{ opacity: 0, scale: 0.1 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 0.4,
+                            delay: 0.1,
+                            ease: [0, 0.71, 0.2, 1.01]
+                        }}>
+
+                        <LazyImage src='./likes1.png' classes='shadow-xl w-[22.01729106628242vw] min-w-[260px] xsm:w-[80%]' />
+                    </motion.div>
                 </div>
 
                 <div className='max-w-[63.976945244956774vw] min-h-[2px] bg-[#D9D9D9] my-[55px]'></div>
@@ -71,7 +82,16 @@ export default function({ }: Props) {
                             <img src='./download.png' alt='' />
                         </div>
                     </div>
-                    <LazyImage src='./likes2.png' classes='w-[22.01729106628242vw] min-w-[260px] xsm:w-[80%]' />
+                    <motion.div  whileHover={{scale:1.03}} initial={{ opacity: 0, scale: 0.1 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: true }}
+                        transition={{
+                            duration: 0.4,
+                            delay: 0.1,
+                            ease: [0, 0.71, 0.2, 1.01]
+                        }}>
+                        <LazyImage src='./likes2.png' classes='shadow-xl w-[22.01729106628242vw] min-w-[260px] xsm:w-[80%]' />
+                    </motion.div>
                 </div>
             </div>
             <div className='mt-[219px]'>
