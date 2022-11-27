@@ -50,14 +50,6 @@ export default function Layout({ children }: Props) {
             <nav className='flex justify-between items-center w-[100%] h-85px'>
                 <div className='flex items-center gap-[3.28vw]'>
                     <motion.img
-                        initial={{ opacity: 0, scale: 0.1 }}
-                        whileInView={{ opacity: 1, scale: 1 }}
-                        viewport={{ once: true }}
-                        transition={{
-                            duration: 0.4,
-                            delay: 0.1,
-                            ease: [0, 0.71, 0.2, 1.01]
-                        }}
                         alt="" src={"/Logo.png"} className="w-[80px] xsm:min-w-[57px] sm:min-w-[57px]" />
                     <div className='xsm:hidden '>
                         <SearchBar whileHover={{ scale: 1.03 }} />
