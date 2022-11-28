@@ -3,6 +3,8 @@ import BarChart from '../components/ReportAnalysis/BarChart'
 import Layout from '../components/General/Layout'
 import SingleBarChart from '../components/ReportAnalysis/SingleBarChart';
 import PieChart from '../components/ReportAnalysis/PieChart';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import LineChart from '../components/ReportAnalysis/LineChart';
 
 type Props = {}
