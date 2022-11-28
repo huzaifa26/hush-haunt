@@ -89,9 +89,9 @@ function App() {
           <Route path='/report-analysis' element={<React.Suspense fallback={<Layout><LoadingAnimation /></Layout>}><ReportAnalysisLazy /></React.Suspense>}></Route>
           <Route path='/invoice-and-billing' element={<React.Suspense fallback={<Layout><LoadingAnimation /></Layout>}><InvoiceAndBillingLazy /></React.Suspense>}></Route>
           <Route path='/setting' element={<React.Suspense fallback={<Layout><LoadingAnimation /></Layout>}><SettingLazy /></React.Suspense>}>
-            <Route index element={<React.Suspense fallback={<Layout><LoadingAnimation /></Layout>}><ProfileEditLazy /></React.Suspense>}></Route>
-            <Route path='invite-team' element={<React.Suspense fallback={<Layout><LoadingAnimation /></Layout>}><InviteTeamLazy /></React.Suspense>}></Route>
-            <Route path='app-installation' element={<React.Suspense fallback={<Layout><LoadingAnimation /></Layout>}><AppInstallationLazy /></React.Suspense>}></Route>
+            <Route index element={<React.Suspense fallback={<LoadingAnimation />}><ProfileEditLazy /></React.Suspense>}></Route>
+            <Route path='invite-team' element={<React.Suspense fallback={<LoadingAnimation />}><InviteTeamLazy /></React.Suspense>}></Route>
+            <Route path='app-installation' element={<React.Suspense fallback={<LoadingAnimation />}><AppInstallationLazy /></React.Suspense>}></Route>
           </Route>
           <Route path='/create-event' element={<React.Suspense fallback={<LoadingAnimation />}><CreateEventLazy /></React.Suspense>}>
             <Route index element={<React.Suspense fallback={<LoadingAnimation />}><BasicInfoLazy /></React.Suspense>}></Route>

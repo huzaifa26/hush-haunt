@@ -39,7 +39,9 @@ export default function Login({ }: Props) {
                         </div>
 
                         <div className='flex flex-col xsm:items-center'>
-                            <Button  whileHover={{ background: "#fff", border: "3px solid #FB4A04", color: "#FB4A04" }} width="27.608069164265128vw" height='57px' text="LogIn" style={{ background: "#FB4A04", color: "#fff", marginTop: "85px", minWidth: "100%" }} />
+                            <Link to={"/creator-dashboard"}>
+                                <Button whileHover={{ background: "#fff", border: "3px solid #FB4A04", color: "#FB4A04" }} width="27.608069164265128vw" height='57px' text="LogIn" style={{ background: "#FB4A04", color: "#fff", marginTop: "85px", minWidth: "100%" }} />
+                            </Link>
                             <Link to={"/signup"} className="min-w-[100%]">
                                 <Button whileHover={{ background: "#FB4A04", border: "3px solid #FB4A04", color: "#fff" }} width="27.608069164265128vw" height='57px' text="SignUp" style={{ background: "#fff", color: "#FB4A04", border: "1px solid #473a3a", marginTop: "40px", minWidth: "100%" }} />
                             </Link>

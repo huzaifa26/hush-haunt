@@ -145,7 +145,7 @@ export default function EventDescriptions({ }: Props) {
 
 
   const [showModal1, setShowModal1] = useState<boolean>(false);
-  const [showModal2, setShowModal2] = useState<boolean>(false);
+  const [showModal2, setShowModal2] = useState<boolean>(true);
 
   return (
     <>

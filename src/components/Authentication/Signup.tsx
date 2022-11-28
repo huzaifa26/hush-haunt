@@ -2,6 +2,7 @@ import React from 'react'
 import Button from '../General/Button'
 import LazyImage from '../General/LazyImage'
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 type Props = {}
 
@@ -17,7 +18,7 @@ export default function Signup({ }: Props) {
                 <div className='w-[52%] xsm:w-[70%] sm:w-[62%] m-auto'>
                     <div className='pt-[58px]'>
                         {/* <img src='./logo.png' /> */}
-                        <LazyImage alt="" src="/logo.png"/>
+                        <LazyImage alt="" src="/logo.png" />
                         <h1 className='font-[700] text-[clamp(20px,2.07492795389049vw,36px)] leading-[58px] text-[#473a3a] mt-[13px]'>Signup</h1>
                     </div>
 
@@ -41,7 +42,9 @@ export default function Signup({ }: Props) {
                             </div>
                         </div>
 
-                        <Button whileHover={{ background: "#fff", border: "3px solid #FB4A04", color: "#FB4A04" }} width="27.608069164265128vw" height='57px' text="SignUp" style={{ background: "#FB4A04", color: "#fff", marginTop: "85px",minWidth:"100%" }} />
+                        <Link to="/interests">
+                            <Button whileHover={{ background: "#fff", border: "3px solid #FB4A04", color: "#FB4A04" }} width="27.608069164265128vw" height='57px' text="SignUp" style={{ background: "#FB4A04", color: "#fff", marginTop: "85px", minWidth: "100%" }} />
+                        </Link>
 
                         <div className='flex justify-between items-center mt-[37px]'>
                             <div className='min-w-[8.247838616714697vw] bg-[#e0e0e0] h-[1px]'> </div>
