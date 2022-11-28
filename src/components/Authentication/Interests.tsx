@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import Button from '../General/Button'
 
 type Props = {}
@@ -53,7 +54,9 @@ export default function Interests({ }: Props) {
                     </div>
                 </div>
                 <div className='xsm:w-[80%] xsm:m-auto sm:w-[80%] sm:m-auto flex justify-end'>
-                    <Button whileHover={{ background: "rgba(0,0,0,0)", color: "#473a3a" }} width='231px' height="58px" text={"Complete"} style={{ alignSelf: "flex-end", margin: "80px 0", border: "3px solid #FB4A04", borderRadius: "20px", fontSize: "14px", lineHeight: "22.8px", color: "#fff", background: "#FB4A04" }}></Button>
+                    <Link to="/dashboard">
+                        <Button whileHover={{ background: "rgba(0,0,0,0)", color: "#473a3a" }} width='231px' height="58px" text={"Complete"} style={{ alignSelf: "flex-end", margin: "80px 0", border: "3px solid #FB4A04", borderRadius: "20px", fontSize: "14px", lineHeight: "22.8px", color: "#fff", background: "#FB4A04" }}></Button>
+                    </Link>
                 </div>
             </div>
         </div>

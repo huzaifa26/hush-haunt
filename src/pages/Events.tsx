@@ -262,7 +262,7 @@ export default function Events({ }: Props) {
                     <Link to={"/community"}>
                         <motion.li whileHover={{ color: "#FB4A04" }}>Live Stream</motion.li>
                     </Link>
-                    <Link to={"/help-sub"}>
+                    <Link to={"/contact-us"}>
                         <motion.li whileHover={{ color: "#FB4A04" }}>Help</motion.li>
                     </Link>
                     <Link to="/login">
@@ -280,7 +280,9 @@ export default function Events({ }: Props) {
                     <Link to={"/community"}>
                         <motion.li whileHover={{ color: "#FB4A04" }}>Live Stream</motion.li>
                     </Link>
-                    <motion.li whileHover={{ color: "#FB4A04" }}>Help</motion.li>
+                    <Link to={"/contact-us"}>
+                        <motion.li whileHover={{ color: "#FB4A04" }}>Help</motion.li>
+                    </Link>
                     <Link to="/login">
                         <motion.li whileHover={{ color: "#FB4A04" }}>Log In</motion.li>
                     </Link>

@@ -39,7 +39,7 @@ export default function Login({ }: Props) {
                         </div>
 
                         <div className='flex flex-col xsm:items-center'>
-                            <Link to={"/creator-dashboard"}>
+                            <Link to={"/dashboard"}>
                                 <Button whileHover={{ background: "#fff", border: "3px solid #FB4A04", color: "#FB4A04" }} width="27.608069164265128vw" height='57px' text="LogIn" style={{ background: "#FB4A04", color: "#fff", marginTop: "85px", minWidth: "100%" }} />
                             </Link>
                             <Link to={"/signup"} className="min-w-[100%]">

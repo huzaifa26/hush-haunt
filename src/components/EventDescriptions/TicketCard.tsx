@@ -7,10 +7,11 @@ type Props = {
   text: string,
   price: string,
   priceDescription: string | null,
-  icon: string
+  icon: string,
+  modalHandler: any
 }
 
-export default function TicketCard({ id, image, text, price, priceDescription, icon }: Props) {
+export default function TicketCard({ id, image, text, price, priceDescription, icon, modalHandler }: Props) {
   return (
     <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} whileHover={{ scale: 1.01 }} key={id} className='shadow-md md:justify-center flex xsm:flex-col w-[42.305vw] xl:w-[41vw] lg:w-[41vw] md:w-[41vw] sm:w-[80vw] xsm:w-[90vw] md:min-w-[70%]'>
       <LazyImage alt="" src={image} classes="w-[13.314vw] xsm:min-w-[100%] min-w-[231px]" />
@@ -24,8 +25,8 @@ export default function TicketCard({ id, image, text, price, priceDescription, i
             }
           </h2>
         </div>
-        <div className='flex justify-center items-center w-[4.43vw] bg-[#FB4A04] xsm:min-w-[77px] sm:min-w-[55px] md:min-w-[60px]'>
-          <LazyImage alt="" src={icon} />
+        <div onClick={()=> modalHandler()} className='cursor-pointer flex justify-center items-center w-[4.43vw] bg-[#FB4A04] xsm:min-w-[77px] sm:min-w-[55px] md:min-w-[60px]'>
+          <LazyImage  alt="" src={icon} />
         </div>
       </div>
     </motion.div>

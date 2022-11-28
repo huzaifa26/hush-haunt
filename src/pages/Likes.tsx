@@ -3,6 +3,7 @@ import Footer from '../components/General/Footer'
 import LazyImage from '../components/General/LazyImage'
 import SearchBar from '../components/General/SearchBar'
 import { motion } from "framer-motion"
+import { Link } from 'react-router-dom'
 
 type Props = {}
 
@@ -24,9 +25,11 @@ export default function ({ }: Props) {
                 </div>
 
                 <ul className='text-[#493c3c] xsm:hidden sm:hidden text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[31px] mr-[7.37vw] items-center'>
-                    <motion.li className='flex items-center gap-[8px]'>
-                        <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>Back</motion.p>
-                    </motion.li>
+                    <Link to="/dashboard">
+                        <motion.li className='flex items-center gap-[8px]'>
+                            <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>Back</motion.p>
+                        </motion.li>
+                    </Link>
                     <motion.li className='flex items-center gap-[8px]'>
                         <img src='./profile.png' alt='' />
                         <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>partymode@gmail.com</motion.p>
@@ -36,9 +39,11 @@ export default function ({ }: Props) {
 
             {showMobileNav &&
                 <ul style={showMobileNav ? { maxHeight: "1000px" } : { maxHeight: "0px", overflow: "hidden" }} className='flex-col-reverse transition-all xsm:flex sm:flex hidden text-[#493c3c] py-[10px] items-center text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] gap-[5.244vw]'>
-                    <motion.li className='flex items-center gap-[8px]'>
-                        <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>Back</motion.p>
-                    </motion.li>
+                    <Link to="/dashboard">
+                        <motion.li className='flex items-center gap-[8px]'>
+                            <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>Back</motion.p>
+                        </motion.li>
+                    </Link>
                     <motion.li className='flex items-center gap-[8px]'>
                         <img src='./profile.png' alt='' />
                         <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>partymode@gmail.com</motion.p>
@@ -58,7 +63,7 @@ export default function ({ }: Props) {
                             <img src='./download.png' alt='' />
                         </div>
                     </div>
-                    <motion.div className='' whileHover={{scale:1.03}} initial={{ opacity: 0, scale: 0.1 }}
+                    <motion.div className='' whileHover={{ scale: 1.03 }} initial={{ opacity: 0, scale: 0.1 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{
@@ -82,7 +87,7 @@ export default function ({ }: Props) {
                             <img src='./download.png' alt='' />
                         </div>
                     </div>
-                    <motion.div  whileHover={{scale:1.03}} initial={{ opacity: 0, scale: 0.1 }}
+                    <motion.div whileHover={{ scale: 1.03 }} initial={{ opacity: 0, scale: 0.1 }}
                         whileInView={{ opacity: 1, scale: 1 }}
                         viewport={{ once: true }}
                         transition={{

@@ -18,7 +18,7 @@ export default function ContactUs({ }: Props) {
     }, [])
     return (
         <div className='w-[100%]'>
-            <motion.nav style={{boxShadow:"1px 1px 8px #00000020"}} className='fixed transition-all z-[1000] flex gap-[8.24207492795389vw] items-center w-[100%] bg-white'>
+            <motion.nav style={{ boxShadow: "1px 1px 8px #00000020" }} className='fixed transition-all z-[1000] flex gap-[8.24207492795389vw] items-center w-[100%] bg-white'>
                 <LazyImage alt="" src={"./Logo.png"} style={{ marginLeft: "15px", minWidth: "85px" }} />
                 <motion.ul className='text-[#473a3a] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[5.244vw] mr-[8.94vw]'>
                     <Link to="#">
@@ -35,7 +35,7 @@ export default function ContactUs({ }: Props) {
                     <div className='relative z-20 pt-[150px] ml-[14.178674351585014vw] xsm:ml-[5vw]'>
                         <h1 className='font-[700] text-[clamp(24px,2.76657060518732vw,48px)] text-[#fff] xsm:leading-[40px] sm:leading-[40px] leading-[80px]'>PartyMode Help Center</h1>
                         <p className='font-[700] text-[clamp(24px,2.76657060518732vw,48px)] text-[#fff] xsm:leading-[40px] sm:leading-[40px] leading-[80px]'>Get Answers and resources</p>
-                        <motion.input whileHover={{scale:1.03}} className='border-[3] border-[#f6ccbb] w-[20.634005763688762vw] min-w-[220px] h-[52px] indent-[3.861671469740634vw] !bg-[#fff]' placeholder='Search Help' style={{ backgroundImage: `url("../assets/contactSearch.png")`, backgroundRepeat: "no-repeat", backgroundPosition: "18px center" }}></motion.input>
+                        <motion.input whileHover={{ scale: 1.03 }} className='border-[3] border-[#f6ccbb] w-[20.634005763688762vw] min-w-[220px] h-[52px] indent-[3.861671469740634vw] !bg-[#fff]' placeholder='Search Help' style={{ backgroundImage: `url("../assets/contactSearch.png")`, backgroundRepeat: "no-repeat", backgroundPosition: "18px center" }}></motion.input>
                     </div>
                 </section>
 
@@ -53,7 +53,9 @@ export default function ContactUs({ }: Props) {
                                 <div className='mt-[17px]'>
                                     <div className='flex items-start gap-[9px]'>
                                         <img className="pt-[2%]" src='darkCircle.png' alt='' />
-                                        <p className='font-[400] text-[clamp(14px,1.1527377521613833vw,20px)] leading-[52px] md:leading-[35px] xsm:leading-[30px] sm:leading-[30px] text-[#473a3a]'>Account Setup</p>
+                                        <Link to="/help-sub">
+                                            <motion.div whileHover={{color:"#FB4A04"}} className='font-[400] text-[clamp(14px,1.1527377521613833vw,20px)] leading-[52px] md:leading-[35px] xsm:leading-[30px] sm:leading-[30px] text-[#473a3a]'>Account Setup</motion.div>
+                                        </Link>
                                     </div>
                                     <div className='flex items-start gap-[9px]'>
                                         <img className="pt-[2%]" src='darkCircle.png' alt='' />
@@ -176,7 +178,7 @@ export default function ContactUs({ }: Props) {
 
                             <div className='flex-1'>
                                 <h3 className='font-[700] text-[clamp(22px,1.8443804034582132vw,32px)] leading-[52px] md:leading-[35px] xsm:leading-[35px] sm:leading-[35px] text-[#473a3a] h-[65px]'>Need More Support </h3>
-                                <Button whileHover={{background:"transparent",border:"3px solid #FB4A04",color:"#FB4A04"}} width='231px' height='58px' text="Contact us" style={{ background: "#FB4A04", borderRadius: "20px", marginTop: "5px" }} />
+                                <Button whileHover={{ background: "transparent", border: "3px solid #FB4A04", color: "#FB4A04" }} width='231px' height='58px' text="Contact us" style={{ background: "#FB4A04", borderRadius: "20px", marginTop: "5px" }} />
                             </div>
                         </div>
                     </div>

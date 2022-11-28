@@ -75,7 +75,7 @@ function App() {
         <Route path='/subscription-and-pricing' element={<React.Suspense fallback={<LoadingAnimation />}><SubscriptionAndPricingLazy /></React.Suspense>}></Route>
         <Route path='/contact-us' element={<React.Suspense fallback={<LoadingAnimation />}><ContactUsLazy /></React.Suspense>}></Route>
         <Route path='/community' element={<React.Suspense fallback={<LoadingAnimation />}><CommunityLazy /></React.Suspense>}></Route>
-        <Route path='/community2' element={<React.Suspense fallback={<LoadingAnimation />}><Community2Lazy /></React.Suspense>}></Route>
+        <Route path='/community-join' element={<React.Suspense fallback={<LoadingAnimation />}><Community2Lazy /></React.Suspense>}></Route>
         <Route path='/help-sub' element={<React.Suspense fallback={<LoadingAnimation />}><HelpSubLazy /></React.Suspense>}></Route>
         <Route path='/dashboard' element={<React.Suspense fallback={<LoadingAnimation />}><DashboardLazy /></React.Suspense>}></Route>
         <Route path='/likes' element={<React.Suspense fallback={<LoadingAnimation />}><LikesLazy /></React.Suspense>}></Route>

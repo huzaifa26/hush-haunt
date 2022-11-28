@@ -145,7 +145,7 @@ export default function EventDescriptions({ }: Props) {
 
 
   const [showModal1, setShowModal1] = useState<boolean>(false);
-  const [showModal2, setShowModal2] = useState<boolean>(true);
+  const [showModal2, setShowModal2] = useState<boolean>(false);
 
   return (
     <>
@@ -243,7 +243,7 @@ export default function EventDescriptions({ }: Props) {
 
         <section className='mt-[48px] mb-[76px] w-[88%] m-auto flex flex-wrap gap-[20px] sm:justify-center md:flex-col md:items-center'>
           {ticketData.map((ticket) => {
-            return <TicketCard {...ticket} />
+            return <TicketCard {...ticket} modalHandler={()=>setShowModal2(true)}/>
           })}
         </section>
 
