@@ -9,10 +9,10 @@ type Props = {}
 export default function HelpSub({ }: Props) {
     return (
         <div>
-            <motion.nav style={{ boxShadow: "1px 1px 8px #00000020" }} className='fixed transition-all z-[1000] top-0 flex justify-between items-center w-[100%] bg-white'>
+            <motion.nav style={{ boxShadow: "1px 1px 8px #00000020" }} className='fixed transition-all z-[1000] flex gap-[8.24207492795389vw] items-center w-[100%] bg-white'>
                 <LazyImage alt="" src={"./Logo.png"} style={{ marginLeft: "15px", minWidth: "85px" }} />
                 <motion.ul className='text-[#473a3a] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[5.244vw] mr-[8.94vw]'>
-                    <Link to="/contact-us">
+                <Link to="/contact-us">
                         <motion.li whileHover={{ color: "#FB4A04" }} className="text-inherit">Help centers</motion.li>
                     </Link>
                     <Link to="/">

@@ -65,18 +65,24 @@ export default function Layout({ children }: Props) {
                 </ul>
             </nav>
             <div className='flex'>
-                <div className='w-[78px] xsm:w-[57px] sm:w-[57px] bg-[#FB4A04] h-[1015px] flex flex-col items-end pt-[65px] gap-[12px]'>
-                    {drawer.map((item) => {
-                        return (
-                            <NavLink to={item.route} end>
-                                <div style={location.pathname.includes(item.route) ? { background: "#ffffff" } : { background: "#FB4A04" }} key={item.id} className='w-[57px] h-[61px] flex justify-center items-center'>
-                                    <img src={location.pathname.includes(item.route) ? item.iconOrange : item.iconWhite} alt="" />
-                                </div>
-                            </NavLink>
-                        )
-                    })}
+                <div className='  w-[78px] xsm:w-[57px] sm:w-[57px] bg-[#FB4A04] h-[1015px] flex flex-col justify-between items-end pt-[65px] '>
+                    <div className='flex flex-col justify-between gap-[12px]'>
+                        {drawer.map((item) => {
+                            return (
+                                <NavLink to={item.route} end>
+                                    <div style={location.pathname.includes(item.route) ? { background: "#ffffff" } : { background: "#FB4A04" }} key={item.id} className='w-[57px] h-[61px] flex justify-center items-center'>
+                                        <img src={location.pathname.includes(item.route) ? item.iconOrange : item.iconWhite} alt="" />
+                                    </div>
+                                </NavLink>
+                            )
+                        })}
+                    </div>
+                    <div className='m-auto my-0 mb-[45px]'>
+                        <img src='./log-out.svg' />
+                    </div>
                 </div>
-                <div className='flex-1 flex'>
+
+                <div className='flex-1 flex items-start'>
                     {children}
                 </div>
             </div>

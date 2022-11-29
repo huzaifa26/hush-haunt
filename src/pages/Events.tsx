@@ -35,6 +35,12 @@ export const data = [
         text: "Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.",
         description: "Thurs Oct 13 at 7:00pm EDT"
     },
+    {
+        image: "./image2.png",
+        imageWidth: "20.576368876080693vw",
+        text: "Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.",
+        description: "Thurs Oct 13 at 7:00pm EDT"
+    },
 ]
 
 export const data1 = [
@@ -52,6 +58,12 @@ export const data1 = [
     },
     {
         image: "./festival3.png",
+        imageWidth: "20.576368876080693vw",
+        text: "Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.",
+        description: "Thurs Oct 13 at 7:00pm EDT"
+    },
+    {
+        image: "./festival2.png",
         imageWidth: "20.576368876080693vw",
         text: "Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.",
         description: "Thurs Oct 13 at 7:00pm EDT"
@@ -76,6 +88,12 @@ export const data1 = [
     },
     {
         image: "./electronic3.png",
+        imageWidth: "20.576368876080693vw",
+        text: "Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.",
+        description: "Thurs Oct 13 at 7:00pm EDT"
+    },
+    {
+        image: "./electronic2.png",
         imageWidth: "20.576368876080693vw",
         text: "Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.",
         description: "Thurs Oct 13 at 7:00pm EDT"
@@ -109,7 +127,14 @@ export const data1 = [
         imageWidth: "20.576368876080693vw",
         text: "Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.",
         description: "Thurs Oct 13 at 7:00pm EDT"
-    },],
+    },
+    {
+        image: "./pop3.png",
+        imageWidth: "20.576368876080693vw",
+        text: "Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.",
+        description: "Thurs Oct 13 at 7:00pm EDT"
+    },
+],
     [{
         image: "./music1.png",
         imageWidth: "20.576368876080693vw",
@@ -133,7 +158,14 @@ export const data1 = [
         imageWidth: "20.576368876080693vw",
         text: "Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.",
         description: "Thurs Oct 13 at 7:00pm EDT"
-    },],
+    },
+    {
+        image: "./music3.png",
+        imageWidth: "20.576368876080693vw",
+        text: "Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.",
+        description: "Thurs Oct 13 at 7:00pm EDT"
+    },
+    ],
     [{
         image: "./comedy1.png",
         imageWidth: "20.576368876080693vw",
@@ -157,7 +189,14 @@ export const data1 = [
         imageWidth: "20.576368876080693vw",
         text: "Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.",
         description: "Thurs Oct 13 at 7:00pm EDT"
-    },],
+    },
+    {
+        image: "./comedy3.png",
+        imageWidth: "20.576368876080693vw",
+        text: "Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.",
+        description: "Thurs Oct 13 at 7:00pm EDT"
+    },
+    ],
     [{
         image: "./miami1.png",
         imageWidth: "20.576368876080693vw",
@@ -181,7 +220,14 @@ export const data1 = [
         imageWidth: "20.576368876080693vw",
         text: "Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.",
         description: "Thurs Oct 13 at 7:00pm EDT"
-    },],
+    },
+    {
+        image: "./miami3.png",
+        imageWidth: "20.576368876080693vw",
+        text: "Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.",
+        description: "Thurs Oct 13 at 7:00pm EDT"
+    },
+    ],
 ]
 
 
@@ -240,6 +286,46 @@ let crousalData = [
     },
 ]
 
+var settings= {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: false
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false
+            }
+        }
+    ]
+};
+
 export default function Events({ }: Props) {
 
     const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
@@ -258,8 +344,7 @@ export default function Events({ }: Props) {
                 </div>
 
                 <ul className='xsm:hidden sm:hidden text-[#493c3c] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[5.244vw] mr-[7.37vw]'>
-                    <motion.li whileHover={{ color: "#FB4A04" }}>Events</motion.li>
-                    <Link to={"/community"}>
+                    <Link to={"/help-sub"}>
                         <motion.li whileHover={{ color: "#FB4A04" }}>Live Stream</motion.li>
                     </Link>
                     <Link to={"/contact-us"}>
@@ -272,12 +357,10 @@ export default function Events({ }: Props) {
                         <motion.li whileHover={{ color: "#473a3a" }} className='text-[#FB4A04]'>Sign Up</motion.li>
                     </Link>
                 </ul>
-
             </nav>
             {showMobileNav &&
                 <ul style={showMobileNav ? { maxHeight: "1000px" } : { maxHeight: "0px", overflow: "hidden" }} className='transition-all xsm:flex sm:flex flex-col hidden text-[#493c3c] py-[10px] items-center text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] gap-[5.244vw]'>
-                    <motion.li whileHover={{ color: "#FB4A04" }}>Events</motion.li>
-                    <Link to={"/community"}>
+                    <Link to={"/help-sub"}>
                         <motion.li whileHover={{ color: "#FB4A04" }}>Live Stream</motion.li>
                     </Link>
                     <Link to={"/contact-us"}>

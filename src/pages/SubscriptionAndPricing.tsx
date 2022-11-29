@@ -66,7 +66,7 @@ export default function SubscriptionAndPricing({ }: Props) {
 
                 <ul className='xsm:hidden sm:hidden text-[#493c3c] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[5.244vw] mr-[7.37vw]'>
                     <motion.li whileHover={{ color: "#FB4A04" }}>Events</motion.li>
-                    <Link to={"/community"}>
+                    <Link to={"/help-sub"}>
                         <motion.li whileHover={{ color: "#FB4A04" }}>Live Stream</motion.li>
                     </Link>
                     <motion.li whileHover={{ color: "#FB4A04" }}>Help</motion.li>
@@ -83,7 +83,7 @@ export default function SubscriptionAndPricing({ }: Props) {
                 {showMobileNav &&
                     <ul style={showMobileNav ? { maxHeight: "1000px" } : { maxHeight: "0px", overflow: "hidden" }} className='transition-all xsm:flex sm:flex flex-col hidden text-[#493c3c] py-[10px] items-center text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] gap-[5.244vw]'>
                         <motion.li whileHover={{ color: "#FB4A04" }}>Events</motion.li>
-                        <Link to={"/community"}>
+                        <Link to={"/help-sub"}>
                             <motion.li whileHover={{ color: "#FB4A04" }}>Live Stream</motion.li>
                         </Link>
                         <motion.li whileHover={{ color: "#FB4A04" }}>Help</motion.li>
