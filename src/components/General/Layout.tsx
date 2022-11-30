@@ -1,5 +1,5 @@
 import React from 'react'
-import { NavLink, Outlet } from "react-router-dom"
+import { NavLink, Outlet, useNavigate } from "react-router-dom"
 import LazyImage from './LazyImage'
 import SearchBar from './SearchBar'
 import { useLocation } from "react-router-dom"
@@ -45,6 +45,7 @@ let drawer = [
 
 export default function Layout({ children }: Props) {
     const location = useLocation();
+    const navigate=useNavigate();
     return (
         <div>
             <nav className='flex justify-between items-center w-[100%] h-85px'>
@@ -77,7 +78,7 @@ export default function Layout({ children }: Props) {
                             )
                         })}
                     </div>
-                    <div className='m-auto my-0 mb-[45px]'>
+                    <div onClick={()=>navigate("/")} className='m-auto my-0 mb-[45px] cursor-pointer'>
                         <img src='./log-out.svg' />
                     </div>
                 </div>

@@ -67,7 +67,7 @@ function App() {
   return (
     <main>
       <Routes>
-        <Route path='/' element={<EventsLazy />}></Route>
+        <Route path='/' element={<React.Suspense fallback={<LoadingAnimation />}><EventsLazy /></React.Suspense>}></Route>
         <Route path='/event-description' element={<React.Suspense fallback={<LoadingAnimation />}><EventDescriptions /></React.Suspense>}></Route>
         <Route path='/login' element={<React.Suspense fallback={<LoadingAnimation />}><LoginLazy /></React.Suspense>}></Route>
         <Route path='/signup' element={<React.Suspense fallback={<LoadingAnimation />}><SignupLazy /></React.Suspense>}></Route>

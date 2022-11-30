@@ -186,7 +186,7 @@ export default function Community2({ }: Props) {
                         </div>
                     </div>
 
-                    <div className='flex-1 h-full rounded-[20px] bg-[#FB4A040F] divide-y-[5px] divide-[#FB4A043D]'>
+                    <div id='top-vibe' className='flex-1 h-full rounded-[20px] bg-[#FB4A040F] divide-y-[5px] divide-[#FB4A043D]'>
                         <div className='w-[38.454755043227664vw] xsm:w-[80%] sm:w-[80%] md:w-[80%] m-auto divide-y-[5px] divide-[#FB4A043D]'>
                             <div className='px-[1.38328530259366vw] py-[21px]'>
                                 <h2 className='font-[700] text-[36px] leading-[58.64px] text-[#231414D4]'>Events with Top vibes </h2>

@@ -55,7 +55,7 @@ export default function SubscriptionAndPricing({ }: Props) {
         <main>
             <nav style={{ boxShadow: "1px 1px 8px #00000015" }} className='fixed z-[1000] bg-[white] flex justify-between items-center w-[100%] xsm:flex-col'>
                 <div className='flex items-center gap-[3.28vw] xsm:justify-between sm:justify-between xsm:w-full sm:w-full'>
-                    <LazyImage alt="" src={"./Logo.png"} classes='ml-[8px] min-w-[80px] ' />
+                    <img alt="" src={"/Logo.png"} className='ml-[8px] min-w-[80px] ' />
                     <SearchBar whileHover={{ scale: 1.03 }} style={{ flex: "1" }} />
                     <div onClick={() => setShowMobileNav(!showMobileNav)} className='xsm:flex sm:flex cursor-pointer hidden flex-col items-center gap-[5px] mr-[10px]'>
                         <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>
@@ -250,7 +250,7 @@ export default function SubscriptionAndPricing({ }: Props) {
                     </div>
                 </section>
 
-                <section className='w-[86vw] flex m-auto mt-[97px] xsm:flex-col sm:flex-col md:flex-col'>
+                <section id='faq' className='w-[86vw] flex m-auto pt-[97px] xsm:flex-col sm:flex-col md:flex-col'>
                     <div className='flex-2 flex flex-col'>
                         <h2 className='font-[700] text-[clamp(24px,2.07492795389049vw,36px)] leading-[58px] xsm:leading-[38px] text-[#473a3a]'>FAQs</h2>
                         <p className='font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26px] text-[#473a3a] mt-[27px] mb-[112px] xsm:mt-[17px]'>Everything you need to know about Party mode.</p>

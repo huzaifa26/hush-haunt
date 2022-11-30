@@ -390,7 +390,7 @@ export default function Events({ }: Props) {
                     </div>
                 </div>
 
-                <section>
+                <section id='checkin'>
                     <div className='flex flex-col justify-center items-center'>
                         <h2 className="font-[700] text-[clamp(20px,2.07492795389049vw,36px)] leading-[58.64px] text-[#473a3a]">Check out trending categories</h2>
                         <hr className='mt-[23px] w-[232px] !h-[2px] border-[#FB4A04] !p-0'></hr>
