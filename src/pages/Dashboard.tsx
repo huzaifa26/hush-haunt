@@ -161,7 +161,7 @@ export default function Dashboard({ }: Props) {
                     <section className='w-[100%] mt-[93px]'>
                         <EventsCards mainText='Pop Culture' data={data1[2]} />
                     </section>
-                    <div className='mt-[354px] xsm:mt-[160px] sm:mt-[180px]'>
+                    <div className='mt-[240px] xsm:mt-[160px] sm:mt-[180px]'>
                         <Footer showFooterHeaders={false} />
                     </div>
                 </div>
