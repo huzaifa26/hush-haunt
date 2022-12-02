@@ -21,32 +21,34 @@ export default function Footer({ showFooterHeaders = true }: Props) {
                             <motion.li whileHover={{ color: "#473a3a" }}>Partymode vibe check</motion.li>
                         </HashLink>
                         <Link to={'/subscription-and-pricing'}>
-
                             <motion.li whileHover={{ color: "#473a3a" }}>Pricing</motion.li>
                         </Link>
-                        <motion.li whileHover={{ color: "#473a3a" }}>Content standards</motion.li>
                         <Link to="/ticket">
                             <motion.li whileHover={{ color: "#473a3a" }}>Partymode mobile ticket</motion.li>
                         </Link>
-                        <motion.li whileHover={{ color: "#473a3a" }}>Partymode check-in</motion.li>
-                        <HashLink smooth to="/#checkin"></HashLink>
                         <motion.li whileHover={{ color: "#473a3a" }}>Partymode marketplace</motion.li>
                         <HashLink smooth to={'/subscription-and-pricing#faq'}>
                             <motion.li whileHover={{ color: "#473a3a" }}>FAQ</motion.li>
                         </HashLink>
-                        <motion.li whileHover={{ color: "#473a3a" }}>Sitemap</motion.li>
+                        <HashLink smooth to={'/subscription-and-pricing#faq'}>
+                            <motion.li whileHover={{ color: "#473a3a" }}>Sitemap</motion.li>
+                        </HashLink>
                     </ul>
 
                     <ul>
                         <h3 className='font-[700] text-[clamp(16px,1.38328530259366vw,24px)] leading-[40px] mb-[25px] '>Plan Events</h3>
-                        <motion.li whileHover={{ color: "#473a3a" }}>Sell tickets online</motion.li>
+                        <Link to="/ticket">
+                            <motion.li whileHover={{ color: "#473a3a" }}>Sell tickets online</motion.li>
+                        </Link>
                         <Link to="/help-sub">
                             <motion.li whileHover={{ color: "#473a3a" }}>Live streaming events</motion.li>
                         </Link>
                         <Link to="/create-event">
                             <motion.li whileHover={{ color: "#473a3a" }}>Create event</motion.li>
                         </Link>
-                        <motion.li whileHover={{ color: "#473a3a" }}>Event payment</motion.li>
+                        <Link to="/subscription-and-pricing">
+                            <motion.li whileHover={{ color: "#473a3a" }}>Event payment</motion.li>
+                        </Link>
                     </ul>
 
                     <ul>
@@ -54,8 +56,9 @@ export default function Footer({ showFooterHeaders = true }: Props) {
                         <Link to="/help-sub">
                             <motion.li whileHover={{ color: "#473a3a" }}>Live streaming</motion.li>
                         </Link>
-                        <motion.li whileHover={{ color: "#473a3a" }}>Online events</motion.li>
-                        <motion.li whileHover={{ color: "#473a3a" }}>Find promoter - creators</motion.li>
+                        <Link to="/">
+                            <motion.li whileHover={{ color: "#473a3a" }}>Online events</motion.li>
+                        </Link>
                     </ul>
 
                     <ul>

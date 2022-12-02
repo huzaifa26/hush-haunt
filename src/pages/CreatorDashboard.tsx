@@ -12,22 +12,26 @@ const data = [
     {
         id: 1,
         heading: "Create your first event",
-        text: "We make it easy to plan successful events. Here's how to start!"
+        text: "We make it easy to plan successful events. Here's how to start!",
+        link:"/create-event"
     },
     {
         id: 2,
         heading: "Build your profile",
-        text: "We make it easy to plan successful events. Here's how to start!"
+        text: "We make it easy to plan successful events. Here's how to start!",
+        link:"#"
     },
     {
         id: 3,
         heading: "Boost Your Event",
-        text: "We make it easy to plan successful events. Here's how to start!"
+        text: "We make it easy to plan successful events. Here's how to start!",
+        link:"#boost"
     },
     {
         id: 4,
         heading: "Set up your finances",
-        text: "We make it easy to plan successful events. Here's how to start!"
+        text: "We make it easy to plan successful events. Here's how to start!",
+        link:"#"
     },
 ]
 
@@ -61,10 +65,9 @@ export default function CreatorDashboard({ }: Props) {
                     </div>
 
 
-                    <div className='w-[52.04610951008645vw] xsm:w-[90%] sm:w-[80%] border-2 border-[#D9D9D9] mt-[70px] flex flex-col'>
+                    <div id="boost" className='w-[52.04610951008645vw] xsm:w-[90%] sm:w-[80%] border-2 border-[#D9D9D9] mt-[70px] flex flex-col'>
                         <h2 className='font-[700] text-[clamp(16px,1.38328530259366vw,24px)] leading-[39px] text-[#473a3a] mt-[8px] ml-[33px] xsm:ml-[10px] sm:ml-[10px]'>Boost your Events with Vibe Check</h2>
                         <p className='font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[26.06px] text-[#473a3a] mt-[25px] ml-[33px] xsm:ml-[10px] sm:ml-[10px]'>Take your marketing to the next level</p>
-
                         <Button whileHover={{background:"#FB4A04",border:"3px solid #fff",color:"#fff"}} classes={"!max-w-[231px]"} width='13.314121037463977vw' height='54px' text="Vibe check" style={{ borderRadius: "20px", background: "#ffff", border: "3px solid #FB4A04", color: "#FB4A04", fontSize: "16px", marginTop: "31px", marginBottom: "22px", alignSelf: "flex-end", marginRight: "23px", minWidth: "60%" }} />
                     </div>
 

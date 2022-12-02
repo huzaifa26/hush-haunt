@@ -343,9 +343,12 @@ export default function Events({ }: Props) {
                     </div>
                 </div>
 
-                <ul className='xsm:hidden sm:hidden text-[#493c3c] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[5.244vw] mr-[7.37vw]'>
+                <ul className='xsm:hidden sm:hidden text-[#493c3c] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[3.8vw] mr-[7.37vw]'>
                     <Link to={"/help-sub"}>
                         <motion.li whileHover={{ color: "#FB4A04" }}>Live Stream</motion.li>
+                    </Link>
+                    <Link to={"/subscription-and-pricing"}>
+                        <motion.li whileHover={{ color: "#FB4A04" }}>Pricing</motion.li>
                     </Link>
                     <Link to={"/contact-us"}>
                         <motion.li whileHover={{ color: "#FB4A04" }}>Help</motion.li>
@@ -359,9 +362,12 @@ export default function Events({ }: Props) {
                 </ul>
             </nav>
             {showMobileNav &&
-                <ul style={showMobileNav ? { maxHeight: "1000px" } : { maxHeight: "0px", overflow: "hidden" }} className='transition-all xsm:flex sm:flex flex-col hidden text-[#493c3c] py-[10px] items-center text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] gap-[5.244vw]'>
+                <ul style={showMobileNav ? { maxHeight: "1000px" } : { maxHeight: "0px", overflow: "hidden" }} className='transition-all xsm:flex sm:flex flex-col hidden text-[#493c3c] py-[10px] items-center text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] gap-[5.244vw] relative top-[88px]'>
                     <Link to={"/help-sub"}>
                         <motion.li whileHover={{ color: "#FB4A04" }}>Live Stream</motion.li>
+                    </Link>
+                    <Link to={"/subscription-and-pricing"}>
+                        <motion.li whileHover={{ color: "#FB4A04" }}>Pricing</motion.li>
                     </Link>
                     <Link to={"/contact-us"}>
                         <motion.li whileHover={{ color: "#FB4A04" }}>Help</motion.li>
