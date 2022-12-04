@@ -4,6 +4,7 @@ import LazyImage from './LazyImage'
 import SearchBar from './SearchBar'
 import { useLocation } from "react-router-dom"
 import { motion } from "framer-motion"
+import { Link } from 'react-router-dom'
 
 type Props = {
     children: any
@@ -50,8 +51,9 @@ export default function Layout({ children }: Props) {
         <div>
             <nav className='flex justify-between items-center w-[100%] h-85px'>
                 <div className='flex items-center gap-[3.28vw]'>
-                    <motion.img
-                        alt="" src={"/Logo.png"} className="w-[80px] xsm:min-w-[57px] sm:min-w-[57px]" />
+                <Link to="/">
+                    <motion.img alt="" src={"/Logo.png"} className="w-[80px] xsm:min-w-[57px] sm:min-w-[57px]" />
+                </Link>
                     <div className='xsm:hidden '>
                         <SearchBar whileHover={{ scale: 1.03 }} />
                     </div>

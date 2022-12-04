@@ -15,6 +15,7 @@ export default function Community({ }: Props) {
         <div>
             <nav className='flex justify-between items-center w-[100%]'>
                 <div className='flex items-center gap-[3.28vw] xsm:justify-between sm:justify-between xsm:w-full sm:w-full'>
+                    <Link to="/">
                     <motion.img initial={{ opacity: 0, scale: 0.5 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{
@@ -22,6 +23,7 @@ export default function Community({ }: Props) {
                             delay: 0.5,
                             ease: [0, 0.71, 0.2, 1.01]
                         }} alt="" src={"./Logo.png"} className='ml-[8px] min-w-[80px] ' />
+                    </Link>
                     <SearchBar whileHover={{ scale: 1.03 }} style={{ flex: "1" }} />
                     <div onClick={() => setShowMobileNav(!showMobileNav)} className='xsm:flex sm:flex cursor-pointer hidden flex-col items-center gap-[5px] mr-[10px]'>
                         <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>

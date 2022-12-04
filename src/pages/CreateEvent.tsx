@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import LazyImage from '../components/General/LazyImage'
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 import SearchBar from '../components/General/SearchBar'
 
 type Props = {}
@@ -13,7 +13,9 @@ export default function CreateEvent({ }: Props) {
         <div>
             <nav className='flex justify-between items-center w-[100%]'>
                 <div className='flex items-center gap-[3.28vw] xsm:justify-between sm:justify-between xsm:w-full sm:w-full'>
-                    <LazyImage alt="" src={"./Logo.png"} classes='ml-[8px] min-w-[80px] ' />
+                    <Link to="/">
+                        <img src='./Logo.png' className='ml-[8px] min-w-[80px]' alt='' />
+                    </Link>
                     <SearchBar whileHover={{ scale: 1.03 }} style={{ flex: "1" }} />
                     <div onClick={() => setShowMobileNav(!showMobileNav)} className='xsm:flex sm:flex cursor-pointer hidden flex-col items-center gap-[5px] mr-[10px]'>
                         <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>
@@ -25,12 +27,12 @@ export default function CreateEvent({ }: Props) {
                 <ul className='text-[#493c3c] xsm:hidden sm:hidden text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[31px] mr-[7.37vw] items-center'>
                     <Link to={"/event-dashboard"}>
                         <li className='flex items-center gap-[8px]'>
-                            <motion.p whileHover={{color:"#FB4A04"}} className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>Back</motion.p>
+                            <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>Back</motion.p>
                         </li>
                     </Link>
                     <li className='flex items-center gap-[8px]'>
                         <img src='./profile.png' alt='' />
-                        <motion.p whileHover={{color:"#FB4A04"}} className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>partymode@gmail.com</motion.p>
+                        <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[700] text-[14px] leading-[23px] text-center'>partymode@gmail.com</motion.p>
                     </li>
                 </ul>
             </nav>

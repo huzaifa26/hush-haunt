@@ -16,7 +16,9 @@ export default function Interests({ }: Props) {
     return (
         <div className='w-[calc(100vw - 100%)] flex justify-center items-center flex-col'>
             <div className='flex gap-[14.236311239193084vw] items-center mt-[4.858789625360231vw]'>
-                <img src='./Logo.png' alt='' />
+                <Link to="/">
+                    <img src='./Logo.png' alt='' />
+                </Link>
                 <h1>Kindly select your event preference </h1>
             </div>
 

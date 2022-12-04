@@ -15,7 +15,9 @@ export default function TicketVerifiedEmail({ }: Props) {
         <div>
             <nav className='flex justify-between items-center w-[100%]'>
                 <div className='flex items-center gap-[3.28vw] xsm:justify-between sm:justify-between xsm:w-full sm:w-full'>
-                    <LazyImage alt="" src={"./Logo.png"} classes='ml-[8px] min-w-[80px] ' />
+                    <Link to="/">
+                        <img alt="" src={"/Logo.png"} className='ml-[8px] min-w-[80px]' />
+                    </Link>
                     <SearchBar whileHover={{ scale: 1.03 }} style={{ flex: "1" }} />
                     <div onClick={() => setShowMobileNav(!showMobileNav)} className='xsm:flex sm:flex cursor-pointer hidden flex-col items-center gap-[5px] mr-[10px]'>
                         <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>

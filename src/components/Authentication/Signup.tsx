@@ -17,8 +17,9 @@ export default function Signup({ }: Props) {
             <div className='flex-1 bg-[#fff] ml-[-45px] xsm:ml-0 sm:ml-0 rounded-tl-[50px] rounded-bl-[50px]'>
                 <div className='w-[52%] xsm:w-[70%] sm:w-[62%] m-auto'>
                     <div className='pt-[58px]'>
-                        {/* <img src='./logo.png' /> */}
-                        <LazyImage alt="" src="/logo.png" />
+                        <Link to="/">
+                            <img src='./Logo.png' alt='' />
+                        </Link>
                         <h1 className='font-[700] text-[clamp(20px,2.07492795389049vw,36px)] leading-[58px] text-[#473a3a] mt-[13px]'>Signup</h1>
                     </div>
 

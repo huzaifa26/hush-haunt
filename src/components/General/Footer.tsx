@@ -29,9 +29,6 @@ export default function Footer({ showFooterHeaders = true }: Props) {
                         <HashLink smooth to={'/subscription-and-pricing#faq'}>
                             <motion.li whileHover={{ color: "#473a3a" }}>FAQ</motion.li>
                         </HashLink>
-                        <HashLink smooth to={'/subscription-and-pricing#faq'}>
-                            <motion.li whileHover={{ color: "#473a3a" }}>Sitemap</motion.li>
-                        </HashLink>
                     </ul>
 
                     <ul>

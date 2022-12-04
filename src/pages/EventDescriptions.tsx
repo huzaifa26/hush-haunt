@@ -203,7 +203,9 @@ export default function EventDescriptions({ }: Props) {
       <div>
         <section style={{ backgroundImage: `url("./backgroundimage.png")` }} className='backgroundImage w-[calc(100vw - 100%)] h-[964px] xsm:h-auto sm:h-auto'>
           <motion.nav style={scrollCounter > 0 ? { background: "#fff", boxShadow: "1px 1px 8px #00000020" } : { background: "rgba(0,0,0,0)" }} className='fixed transition-all z-[1000] flex justify-between items-center w-[100%]'>
-            <LazyImage alt="" src={"./Logo.png"} style={{ marginLeft: "3.54vw" }} />
+            <Link to="/">
+                    <img src='./Logo.png' className='ml-[3.54vw]' alt='' />
+                </Link>
             <motion.ul className={scrollCounter > 0 ? 'text-[#473a3a] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[5.244vw] mr-[8.94vw]' : 'text-[#ffffff] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[5.244vw] mr-[8.94vw]'}>
               <Link to="/">
                 <motion.li whileHover={{ color: "#FB4A04" }} className="text-inherit">Events</motion.li>

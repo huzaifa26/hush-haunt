@@ -33,7 +33,9 @@ export default function Dashboard({ }: Props) {
                 <nav style={{ boxShadow: "1px 1px 8px #00000015" }} className='fixed z-[1000] bg-[white] flex justify-between items-center w-[100%] xsm:flex-col'>
                     <div className='flex items-center gap-[3.28vw] xsm:justify-between sm:justify-between xsm:w-full sm:w-full md:w-full'>
                         <div className='flex lg:w-[90px] flex-1 items-center gap-[3.28vw] w-full'>
-                            <LazyImage alt="" src={"./Logo.png"} classes='ml-[8px] min-w-[80px] ' />
+                            <Link to="/">
+                                <img src='./Logo.png' className='ml-[8px] min-w-[80px]' alt='' />
+                            </Link>
                             <SearchBar whileHover={{ scale: 1.03 }} style={{ flex: "1" }} />
                             <div onClick={() => setShowMobileNav(!showMobileNav)} className='xsm:flex sm:flex md:flex cursor-pointer relative z-[1000] lg:hidden xl:hidden 2xl:hidden flex-col items-center gap-[5px] mr-[10px]'>
                                 <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>
@@ -45,7 +47,7 @@ export default function Dashboard({ }: Props) {
 
                     <ul className='xsm:hidden sm:hidden md:hidden text-[#493c3c] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[2.881844380403458vw] mr-[2vw]'>
                         <div className='flex justify-center items-center relative'>
-                            <motion.li whileHover={{ color: "#FB4A04" }} onClick={()=>setShowNavContext(!showNavContext)} className='cursor-pointer flex items-center gap-[0.4610951008645533vw]'>Event creators <img style={showNavContext?{transform:"rotate(180deg)"}:{}} className='w-[12px]' src='./3017945_arrow_declining_descending_down_downward_icon.svg' alt='' /></motion.li>
+                            <motion.li whileHover={{ color: "#FB4A04" }} onClick={() => setShowNavContext(!showNavContext)} className='cursor-pointer flex items-center gap-[0.4610951008645533vw]'>Event creators <img style={showNavContext ? { transform: "rotate(180deg)" } : {}} className='w-[12px]' src='./3017945_arrow_declining_descending_down_downward_icon.svg' alt='' /></motion.li>
                             {showNavContext &&
                                 <div style={{ boxShadow: "1px 1px 8px #00000030" }} className='transition-all w-[181px] h-[170px] bg-white absolute z-[1] flex flex-col justify-around items-center py-[20px] top-full right-[-30%]'>
                                     <Link to="/create-event" className='flex items-center '>
@@ -77,9 +79,9 @@ export default function Dashboard({ }: Props) {
                         </li>
                         <li className='relative flex items-center'>
                             <div className='cursor-pointer flex flex-col items-center gap-[5px]' onClick={() => { setOpenContextMenu(!openContextMenu) }}>
-                                <div style={openContextMenu?{background:"#FB4A04"}:{background:"#473a3a"}} className='min-w-[29px] min-h-[5px] rounded-full'></div>
-                                <div style={openContextMenu?{background:"#FB4A04"}:{background:"#473a3a"}} className='min-w-[29px] min-h-[5px] rounded-full'></div>
-                                <div style={openContextMenu?{background:"#FB4A04"}:{background:"#473a3a"}} className='min-w-[29px] min-h-[5px] rounded-full'></div>
+                                <div style={openContextMenu ? { background: "#FB4A04" } : { background: "#473a3a" }} className='min-w-[29px] min-h-[5px] rounded-full'></div>
+                                <div style={openContextMenu ? { background: "#FB4A04" } : { background: "#473a3a" }} className='min-w-[29px] min-h-[5px] rounded-full'></div>
+                                <div style={openContextMenu ? { background: "#FB4A04" } : { background: "#473a3a" }} className='min-w-[29px] min-h-[5px] rounded-full'></div>
                             </div>
                             {openContextMenu &&
                                 <div style={{ boxShadow: "1px 1px 8px #00000030" }} className='transition-all w-[181px] h-[170px] bg-white absolute z-[1] flex flex-col justify-around py-[20px] top-full right-[-30%]'>

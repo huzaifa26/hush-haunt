@@ -134,7 +134,7 @@ export const data1 = [
         text: "Hush Haunt 2022 - Oct 13 Hush Haunted Attraction, Westland.",
         description: "Thurs Oct 13 at 7:00pm EDT"
     },
-],
+    ],
     [{
         image: "./music1.png",
         imageWidth: "20.576368876080693vw",
@@ -334,7 +334,9 @@ export default function Events({ }: Props) {
         <div className='w-[calc(100vw - 100%)] '>
             <nav style={{ boxShadow: "1px 1px 8px #00000015" }} className='fixed z-[1000] bg-[white] flex justify-between items-center w-[100%] xsm:flex-col'>
                 <div className='flex items-center gap-[3.28vw] xsm:justify-between sm:justify-between xsm:w-full sm:w-full'>
-                    <LazyImage alt="" src={"./Logo.png"} classes='ml-[8px] min-w-[80px] ' />
+                    <Link to="/">
+                        <img src='./Logo.png' className='ml-[8px] min-w-[80px]' alt='' />
+                    </Link>
                     <SearchBar whileHover={{ scale: 1.03 }} style={{ flex: "1" }} />
                     <div onClick={() => setShowMobileNav(!showMobileNav)} className='xsm:flex sm:flex cursor-pointer hidden flex-col items-center gap-[5px] mr-[10px]'>
                         <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>
