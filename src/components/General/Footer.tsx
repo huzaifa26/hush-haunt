@@ -14,9 +14,6 @@ export default function Footer({ showFooterHeaders = true }: Props) {
                 <motion.div className='w-[90%] mb-[77px] m-auto flex justify-around mt-[55px] xsm:flex-col flex-wrap xsm:gap-[40px] sm:gap-[40px]'>
                     <ul>
                         <h3 className='font-[700] text-[clamp(16px,1.38328530259366vw,24px)] leading-[40px] mb-[25px] xsm:mb-[15px]'>Use Site</h3>
-                        <Link to={'/help-sub'}>
-                            <motion.li whileHover={{ color: "#473a3a" }} className=''>How It Works</motion.li>
-                        </Link>
                         <HashLink smooth to="/community-join#top-vibe">
                             <motion.li whileHover={{ color: "#473a3a" }}>Partymode vibe check</motion.li>
                         </HashLink>
@@ -26,7 +23,9 @@ export default function Footer({ showFooterHeaders = true }: Props) {
                         <Link to="/ticket">
                             <motion.li whileHover={{ color: "#473a3a" }}>Partymode mobile ticket</motion.li>
                         </Link>
-                        <motion.li whileHover={{ color: "#473a3a" }}>Partymode marketplace</motion.li>
+                        <a href="https://partymode.com/" target="_blank">
+                            <motion.li whileHover={{ color: "#473a3a" }}>Partymode marketplace</motion.li>
+                        </a>
                         <HashLink smooth to={'/subscription-and-pricing#faq'}>
                             <motion.li whileHover={{ color: "#473a3a" }}>FAQ</motion.li>
                         </HashLink>

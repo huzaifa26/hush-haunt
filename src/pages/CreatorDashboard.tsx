@@ -16,22 +16,10 @@ const data = [
         link:"/create-event"
     },
     {
-        id: 2,
-        heading: "Build your profile",
-        text: "We make it easy to plan successful events. Here's how to start!",
-        link:"#"
-    },
-    {
-        id: 3,
-        heading: "Boost Your Event",
-        text: "We make it easy to plan successful events. Here's how to start!",
-        link:"#boost"
-    },
-    {
         id: 4,
         heading: "Set up your finances",
         text: "We make it easy to plan successful events. Here's how to start!",
-        link:"#"
+        link:"/subscription-and-pricing"
     },
 ]
 

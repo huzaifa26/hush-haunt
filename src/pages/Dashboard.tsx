@@ -16,6 +16,7 @@ export default function Dashboard({ }: Props) {
     const [openContextMenu, setOpenContextMenu] = useState<boolean>(false);
     const [showMobileNav, setShowMobileNav] = useState<boolean>(false);
     const [showModal, setShowModal] = useState<boolean>(false);
+    const [showNavContext, setShowNavContext] = useState<boolean>(false);
 
     return (
         <>
@@ -24,7 +25,7 @@ export default function Dashboard({ }: Props) {
                     <p className='font-[400] text-[16px] text-[#231414D4] leading-[26.06px] mb-[16px]'>Enter Friend email address</p>
                     <div className='flex gap-[2.3054755043227666vw] xsm:flex-col sm:flex-col'>
                         <input className='w-[28.35734870317003vw] xsm:w-[60vw] sm:w-[60vw] h-[41px] border-[1px] border-[#231414D4]'></input>
-                        <Button initial={{ backgroundColor: '#FB4A04', color: "#fff" }} whileHover={{ scale: 1.02, backgroundColor: "#ffffff", border: "3px solid #FB4A04", color: "#FB4A04" }} style={{ borderRadius: "0px", fontSize: "12px",minWidth:"150px"}} width={"6.858789625360231vw"} height={"41px"} text={"Invite a Friend"} />
+                        <Button initial={{ backgroundColor: '#FB4A04', color: "#fff" }} whileHover={{ scale: 1.02, backgroundColor: "#ffffff", border: "3px solid #FB4A04", color: "#FB4A04" }} style={{ borderRadius: "0px", fontSize: "12px", minWidth: "150px" }} width={"6.858789625360231vw"} height={"41px"} text={"Invite a Friend"} />
                     </div>
                 </div>
             </Modal>
@@ -43,37 +44,45 @@ export default function Dashboard({ }: Props) {
                     </div>
 
                     <ul className='xsm:hidden sm:hidden md:hidden text-[#493c3c] text-[clamp(12px,0.9221902017291066vw,16px)] font-[700] flex gap-[2.881844380403458vw] mr-[2vw]'>
-                        <Link to="/create-event" className='flex items-center '>
-                            <li className='flex items-center gap-[0.4610951008645533vw]'>
-                                <p className='text-[#1977F3] font-[400] text-[14px] leading-[23px] text-center'>+</p>
-                                <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#1977F3] font-[400] text-[14px] leading-[23px] text-center'>Create Events</motion.p>
-                            </li>
-                        </Link>
+                        <div className='flex justify-center items-center relative'>
+                            <motion.li whileHover={{ color: "#FB4A04" }} onClick={()=>setShowNavContext(!showNavContext)} className='cursor-pointer flex items-center gap-[0.4610951008645533vw]'>Event creators <img style={showNavContext?{transform:"rotate(180deg)"}:{}} className='w-[12px]' src='./3017945_arrow_declining_descending_down_downward_icon.svg' alt='' /></motion.li>
+                            {showNavContext &&
+                                <div style={{ boxShadow: "1px 1px 8px #00000030" }} className='transition-all w-[181px] h-[170px] bg-white absolute z-[1] flex flex-col justify-around items-center py-[20px] top-full right-[-30%]'>
+                                    <Link to="/create-event" className='flex items-center '>
+                                        <li className='flex items-center gap-[0.4610951008645533vw]'>
+                                            <p className='text-[#1977F3] font-[400] text-[14px] leading-[23px] text-center'>+</p>
+                                            <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#1977F3] font-[400] text-[14px] leading-[23px] text-center'>Create Events</motion.p>
+                                        </li>
+                                    </Link>
 
-                        <Link to="/likes" className='flex items-center'>
-                            <li className='flex items-center gap-[8px]'>
-                                <img src='./heart.png' alt='' />
-                                <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Likes</motion.p>
-                            </li>
-                        </Link>
-                        <Link to="/ticket" className='flex items-center'>
-                            <li className='flex items-center gap-[0.4610951008645533vw] '>
-                                <img src='./ticket.png' alt='' />
-                                <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Ticket</motion.p>
-                            </li>
-                        </Link>
+                                    <Link to="/likes" className='flex items-center'>
+                                        <li className='flex items-center gap-[8px]'>
+                                            <img src='./heart.png' alt='' />
+                                            <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Likes</motion.p>
+                                        </li>
+                                    </Link>
+                                    <Link to="/ticket" className='flex items-center'>
+                                        <li className='flex items-center gap-[0.4610951008645533vw] '>
+                                            <img src='./ticket.png' alt='' />
+                                            <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>Ticket</motion.p>
+                                        </li>
+                                    </Link>
+                                </div>
+                            }
+                        </div>
+
                         <li className='flex items-center gap-[0.4610951008645533vw] '>
                             <img src='./profile.png' alt='' />
                             <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] font-[400] text-[14px] leading-[23px] text-center'>partymode@gmail.com</motion.p>
                         </li>
                         <li className='relative flex items-center'>
                             <div className='cursor-pointer flex flex-col items-center gap-[5px]' onClick={() => { setOpenContextMenu(!openContextMenu) }}>
-                                <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>
-                                <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>
-                                <div className='min-w-[29px] min-h-[5px] bg-[#473a3a] rounded-full'></div>
+                                <div style={openContextMenu?{background:"#FB4A04"}:{background:"#473a3a"}} className='min-w-[29px] min-h-[5px] rounded-full'></div>
+                                <div style={openContextMenu?{background:"#FB4A04"}:{background:"#473a3a"}} className='min-w-[29px] min-h-[5px] rounded-full'></div>
+                                <div style={openContextMenu?{background:"#FB4A04"}:{background:"#473a3a"}} className='min-w-[29px] min-h-[5px] rounded-full'></div>
                             </div>
                             {openContextMenu &&
-                                <div className='transition-all w-[181px] h-[170px] bg-white shadow-md absolute z-[1] flex flex-col justify-around py-[20px] top-full left-[-270%]'>
+                                <div style={{ boxShadow: "1px 1px 8px #00000030" }} className='transition-all w-[181px] h-[170px] bg-white absolute z-[1] flex flex-col justify-around py-[20px] top-full right-[-30%]'>
                                     <Link to="/community">
                                         <motion.p whileHover={{ color: "#FB4A04" }} className='text-[#473a3a] cursor-pointer font-[400] text-[clamp(12px,0.9221902017291066vw,16px)] leading-[23px] text-center'> Explore Community</motion.p>
                                     </Link>
