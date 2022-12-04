@@ -26,6 +26,9 @@ export default function Footer({ showFooterHeaders = true }: Props) {
                         <a href="https://partymode.com/" target="_blank">
                             <motion.li whileHover={{ color: "#473a3a" }}>Partymode marketplace</motion.li>
                         </a>
+                        <a href="https://partymoderadio.com/" target="_blank">
+                            <motion.li whileHover={{ color: "#473a3a" }}>Partymode Radio</motion.li>
+                        </a>
                         <HashLink smooth to={'/subscription-and-pricing#faq'}>
                             <motion.li whileHover={{ color: "#473a3a" }}>FAQ</motion.li>
                         </HashLink>
